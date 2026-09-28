@@ -8,7 +8,7 @@ Phone-friendly collection tracker for A01/A02, designed so future sets can be ad
 
 ## Install
 
-Host the folder on an HTTPS static host such as GitHub Pages. Open the HTTPS site on Android/Chrome and use the browser's **Install app / Add to Home screen** option.
+Open the HTTPS (https://weber-m.github.io/nichirin-collection/) site on Android/Chrome and use the browser's **Install app / Add to Home screen** option.
 
 ## Future sets
 
