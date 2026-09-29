@@ -84,7 +84,7 @@ def old_cards():
 def main():
     catalog=json.loads(CATALOG.read_text(encoding='utf-8'))
     old=old_cards()
-    cards={c['id']:{'offers':[], 'shopLinks':[]} for c in catalog['cards']}
+    cards={c['id']:{'offers':[], 'shopLinks':[], 'marketReferences':[]} for c in catalog['cards']}
     catalog_by_id={c['id']:c for c in catalog['cards']}
 
     # Public shop sources.
@@ -118,7 +118,7 @@ def main():
             vals=mercari_prices(get(url),c['id'])
             if vals:
                 med=int(round(statistics.median(vals)))
-                cards[c['id']]['offers'].append({'shop':MERCARI_LABEL,'price':med,'url':url,'method':'median'})
+                cards[c['id']]['marketReferences'].append({'market':MERCARI_LABEL,'price':med,'url':url,'method':'median'})
                 print(f'Mercari {c["id"]}: {med} from {len(vals)} candidates')
             else:
                 print(f'Mercari {c["id"]}: no exact-ID price')
@@ -137,6 +137,11 @@ def main():
         for x in prev.get('offers',[]):
             if x.get('shop') and x.get('url') and x['shop'] not in links:
                 links[x['shop']]={'shop':x['shop'],'url':x['url']}
+        # Always keep the main source links available for A02 even if a source is temporarily unavailable.
+        if cid.startswith('A02-'):
+            links.setdefault('FullAhead',{'shop':'FullAhead','url':'https://pt-fullahead.com/shopbrand/kynbs/'})
+            links.setdefault('TCG Library',{'shop':'TCG Library','url':'https://tcg-library.com/collections/kimetsu-nichirin-battle-slash'})
+            links.setdefault('カードショップ カリントウ',{'shop':'カードショップ カリントウ','url':'https://item.rakuten.co.jp/karintou10/c/0000006150/'})
         c['shopLinks']=list(links.values())
         if c['offers']:
             prices=[int(x['price']) for x in c['offers'] if isinstance(x.get('price'),(int,float)) and x['price']>0]
@@ -146,7 +151,8 @@ def main():
         elif prev:
             # Keep legacy data rather than turning a temporary scrape failure into blanks.
             for k,v in prev.items():
-                if k not in ('shopLinks',): c[k]=v
+                if k not in ('shopLinks','marketReferences'): c[k]=v
+        c.setdefault('marketReferences', prev.get('marketReferences', []))
 
     OUT.write_text(json.dumps({'version':2,'updated':time.strftime('%Y-%m-%d'),'cards':cards},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print('Updated',OUT)
