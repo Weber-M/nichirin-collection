@@ -1,5 +1,5 @@
 {
-  "version": 6,
+  "version": 3,
   "updated": "2026-10-05",
   "sets": [
     {
@@ -19,52 +19,71 @@
           "name": "FullAhead",
           "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
         }
+      ],
+      "promoSets": [
+        "P01"
       ]
     },
     {
       "id": "A02",
       "name": "A02",
       "cardCount": 60,
-      "sources": [
-        {
-          "name": "FullAhead",
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
-        },
-        {
-          "name": "TCG Library",
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
-        },
-        {
-          "name": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
-        },
-        {
-          "name": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02"
-        }
-      ]
-    },
-    {
-      "id": "PR",
-      "name": "PR",
-      "cardCount": 6,
-      "sources": [
-        {
-          "name": "FullAhead",
-          "url": "https://item.rakuten.co.jp/fullahead/c/0000012539/"
-        },
-        {
-          "name": "TCG Library",
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
-        },
-        {
-          "name": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=%E9%AC%BC%E6%BB%85%E3%81%AE%E5%88%83%20%E6%97%A5%E8%BC%AA%E3%83%90%E3%83%88%E3%83%AB%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5%20PR"
-        }
-      ]
+      "sources": []
     }
   ],
   "cards": [
+    {
+      "id": "P01-001",
+      "set": "A01",
+      "promoSet": "P01",
+      "name": "竈門禰豆子",
+      "rarity": "PR",
+      "img": null,
+      "back": null,
+      "price": null,
+      "imageSource": "pending-user-image",
+      "releaseDate": "2026-03-28",
+      "promoSource": "AnimeJapan2026 配布カード"
+    },
+    {
+      "id": "P01-002",
+      "set": "A01",
+      "promoSet": "P01",
+      "name": "竈門炭治郎",
+      "rarity": "PR",
+      "img": null,
+      "back": null,
+      "price": null,
+      "imageSource": "pending-user-image",
+      "releaseDate": "2026-07-03",
+      "promoSource": "最強ジャンプ2026年8月号 付録"
+    },
+    {
+      "id": "P01-003",
+      "set": "A01",
+      "promoSet": "P01",
+      "name": "累",
+      "rarity": "PR",
+      "img": null,
+      "back": null,
+      "price": null,
+      "imageSource": "pending-user-image",
+      "releaseDate": "2026-07-21",
+      "promoSource": "Vジャンプ2026年9月号 付録"
+    },
+    {
+      "id": "P01-005",
+      "set": "A01",
+      "promoSet": "P01",
+      "name": "我妻善逸",
+      "rarity": "PR",
+      "img": null,
+      "back": null,
+      "price": null,
+      "imageSource": "pending-user-image",
+      "releaseDate": "2026-07-19",
+      "promoSource": "ジャンプビクトリーカーニバル2026 来場者記念品"
+    },
     {
       "id": "A01-001",
       "set": "A01",
@@ -1264,84 +1283,6 @@
       "price": null,
       "type": "support",
       "imageSource": null
-    },
-    {
-      "id": "P01-001",
-      "set": "PR",
-      "name": "竈門禰豆子",
-      "rarity": "PR",
-      "img": null,
-      "back": null,
-      "price": null,
-      "type": "promo",
-      "imageSource": null,
-      "releaseDate": "2026-03-28",
-      "distribution": "AnimeJapan 2026 配布"
-    },
-    {
-      "id": "P01-002",
-      "set": "PR",
-      "name": "竈門炭治郎",
-      "rarity": "PR",
-      "img": null,
-      "back": null,
-      "price": null,
-      "type": "promo",
-      "imageSource": null,
-      "releaseDate": "2026-07-03",
-      "distribution": "最強ジャンプ2026年8月号 付録"
-    },
-    {
-      "id": "P01-003",
-      "set": "PR",
-      "name": "累",
-      "rarity": "PR",
-      "img": null,
-      "back": null,
-      "price": null,
-      "type": "promo",
-      "imageSource": null,
-      "releaseDate": "2026-07-21",
-      "distribution": "Vジャンプ2026年9月特大号 付録"
-    },
-    {
-      "id": "P01-005",
-      "set": "PR",
-      "name": "我妻善逸",
-      "rarity": "PR",
-      "img": null,
-      "back": null,
-      "price": null,
-      "type": "promo",
-      "imageSource": null,
-      "releaseDate": "2026-07-19",
-      "distribution": "ジャンプビクトリーカーニバル2026 来場者記念品"
-    },
-    {
-      "id": "P02-001",
-      "set": "PR",
-      "name": "煉獄杏寿郎",
-      "rarity": "PR",
-      "img": null,
-      "back": null,
-      "price": null,
-      "type": "promo",
-      "imageSource": null,
-      "releaseDate": "2026-09-17",
-      "distribution": "日輪刀手引ノ書・壱 同梱カード"
-    },
-    {
-      "id": "P02-002",
-      "set": "PR",
-      "name": "胡蝶しのぶ",
-      "rarity": "PR",
-      "img": null,
-      "back": null,
-      "price": null,
-      "type": "promo",
-      "imageSource": null,
-      "releaseDate": "2026-09-18",
-      "distribution": "Vジャンプ2026年11月特大号 付録"
     }
   ]
 }
