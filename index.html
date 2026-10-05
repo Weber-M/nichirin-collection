@@ -9,6 +9,119 @@ header{position:sticky;top:0;z-index:10;background:rgba(9,9,11,.92);backdrop-fil
 .modal{position:fixed;inset:0;background:#0009;z-index:60;display:none;align-items:flex-end}.modal.open{display:flex}.sheet{width:100%;max-height:78vh;background:#151519;border-top:1px solid #333;border-radius:18px 18px 0 0;padding:18px;overflow:auto}.sheet h2{font-size:17px;margin:0 0 12px}.sheet section{padding:12px 0;border-top:1px solid #2b2b31}.sheet a{color:#e8bd52;text-decoration:none}.sheet button{margin-top:8px}.danger{color:var(--danger)}
 @media(min-width:700px){.grid{grid-template-columns:repeat(6,1fr);gap:9px}.stats{max-width:700px}.toolbar{top:82px}.modal{align-items:center}.sheet{width:min(560px,92vw);border-radius:18px}}
 @media(max-width:520px){.stats{gap:4px}.stat{padding:7px 3px}.stat b{font-size:12px}.toolbar{top:79px}}
+.card .meta {
+    padding: 9px 8px 11px;
+}
+.card .meta .num {
+    font-size: 15px;
+    font-weight: 800;
+}
+.card .meta .name {
+    font-size: 17px;
+    line-height: 1.25;
+    font-weight: 750;
+}
+.card .meta .price-line {
+    font-size: 15px;
+    font-weight: 800;
+    margin-top: 5px;
+}
+.v6-market {
+    margin-top: 10px;
+    padding: 12px;
+    border: 1px solid #303039;
+    border-radius: 13px;
+    background: #111116;
+}
+
+.v6-market h3 {
+    margin: 0 0 8px;
+    font-size: 16px;
+}
+
+.v6-market-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.v6-estimate {
+    font-size: 24px;
+    font-weight: 850;
+}
+
+.v6-sub {
+    font-size: 12px;
+    opacity: 0.72;
+    margin-top: 3px;
+}
+
+.v6-market button {
+    cursor: pointer;
+}
+
+.v6-offers {
+    display: none;
+    margin-top: 9px;
+}
+
+.v6-offers.open {
+    display: block;
+}
+
+.v6-offer {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 8px 0;
+    border-top: 1px solid #303039;
+    font-size: 13px;
+}
+
+.v6-offer a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 750;
+}
+
+.v6-history {
+    margin-top: 10px;
+}
+
+.v6-chart {
+    width: 100%;
+    height: 180px;
+    display: block;
+    margin-top: 8px;
+    border-radius: 10px;
+}
+
+.v6-note {
+    font-size: 11px;
+    opacity: 0.68;
+    margin-top: 6px;
+    line-height: 1.4;
+}
+
+.card .meta { padding: 9px 8px 11px; }
+.card .meta .num { font-size: 15px; font-weight: 800; }
+.card .meta .name { font-size: 17px; line-height: 1.25; font-weight: 750; }
+.card .meta .price-line { font-size: 15px; font-weight: 800; margin-top: 5px; }
+.v6-market { margin-top: 4px; padding: 10px; border:1px solid #303039; border-radius:12px; background:#111116; }
+.v6-market h3 { margin:0 0 7px; font-size:15px; }
+.v6-market-main { display:flex; justify-content:space-between; align-items:center; gap:8px; }
+.v6-estimate { font-size:23px; font-weight:850; }
+.v6-sub { font-size:11px; opacity:.75; margin-top:2px; }
+.v6-market button { cursor:pointer; }
+.v6-offers { display:none; margin-top:8px; }
+.v6-offers.open { display:block; }
+.v6-offer { display:flex; justify-content:space-between; gap:8px; padding:7px 0; border-top:1px solid #303039; font-size:12px; }
+.v6-offer a { color:#e8bd52; text-decoration:none; font-weight:750; }
+.v6-history { margin-top:9px; }
+.v6-chart { width:100%; height:170px; display:block; margin-top:7px; border-radius:9px; background:#0d0d11; }
+.v6-note { font-size:10px; opacity:.68; margin-top:5px; line-height:1.4; }
+.v6-history button,.v6-compare { padding:5px 8px; font-size:10px; }
 </style></head><body>
 <header><h1>鬼滅の刃 日輪バトルスラッシュ</h1><div class="sub">My Collection — 公式ロゴ使用・タップで拡大・裏返し。所持ボタンはカード画像とは別です。</div><div class="stats"><div class="stat"><b id="count">—</b><span>COLLECTED</span></div><div class="stat"><b id="pct">—</b><span>COMPLETE</span></div><div class="stat"><b id="value">—</b><span>OWNED VALUE</span></div><div class="stat"><b id="setValue">—</b><span>SET VALUE</span></div></div></header>
 <div class="toolbar"><div class="row"><button class="pill active" data-set="ALL">ALL</button><button class="pill" data-set="A01">A01</button><button class="pill" data-set="A02">A02</button><button class="pill" data-owned="missing">未所持</button><button class="pill" data-owned="owned">所持</button><select id="rar"><option value="ALL">全レアリティ</option><option value="UR">UR</option><option value="SR">SR</option><option value="R">R</option><option value="C">C</option></select></div><div class="row"><input id="search" class="search" placeholder="カード番号・名前を検索"><button id="refreshPrices" class="tool">↻ 価格更新</button><button id="settings" class="tool">⚙ 設定</button></div></div>
@@ -19,35 +132,41 @@ header{position:sticky;top:0;z-index:10;background:rgba(9,9,11,.92);backdrop-fil
 const state={cards:[],sets:[],prices:{},set:'ALL',own:'ALL',rarity:'ALL',q:'',current:0,flipped:false};
 const saved=JSON.parse(localStorage.getItem('nichirin-owned')||'{}');
 if(!localStorage.getItem('nichirin-owned-v3-backup') && localStorage.getItem('nichirin-owned')) localStorage.setItem('nichirin-owned-v3-backup',localStorage.getItem('nichirin-owned'));
-
-const $=id=>document.getElementById(id); const isOwned=id=>!!saved[id];
+const $=id=>document.getElementById(id);
+const isOwned=id=>!!saved[id];
 function scope(){return state.cards.filter(c=>state.set==='ALL'||c.set===state.set)}
 function filtered(){return state.cards.filter(c=>(state.set==='ALL'||c.set===state.set)&&(state.own==='ALL'||(state.own==='owned'?isOwned(c.id):!isOwned(c.id)))&&(state.rarity==='ALL'||String(c.rarity).replace('*','')===state.rarity)&&(!state.q||c.id.toLowerCase().includes(state.q.toLowerCase())||c.name.includes(state.q)))}
-function cardDataPrice(c){return state.prices[c.id]||{};}
+function cardDataPrice(c){return state.prices[c.id]||{}}
 function validOffers(c){const p=cardDataPrice(c);return (Array.isArray(p.offers)?p.offers:[]).filter(x=>Number.isFinite(Number(x.price))&&Number(x.price)>0)}
+function median(values){const a=values.filter(Number.isFinite).sort((x,y)=>x-y);if(!a.length)return null;const m=Math.floor(a.length/2);return a.length%2?a[m]:Math.round((a[m-1]+a[m])/2)}
+function marketValue(c){const p=cardDataPrice(c);if(Number.isFinite(Number(p.marketValue))&&Number(p.marketValue)>0)return Number(p.marketValue);const vals=validOffers(c).map(x=>Number(x.price));return median(vals)}
 function cardPrice(c){const offers=validOffers(c);if(offers.length)return Math.min(...offers.map(x=>Number(x.price)));const p=cardDataPrice(c);return Number.isFinite(Number(p.price))?Number(p.price):(Number.isFinite(Number(c.price))?Number(c.price):null)}
-function cardAverage(c){const offers=validOffers(c);if(!offers.length)return null;return Math.round(offers.reduce((a,x)=>a+Number(x.price),0)/offers.length)}
+function cardAverage(c){const offers=validOffers(c);if(!offers.length){const p=cardDataPrice(c);return Number.isFinite(Number(p.average))?Number(p.average):null}return Math.round(offers.reduce((a,x)=>a+Number(x.price),0)/offers.length)}
 function mercariUrl(c){const q=[c.id,c.name,c.rarity].filter(Boolean).join(' ');return 'https://jp.mercari.com/search?keyword='+encodeURIComponent(q)}
 function escapeHtml(v){return String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
-function render(){const list=filtered(); $('grid').innerHTML=list.length?list.map(c=>{const own=isOwned(c.id),p=cardPrice(c),avg=cardAverage(c);return `<article class="card ${own?'owned':'missing'}" data-id="${c.id}"><div class="tag">${c.rarity}</div><button class="check" aria-label="${own?'所持':'未所持'}">${own?'✓':'○'}</button>${c.img?`<img src="${c.img}" loading="lazy" alt="${c.name}" onerror="this.outerHTML='<div class=\"ph\">画像準備中</div>'">`:`<div class="ph">${c.id}<br>${c.name}<br><small>画像未設定</small></div>`}<div class="meta"><div class="num">${c.id}</div><div class="name">${c.name}</div>${avg!=null?`<div class="num">平均 ¥${avg.toLocaleString()}</div>`:p!=null?`<div class="num">最安 ¥${p.toLocaleString()}</div>`:''}</div></article>`}).join(''):`<div class="empty">該当するカードがありません。</div>`;
+function render(){const list=filtered();$('grid').innerHTML=list.length?list.map(c=>{const own=isOwned(c.id),p=cardPrice(c),mv=marketValue(c);return `<article class="card ${own?'owned':'missing'}" data-id="${c.id}"><div class="tag">${escapeHtml(c.rarity)}</div><button class="check" aria-label="${own?'所持':'未所持'}">${own?'✓':'○'}</button>${c.img?`<img src="${escapeHtml(c.img)}" loading="lazy" alt="${escapeHtml(c.name)}" onerror="this.outerHTML='<div class=\"ph\"></div>'">`:`<div class="ph"></div>`}<div class="meta"><div class="num">${escapeHtml(c.id)}</div><div class="name">${escapeHtml(c.name)}</div>${mv!=null?`<div class="price-line">市場価格 ¥${mv.toLocaleString()}</div>`:p!=null?`<div class="price-line">最安 ¥${p.toLocaleString()}</div>`:''}</div></article>`}).join(''):`<div class="empty">該当するカードがありません。</div>`;
 $('grid').querySelectorAll('.card').forEach(el=>{el.onclick=e=>{if(e.target.closest('.check'))return;open(state.cards.findIndex(c=>c.id===el.dataset.id))};el.querySelector('.check').onclick=e=>{e.stopPropagation();toggleOwned(el.dataset.id)}});updateStats()}
-function updateStats(){const sc=scope(),owned=sc.filter(c=>isOwned(c.id)),known=sc.map(cardAverage).filter(v=>v!=null),ov=owned.map(cardAverage).filter(v=>v!=null);$('count').textContent=`${owned.length} / ${sc.length}`;$('pct').textContent=(sc.length?(owned.length/sc.length*100):0).toFixed(1)+'%';$('value').textContent=ov.length?'¥'+ov.reduce((a,b)=>a+b,0).toLocaleString():'—';$('setValue').textContent=known.length?'¥'+known.reduce((a,b)=>a+b,0).toLocaleString():'—'}
+function updateStats(){const sc=scope(),owned=sc.filter(c=>isOwned(c.id)),known=sc.map(marketValue).filter(v=>v!=null),ov=owned.map(marketValue).filter(v=>v!=null);$('count').textContent=`${owned.length} / ${sc.length}`;$('pct').textContent=(sc.length?(owned.length/sc.length*100):0).toFixed(1)+'%';$('value').textContent=ov.length?'¥'+ov.reduce((a,b)=>a+b,0).toLocaleString():'—';$('setValue').textContent=known.length?'¥'+known.reduce((a,b)=>a+b,0).toLocaleString():'—'}
 function toggleOwned(id){if(saved[id])delete saved[id];else saved[id]=true;localStorage.setItem('nichirin-owned',JSON.stringify(saved));render();if($('overlay').classList.contains('open'))syncViewer()}
 function open(i){if(i<0)return;state.current=i;state.flipped=false;$('overlay').classList.add('open');syncViewer()}
-function syncViewer(){const c=state.cards[state.current];$('viewer').style.setProperty('--viewer-bg',c.img?`url(\"${c.img}\")`:'none');$('vlabel').textContent=`${c.id}  ${c.name} · ${c.rarity}`;$('ownBtn').textContent=isOwned(c.id)?'✓ 所持':'○ 未所持';$('ownBtn').classList.toggle('on',isOwned(c.id));const pd=cardDataPrice(c);const offers=validOffers(c);const avg=cardAverage(c);const sorted=[...offers].sort((a,b)=>Number(a.price)-Number(b.price));const lowest=sorted[0];let html='';if(offers.length){html+=`<div class="summary"><span>平均 <strong>¥${avg.toLocaleString()}</strong></span><span class="best">最安 <strong>¥${Number(lowest.price).toLocaleString()}</strong></span></div><button id="compareBtn" class="tool" style="padding:4px 7px;font-size:10px">▼ 価格比較</button><div id="compareList" style="display:none;margin-top:4px">${sorted.map((x,i)=>`<div class="shoprow"><a href="${escapeHtml(x.url)}" target="_blank" rel="noopener">${escapeHtml(x.shop)} ¥${Number(x.price).toLocaleString()}${i===0?' ★':''} ↗</a></div>`).join('')}</div>`}else{html='<span class="muted">価格データなし</span>'};const links=[...(pd.shopLinks||[])];if(!links.some(x=>String(x.shop).includes('メルカリ')))links.push({shop:'メルカリ検索',url:mercariUrl(c)});if(links.length)html+=`<div class="shoprow" style="margin-top:4px">${links.map(x=>`<a href="${escapeHtml(x.url)}" target="_blank" rel="noopener">${escapeHtml(x.shop)} ↗</a>`).join(' · ')}</div>`;$('vprices').innerHTML=html;const cb=$('compareBtn');if(cb){cb.onclick=()=>{const el=$('compareList');const open=el.style.display!=='none';el.style.display=open?'none':'block';cb.textContent=open?'▼ 価格比較':'▲ 価格比較'}};const url=state.flipped?c.back:c.img;if(url){$('big').style.display='block';$('noimage').style.display='none';$('big').src=url;$('big').alt=c.name}else{$('big').style.display='none';$('noimage').style.display='grid';$('noimage').innerHTML=`<b>${c.id}</b><br>${c.name}<br><small>画像は後から追加できます</small>`}}
+function historyData(c){const p=cardDataPrice(c);const h=Array.isArray(p.history)?p.history.filter(x=>Number.isFinite(Number(x.market))&&x.date):[];const now=marketValue(c);if(!h.length&&now!=null)h.push({date:p.updated||new Date().toISOString().slice(0,10),market:now,average:cardAverage(c),cheapest:cardPrice(c)});return h}
+function drawHistory(c){const canvas=$('v6-chart');if(!canvas)return;const rect=canvas.getBoundingClientRect();const dpr=window.devicePixelRatio||1;canvas.width=Math.max(1,Math.round(rect.width*dpr));canvas.height=Math.max(1,Math.round(170*dpr));const ctx=canvas.getContext('2d');ctx.scale(dpr,dpr);const w=rect.width,h=170;ctx.clearRect(0,0,w,h);const data=historyData(c);if(!data.length)return;const vals=data.map(x=>Number(x.market));let min=Math.min(...vals),max=Math.max(...vals);if(min===max){min=Math.max(0,min-100);max=max+100}const pad={l:48,r:12,t:14,b:30};const pw=Math.max(1,w-pad.l-pad.r),ph=Math.max(1,h-pad.t-pad.b);const x=i=>pad.l+(data.length===1?pw/2:pw*i/(data.length-1));const y=v=>pad.t+(max-v)/(max-min)*ph;ctx.strokeStyle='rgba(255,255,255,.12)';ctx.lineWidth=1;for(let i=0;i<4;i++){const yy=pad.t+ph*i/3;ctx.beginPath();ctx.moveTo(pad.l,yy);ctx.lineTo(w-pad.r,yy);ctx.stroke();ctx.fillStyle='rgba(255,255,255,.55)';ctx.font='10px system-ui';const label=Math.round(max-(max-min)*i/3);ctx.fillText('¥'+label.toLocaleString(),4,yy+3)}ctx.strokeStyle='#e8bd52';ctx.lineWidth=2;ctx.beginPath();data.forEach((pt,i)=>{const xx=x(i),yy=y(Number(pt.market));i?ctx.lineTo(xx,yy):ctx.moveTo(xx,yy)});ctx.stroke();ctx.fillStyle='#e8bd52';data.forEach((pt,i)=>{ctx.beginPath();ctx.arc(x(i),y(Number(pt.market)),3,0,Math.PI*2);ctx.fill()});ctx.fillStyle='rgba(255,255,255,.65)';ctx.font='10px system-ui';const labels=data.length<=5?data:data.filter((_,i)=>i===0||i===data.length-1);labels.forEach((pt,idx)=>{const original=data.indexOf(pt);ctx.fillText(String(pt.date).slice(5),x(original)-14,h-9)})}
+function renderMarketPanel(c){const pd=cardDataPrice(c),offers=validOffers(c).sort((a,b)=>Number(a.price)-Number(b.price)),mv=marketValue(c),avg=cardAverage(c),low=offers.length?Number(offers[0].price):cardPrice(c);let html=`<div class="v6-market"><h3>市場価格</h3><div class="v6-market-main"><div><div class="v6-estimate">${mv!=null?'¥'+mv.toLocaleString():'—'}</div><div class="v6-sub">中央値ベースの推定値${avg!=null?' ・ 平均 ¥'+avg.toLocaleString():''}</div><div class="v6-sub">最安 ${low!=null?'¥'+Number(low).toLocaleString():'—'}</div></div>${offers.length?'<button id="v6-offers-toggle" class="tool v6-compare">価格を見る ▼</button>':''}</div><div id="v6-offers" class="v6-offers">${offers.map((x,i)=>`<div class="v6-offer"><a href="${escapeHtml(x.url)}" target="_blank" rel="noopener">${escapeHtml(x.shop)} ↗</a><span>${Number(x.price).toLocaleString()}円${i===0?' ★':''}</span></div>`).join('')}${pd.mercari&&Array.isArray(pd.mercari.samples)&&pd.mercari.samples.length?pd.mercari.samples.map(x=>`<div class="v6-offer"><a href="${escapeHtml(x.url||mercariUrl(c))}" target="_blank" rel="noopener">メルカリ ↗</a><span>${Number(x.price).toLocaleString()}円</span></div>`).join(''):''}<div class="v6-offer"><a href="${escapeHtml(mercariUrl(c))}" target="_blank" rel="noopener">メルカリ検索 ↗</a><span>最新出品を確認</span></div></div><div class="v6-history"><button id="v6-history-toggle" class="tool">価格推移を見る</button><canvas id="v6-chart" class="v6-chart" hidden></canvas><div id="v6-history-note" class="v6-note"></div></div></div>`;$('vprices').innerHTML=html;const cb=$('v6-offers-toggle');if(cb)cb.onclick=()=>{const el=$('v6-offers');const isOpen=el.classList.toggle('open');cb.textContent=isOpen?'価格を隠す ▲':'価格を見る ▼'};const hb=$('v6-history-toggle');if(hb)hb.onclick=()=>{const ch=$('v6-chart');const isHidden=ch.hidden;ch.hidden=!isHidden;hb.textContent=isHidden?'価格推移を隠す ▲':'価格推移を見る';if(isHidden){drawHistory(c);const n=$('v6-history-note');const count=historyData(c).length;n.textContent=count>1?`保存された${count}回分の市場価格。価格更新はGitHub Actionsで自動保存されます。`:'現在は初回スナップショットのみ。今後の自動価格更新で履歴が蓄積されます。'}}}
+function syncViewer(){const c=state.cards[state.current];$('viewer').style.setProperty('--viewer-bg',c.img?`url("${c.img}")`:'none');$('vlabel').textContent=`${c.id}  ${c.name} · ${c.rarity}`;$('ownBtn').textContent=isOwned(c.id)?'✓ 所持':'○ 未所持';$('ownBtn').classList.toggle('on',isOwned(c.id));renderMarketPanel(c);const url=state.flipped?c.back:c.img;if(url){$('big').style.display='block';$('noimage').style.display='none';$('big').src=url;$('big').alt=c.name}else{$('big').style.display='none';$('noimage').style.display='grid';$('noimage').innerHTML=`<b>${c.id}</b><br>${c.name}<br><small>画像なし</small>`}}
 function move(d){state.current=(state.current+d+state.cards.length)%state.cards.length;state.flipped=false;syncViewer()}
 async function loadData(){const r=await fetch('data/catalog.json',{cache:'no-cache'});const cat=await r.json();state.cards=cat.cards;state.sets=cat.sets;try{const p=await fetch('data/prices.json',{cache:'no-cache'});const pd=await p.json();state.prices=pd.cards||{}}catch{};render();$('dbStatus').textContent=`カードDB v${cat.version} · ${cat.updated}`}
-async function refreshPrices(){const b=$('refreshPrices');b.disabled=true;b.textContent='更新中…';try{const r=await fetch('data/prices.json?ts='+Date.now(),{cache:'no-store'});const pd=await r.json();state.prices=pd.cards||{};render();$('priceStatus').textContent='価格データ更新: '+(pd.updated||'—')+'（ショップ＋メルカリ。平均は取得済み価格のみ）'}catch(e){$('priceStatus').textContent='価格データを取得できませんでした。'}finally{b.disabled=false;b.textContent='↻ 価格更新'}}
+async function refreshPrices(){const b=$('refreshPrices');b.disabled=true;b.textContent='更新中…';try{const r=await fetch('data/prices.json?ts='+Date.now(),{cache:'no-store'});const pd=await r.json();state.prices=pd.cards||{};render();$('priceStatus').textContent='価格データ更新: '+(pd.updated||'—')+'（ショップ＋メルカリ参照値・履歴）'}catch(e){$('priceStatus').textContent='価格データを取得できませんでした。'}finally{b.disabled=false;b.textContent='↻ 価格更新'}}
 function openSettings(){$('modal').classList.add('open');renderSources()}
 function renderSources(){const sets=state.sets.map(s=>`<section><b>${s.id}</b><div>${(s.sources||[]).length?s.sources.map(x=>`<p><a href="${x.url}" target="_blank" rel="noopener">${x.name}</a></p>`).join(''):'<span class="num">販売店リンクは後から追加できます。</span>'}</div></section>`).join('');$('sources').innerHTML=sets}
 function exportCollection(){const blob=new Blob([JSON.stringify(saved,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='nichirin-collection.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}
 function importCollection(file){const fr=new FileReader();fr.onload=()=>{try{const x=JSON.parse(fr.result);Object.keys(saved).forEach(k=>delete saved[k]);Object.assign(saved,x);localStorage.setItem('nichirin-owned',JSON.stringify(saved));render()}catch{alert('バックアップを読み込めませんでした。')}};fr.readAsText(file)}
-$('grid').addEventListener('touchstart',e=>{if(!$('overlay').classList.contains('open'))return});
-$('big').onclick=()=>{const c=state.cards[state.current];if(c.back)state.flipped=!state.flipped,syncViewer()};
+$('big').onclick=()=>{const c=state.cards[state.current];if(c.back){state.flipped=!state.flipped;syncViewer()}};
 $('ownBtn').onclick=e=>{e.stopPropagation();toggleOwned(state.cards[state.current].id)};$('close').onclick=()=>$('overlay').classList.remove('open');$('prev').onclick=()=>move(-1);$('next').onclick=()=>move(1);
 $('rar').onchange=e=>{state.rarity=e.target.value;render()};$('search').oninput=e=>{state.q=e.target.value;render()};$('refreshPrices').onclick=refreshPrices;$('settings').onclick=openSettings;$('modalClose').onclick=()=>$('modal').classList.remove('open');$('export').onclick=exportCollection;$('import').onchange=e=>e.target.files[0]&&importCollection(e.target.files[0]);
 document.querySelectorAll('[data-set]').forEach(b=>b.onclick=()=>{document.querySelectorAll('[data-set]').forEach(x=>x.classList.remove('active'));b.classList.add('active');state.set=b.dataset.set;render()});document.querySelectorAll('[data-owned]').forEach(b=>b.onclick=()=>{state.own=state.own===b.dataset.owned?'ALL':b.dataset.owned;document.querySelectorAll('[data-owned]').forEach(x=>x.classList.remove('active'));if(state.own!=='ALL')b.classList.add('active');render()});
 document.addEventListener('keydown',e=>{if(!$('overlay').classList.contains('open'))return;if(e.key==='Escape')$('overlay').classList.remove('open');if(e.key==='ArrowLeft')move(-1);if(e.key==='ArrowRight')move(1)});
 let sx=0;$('viewer').addEventListener('touchstart',e=>sx=e.changedTouches[0].clientX,{passive:true});$('viewer').addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>60)move(dx<0?1:-1)},{passive:true});
+window.addEventListener('resize',()=>{const ch=$('v6-chart');if(ch&&!ch.hidden&&$('overlay').classList.contains('open'))drawHistory(state.cards[state.current])});
 loadData();
-</script><script>if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js');</script></body></html>
+</script><script>if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js');</script>
+</body></html>
