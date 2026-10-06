@@ -28,7 +28,10 @@
       "id": "A02",
       "name": "A02",
       "cardCount": 60,
-      "sources": []
+      "sources": [],
+      "promoSets": [
+        "P02"
+      ]
     }
   ],
   "cards": [
@@ -1283,6 +1286,32 @@
       "price": null,
       "type": "support",
       "imageSource": null
+    },
+    {
+      "id": "P02-001",
+      "set": "A02",
+      "promoSet": "P02",
+      "name": "煉獄杏寿郎",
+      "rarity": "PR",
+      "img": null,
+      "back": null,
+      "price": null,
+      "imageSource": "pending-user-image",
+      "releaseDate": "2026-09-17",
+      "promoSource": "日輪刀手引ノ書・壱 同梱カード"
+    },
+    {
+      "id": "P02-002",
+      "set": "A02",
+      "promoSet": "P02",
+      "name": "胡蝶しのぶ",
+      "rarity": "PR",
+      "img": null,
+      "back": null,
+      "price": null,
+      "imageSource": "pending-user-image",
+      "releaseDate": "2026-09-18",
+      "promoSource": "Vジャンプ2026年11月号 付録"
     }
   ]
 }
