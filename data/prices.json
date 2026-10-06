@@ -1,6 +1,288 @@
 {
-  "updated": "2026-10-05",
+  "updated": "2026-10-06",
   "cards": {
+    "P01-001": {
+      "price": 3980,
+      "updated": "2026-10-05",
+      "sources": [
+        {
+          "name": "FullAhead",
+          "url": "https://item.rakuten.co.jp/fullahead/kynbs-p01-001/"
+        }
+      ],
+      "offers": [
+        {
+          "shop": "FullAhead",
+          "price": 3980,
+          "url": "https://item.rakuten.co.jp/fullahead/kynbs-p01-001/",
+          "stale": true
+        }
+      ],
+      "average": 3980,
+      "marketValue": 3980,
+      "history": [
+        {
+          "date": "2026-10-05",
+          "market": 3980,
+          "average": 3980,
+          "cheapest": 3980
+        }
+      ],
+      "shopLinks": [
+        {
+          "shop": "FullAhead",
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
+        },
+        {
+          "shop": "カードショップ カリントウ",
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
+        },
+        {
+          "shop": "メルカリ",
+          "url": "https://jp.mercari.com/search?keyword=P01-001+%E7%AB%88%E9%96%80%E7%A6%B0%E8%B1%86%E5%AD%90+PR"
+        }
+      ],
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=P01-001+%E7%AB%88%E9%96%80%E7%A6%B0%E8%B1%86%E5%AD%90+PR",
+        "updated": "2026-10-06"
+      }
+    },
+    "P01-002": {
+      "price": 240,
+      "updated": "2026-10-05",
+      "sources": [
+        {
+          "name": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
+        },
+        {
+          "name": "FullAhead",
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "name": "Surugaya",
+          "url": "https://www.suruga-ya.jp/search?category=5010801&search_word=P01-002"
+        }
+      ],
+      "offers": [
+        {
+          "shop": "FullAhead",
+          "price": 480,
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
+        },
+        {
+          "shop": "Surugaya",
+          "price": 240,
+          "url": "https://www.suruga-ya.jp/search?category=5010801&search_word=P01-002",
+          "stale": true
+        },
+        {
+          "shop": "TCG Library",
+          "price": 600,
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash",
+          "stale": true
+        }
+      ],
+      "average": 440,
+      "marketValue": 480,
+      "history": [
+        {
+          "date": "2026-10-05",
+          "market": 480,
+          "average": 440,
+          "cheapest": 240
+        }
+      ],
+      "shopLinks": [
+        {
+          "shop": "FullAhead",
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
+        },
+        {
+          "shop": "カードショップ カリントウ",
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
+        },
+        {
+          "shop": "メルカリ",
+          "url": "https://jp.mercari.com/search?keyword=P01-002+%E7%AB%88%E9%96%80%E7%82%AD%E6%B2%BB%E9%83%8E+PR"
+        }
+      ],
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=P01-002+%E7%AB%88%E9%96%80%E7%82%AD%E6%B2%BB%E9%83%8E+PR",
+        "updated": "2026-10-06"
+      }
+    },
+    "P01-003": {
+      "price": 100,
+      "updated": "2026-10-05",
+      "sources": [
+        {
+          "name": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
+        },
+        {
+          "name": "FullAhead",
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "name": "Surugaya",
+          "url": "https://www.suruga-ya.jp/search?category=501080178&search_word=P01-003"
+        }
+      ],
+      "offers": [
+        {
+          "shop": "FullAhead",
+          "price": 280,
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
+        },
+        {
+          "shop": "Surugaya",
+          "price": 160,
+          "url": "https://www.suruga-ya.jp/search?category=501080178&search_word=P01-003",
+          "stale": true
+        },
+        {
+          "shop": "TCG Library",
+          "price": 100,
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash",
+          "stale": true
+        }
+      ],
+      "average": 180,
+      "marketValue": 160,
+      "history": [
+        {
+          "date": "2026-10-05",
+          "market": 160,
+          "average": 180,
+          "cheapest": 100
+        }
+      ],
+      "shopLinks": [
+        {
+          "shop": "FullAhead",
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
+        },
+        {
+          "shop": "カードショップ カリントウ",
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
+        },
+        {
+          "shop": "メルカリ",
+          "url": "https://jp.mercari.com/search?keyword=P01-003+%E7%B4%AF+PR"
+        }
+      ],
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=P01-003+%E7%B4%AF+PR",
+        "updated": "2026-10-06"
+      }
+    },
+    "P01-005": {
+      "price": 380,
+      "updated": "2026-10-05",
+      "sources": [
+        {
+          "name": "FullAhead",
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "name": "メルカリ",
+          "url": "https://jp.mercari.com/search?keyword=P01-005+我妻善逸+PR"
+        },
+        {
+          "name": "メルカリ",
+          "url": "https://jp.mercari.com/search?keyword=P01-005+我妻善逸+PR"
+        }
+      ],
+      "offers": [
+        {
+          "shop": "FullAhead",
+          "price": 380,
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
+        },
+        {
+          "shop": "メルカリ",
+          "price": 600,
+          "url": "https://jp.mercari.com/search?keyword=P01-005+我妻善逸+PR",
+          "stale": true
+        }
+      ],
+      "average": 490,
+      "marketValue": 490,
+      "history": [
+        {
+          "date": "2026-10-05",
+          "market": 380,
+          "average": 427,
+          "cheapest": 300
+        }
+      ],
+      "shopLinks": [
+        {
+          "shop": "FullAhead",
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
+        },
+        {
+          "shop": "カードショップ カリントウ",
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
+        },
+        {
+          "shop": "メルカリ",
+          "url": "https://jp.mercari.com/search?keyword=P01-005+%E6%88%91%E5%A6%BB%E5%96%84%E9%80%B8+PR"
+        }
+      ],
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=P01-005+%E6%88%91%E5%A6%BB%E5%96%84%E9%80%B8+PR",
+        "updated": "2026-10-06"
+      }
+    },
     "A01-001": {
       "price": 1120,
       "updated": "2026-09-28",
@@ -22,13 +304,22 @@
         {
           "shop": "TCG Library",
           "price": 1120,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -48,7 +339,14 @@
           "cheapest": 1120.0
         }
       ],
-      "marketValue": 1120.0
+      "marketValue": 1120,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-001+%E7%AB%88%E9%96%80%E7%82%AD%E6%B2%BB%E9%83%8E+UR",
+        "updated": "2026-10-06"
+      }
     },
     "A01-002": {
       "price": 12100,
@@ -71,7 +369,8 @@
         {
           "shop": "TCG Library",
           "price": 12100,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -80,12 +379,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
+        },
+        {
           "shop": "カードショップ カリントウ",
           "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A01-002+%E7%AB%88%E9%96%80%E7%82%AD%E6%B2%BB%E9%83%8E+UR%2A"
+          "url": "https://jp.mercari.com/search?keyword=A01-002+%E7%AB%88%E9%96%80%E7%82%AD%E6%B2%BB%E9%83%8E+UR"
         }
       ],
       "average": 12100,
@@ -97,7 +404,14 @@
           "cheapest": 12100.0
         }
       ],
-      "marketValue": 12100.0
+      "marketValue": 12100,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-002+%E7%AB%88%E9%96%80%E7%82%AD%E6%B2%BB%E9%83%8E+UR",
+        "updated": "2026-10-06"
+      }
     },
     "A01-003": {
       "price": 920,
@@ -120,13 +434,22 @@
         {
           "shop": "TCG Library",
           "price": 920,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -146,7 +469,14 @@
           "cheapest": 920.0
         }
       ],
-      "marketValue": 920.0
+      "marketValue": 920,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-003+%E7%AB%88%E9%96%80%E7%A6%B0%E8%B1%86%E5%AD%90+UR",
+        "updated": "2026-10-06"
+      }
     },
     "A01-004": {
       "price": 10080,
@@ -169,7 +499,8 @@
         {
           "shop": "TCG Library",
           "price": 10080,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -178,12 +509,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
+        },
+        {
           "shop": "カードショップ カリントウ",
           "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A01-004+%E7%AB%88%E9%96%80%E7%A6%B0%E8%B1%86%E5%AD%90+UR%2A"
+          "url": "https://jp.mercari.com/search?keyword=A01-004+%E7%AB%88%E9%96%80%E7%A6%B0%E8%B1%86%E5%AD%90+UR"
         }
       ],
       "average": 10080,
@@ -195,7 +534,14 @@
           "cheapest": 10080.0
         }
       ],
-      "marketValue": 10080.0
+      "marketValue": 10080,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-004+%E7%AB%88%E9%96%80%E7%A6%B0%E8%B1%86%E5%AD%90+UR",
+        "updated": "2026-10-06"
+      }
     },
     "A01-005": {
       "price": 1120,
@@ -218,13 +564,22 @@
         {
           "shop": "TCG Library",
           "price": 1120,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -244,7 +599,14 @@
           "cheapest": 1120.0
         }
       ],
-      "marketValue": 1120.0
+      "marketValue": 1120,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-005+%E6%88%91%E5%A6%BB%E5%96%84%E9%80%B8+UR",
+        "updated": "2026-10-06"
+      }
     },
     "A01-006": {
       "price": 600,
@@ -267,13 +629,22 @@
         {
           "shop": "TCG Library",
           "price": 600,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -293,7 +664,14 @@
           "cheapest": 600.0
         }
       ],
-      "marketValue": 600.0
+      "marketValue": 600,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-006+%E5%98%B4%E5%B9%B3%E4%BC%8A%E4%B9%8B%E5%8A%A9+UR",
+        "updated": "2026-10-06"
+      }
     },
     "A01-007": {
       "price": 1620,
@@ -316,13 +694,22 @@
         {
           "shop": "TCG Library",
           "price": 1620,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -342,7 +729,14 @@
           "cheapest": 1620.0
         }
       ],
-      "marketValue": 1620.0
+      "marketValue": 1620,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-007+%E5%86%A8%E5%B2%A1%E7%BE%A9%E5%8B%87+UR",
+        "updated": "2026-10-06"
+      }
     },
     "A01-008": {
       "price": 18100,
@@ -365,7 +759,8 @@
         {
           "shop": "TCG Library",
           "price": 18100,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -374,12 +769,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
+        },
+        {
           "shop": "カードショップ カリントウ",
           "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A01-008+%E5%86%A8%E5%B2%A1%E7%BE%A9%E5%8B%87+UR%2A"
+          "url": "https://jp.mercari.com/search?keyword=A01-008+%E5%86%A8%E5%B2%A1%E7%BE%A9%E5%8B%87+UR"
         }
       ],
       "average": 18100,
@@ -391,7 +794,14 @@
           "cheapest": 18100.0
         }
       ],
-      "marketValue": 18100.0
+      "marketValue": 18100,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-008+%E5%86%A8%E5%B2%A1%E7%BE%A9%E5%8B%87+UR",
+        "updated": "2026-10-06"
+      }
     },
     "A01-009": {
       "price": 1320,
@@ -414,13 +824,22 @@
         {
           "shop": "TCG Library",
           "price": 1320,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -440,7 +859,14 @@
           "cheapest": 1320.0
         }
       ],
-      "marketValue": 1320.0
+      "marketValue": 1320,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-009+%E8%83%A1%E8%9D%B6%E3%81%97%E3%81%AE%E3%81%B6+UR",
+        "updated": "2026-10-06"
+      }
     },
     "A01-010": {
       "price": 12100,
@@ -463,7 +889,8 @@
         {
           "shop": "TCG Library",
           "price": 12100,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -472,12 +899,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
+        },
+        {
           "shop": "カードショップ カリントウ",
           "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A01-010+%E8%83%A1%E8%9D%B6%E3%81%97%E3%81%AE%E3%81%B6+UR%2A"
+          "url": "https://jp.mercari.com/search?keyword=A01-010+%E8%83%A1%E8%9D%B6%E3%81%97%E3%81%AE%E3%81%B6+UR"
         }
       ],
       "average": 12100,
@@ -489,7 +924,14 @@
           "cheapest": 12100.0
         }
       ],
-      "marketValue": 12100.0
+      "marketValue": 12100,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-010+%E8%83%A1%E8%9D%B6%E3%81%97%E3%81%AE%E3%81%B6+UR",
+        "updated": "2026-10-06"
+      }
     },
     "A01-011": {
       "price": 400,
@@ -512,13 +954,22 @@
         {
           "shop": "TCG Library",
           "price": 400,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -538,7 +989,14 @@
           "cheapest": 400.0
         }
       ],
-      "marketValue": 400.0
+      "marketValue": 400,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-011+%E7%B4%AF+UR",
+        "updated": "2026-10-06"
+      }
     },
     "A01-012": {
       "price": 110,
@@ -561,13 +1019,22 @@
         {
           "shop": "TCG Library",
           "price": 110,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -587,7 +1054,14 @@
           "cheapest": 110.0
         }
       ],
-      "marketValue": 110.0
+      "marketValue": 110,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-012+%E7%AB%88%E9%96%80%E7%82%AD%E6%B2%BB%E9%83%8E+SR",
+        "updated": "2026-10-06"
+      }
     },
     "A01-013": {
       "price": 110,
@@ -610,13 +1084,22 @@
         {
           "shop": "TCG Library",
           "price": 110,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -636,7 +1119,14 @@
           "cheapest": 110.0
         }
       ],
-      "marketValue": 110.0
+      "marketValue": 110,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-013+%E7%AB%88%E9%96%80%E7%A6%B0%E8%B1%86%E5%AD%90+SR",
+        "updated": "2026-10-06"
+      }
     },
     "A01-014": {
       "price": 110,
@@ -659,13 +1149,22 @@
         {
           "shop": "TCG Library",
           "price": 110,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -685,7 +1184,14 @@
           "cheapest": 110.0
         }
       ],
-      "marketValue": 110.0
+      "marketValue": 110,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-014+%E6%88%91%E5%A6%BB%E5%96%84%E9%80%B8+SR",
+        "updated": "2026-10-06"
+      }
     },
     "A01-015": {
       "price": 110,
@@ -708,13 +1214,22 @@
         {
           "shop": "TCG Library",
           "price": 110,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -734,7 +1249,14 @@
           "cheapest": 110.0
         }
       ],
-      "marketValue": 110.0
+      "marketValue": 110,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-015+%E5%98%B4%E5%B9%B3%E4%BC%8A%E4%B9%8B%E5%8A%A9+SR",
+        "updated": "2026-10-06"
+      }
     },
     "A01-016": {
       "price": 200,
@@ -757,13 +1279,22 @@
         {
           "shop": "TCG Library",
           "price": 200,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -783,7 +1314,14 @@
           "cheapest": 200.0
         }
       ],
-      "marketValue": 200.0
+      "marketValue": 200,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-016+%E5%86%A8%E5%B2%A1%E7%BE%A9%E5%8B%87+SR",
+        "updated": "2026-10-06"
+      }
     },
     "A01-017": {
       "price": 110,
@@ -806,13 +1344,22 @@
         {
           "shop": "TCG Library",
           "price": 110,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -832,7 +1379,14 @@
           "cheapest": 110.0
         }
       ],
-      "marketValue": 110.0
+      "marketValue": 110,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-017+%E8%83%A1%E8%9D%B6%E3%81%97%E3%81%AE%E3%81%B6+SR",
+        "updated": "2026-10-06"
+      }
     },
     "A01-018": {
       "price": 340,
@@ -855,13 +1409,22 @@
         {
           "shop": "TCG Library",
           "price": 340,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -881,7 +1444,14 @@
           "cheapest": 340.0
         }
       ],
-      "marketValue": 340.0
+      "marketValue": 340,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-018+%E9%8C%86%E5%85%8E+SR",
+        "updated": "2026-10-06"
+      }
     },
     "A01-019": {
       "price": 110,
@@ -904,13 +1474,22 @@
         {
           "shop": "TCG Library",
           "price": 110,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -930,7 +1509,14 @@
           "cheapest": 110.0
         }
       ],
-      "marketValue": 110.0
+      "marketValue": 110,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-019+%E7%B4%AF+SR",
+        "updated": "2026-10-06"
+      }
     },
     "A01-020": {
       "price": 90,
@@ -953,13 +1539,22 @@
         {
           "shop": "TCG Library",
           "price": 90,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -979,7 +1574,14 @@
           "cheapest": 90.0
         }
       ],
-      "marketValue": 90.0
+      "marketValue": 90,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-020+%E7%AB%88%E9%96%80%E7%82%AD%E6%B2%BB%E9%83%8E+R",
+        "updated": "2026-10-06"
+      }
     },
     "A01-021": {
       "price": 90,
@@ -1002,13 +1604,22 @@
         {
           "shop": "TCG Library",
           "price": 90,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -1028,7 +1639,14 @@
           "cheapest": 90.0
         }
       ],
-      "marketValue": 90.0
+      "marketValue": 90,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-021+%E7%AB%88%E9%96%80%E7%A6%B0%E8%B1%86%E5%AD%90+R",
+        "updated": "2026-10-06"
+      }
     },
     "A01-022": {
       "price": 90,
@@ -1051,13 +1669,22 @@
         {
           "shop": "TCG Library",
           "price": 90,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -1077,7 +1704,14 @@
           "cheapest": 90.0
         }
       ],
-      "marketValue": 90.0
+      "marketValue": 90,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-022+%E6%88%91%E5%A6%BB%E5%96%84%E9%80%B8+R",
+        "updated": "2026-10-06"
+      }
     },
     "A01-023": {
       "price": 90,
@@ -1100,13 +1734,22 @@
         {
           "shop": "TCG Library",
           "price": 90,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -1126,7 +1769,14 @@
           "cheapest": 90.0
         }
       ],
-      "marketValue": 90.0
+      "marketValue": 90,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-023+%E5%98%B4%E5%B9%B3%E4%BC%8A%E4%B9%8B%E5%8A%A9+R",
+        "updated": "2026-10-06"
+      }
     },
     "A01-024": {
       "price": 90,
@@ -1149,13 +1799,22 @@
         {
           "shop": "TCG Library",
           "price": 90,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -1175,7 +1834,14 @@
           "cheapest": 90.0
         }
       ],
-      "marketValue": 90.0
+      "marketValue": 90,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-024+%E4%B8%8D%E6%AD%BB%E5%B7%9D%E7%8E%84%E5%BC%A5+R",
+        "updated": "2026-10-06"
+      }
     },
     "A01-025": {
       "price": 110,
@@ -1198,13 +1864,22 @@
         {
           "shop": "TCG Library",
           "price": 110,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -1224,7 +1899,14 @@
           "cheapest": 110.0
         }
       ],
-      "marketValue": 110.0
+      "marketValue": 110,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-025+%E5%86%A8%E5%B2%A1%E7%BE%A9%E5%8B%87+R",
+        "updated": "2026-10-06"
+      }
     },
     "A01-026": {
       "price": 90,
@@ -1247,13 +1929,22 @@
         {
           "shop": "TCG Library",
           "price": 90,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -1273,7 +1964,14 @@
           "cheapest": 90.0
         }
       ],
-      "marketValue": 90.0
+      "marketValue": 90,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-026+%E8%83%A1%E8%9D%B6%E3%81%97%E3%81%AE%E3%81%B6+R",
+        "updated": "2026-10-06"
+      }
     },
     "A01-027": {
       "price": 90,
@@ -1296,13 +1994,22 @@
         {
           "shop": "TCG Library",
           "price": 90,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -1322,7 +2029,14 @@
           "cheapest": 90.0
         }
       ],
-      "marketValue": 90.0
+      "marketValue": 90,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-027+%E9%B1%97%E6%BB%9D%E5%B7%A6%E8%BF%91%E6%AC%A1+R",
+        "updated": "2026-10-06"
+      }
     },
     "A01-028": {
       "price": 90,
@@ -1345,13 +2059,22 @@
         {
           "shop": "TCG Library",
           "price": 90,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -1371,7 +2094,14 @@
           "cheapest": 90.0
         }
       ],
-      "marketValue": 90.0
+      "marketValue": 90,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-028+%E7%9C%9F%E8%8F%B0+R",
+        "updated": "2026-10-06"
+      }
     },
     "A01-029": {
       "price": 90,
@@ -1394,13 +2124,22 @@
         {
           "shop": "TCG Library",
           "price": 90,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -1420,7 +2159,14 @@
           "cheapest": 90.0
         }
       ],
-      "marketValue": 90.0
+      "marketValue": 90,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-029+%E6%89%8B%E9%AC%BC+R",
+        "updated": "2026-10-06"
+      }
     },
     "A01-030": {
       "price": 90,
@@ -1443,13 +2189,22 @@
         {
           "shop": "TCG Library",
           "price": 90,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -1469,7 +2224,14 @@
           "cheapest": 90.0
         }
       ],
-      "marketValue": 90.0
+      "marketValue": 90,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-030+%E6%9C%B1%E7%B4%97%E4%B8%B8+R",
+        "updated": "2026-10-06"
+      }
     },
     "A01-031": {
       "price": 90,
@@ -1492,13 +2254,22 @@
         {
           "shop": "TCG Library",
           "price": 90,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -1518,7 +2289,14 @@
           "cheapest": 90.0
         }
       ],
-      "marketValue": 90.0
+      "marketValue": 90,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-031+%E7%9F%A2%E7%90%B6%E7%BE%BD+R",
+        "updated": "2026-10-06"
+      }
     },
     "A01-032": {
       "price": 60,
@@ -1541,13 +2319,22 @@
         {
           "shop": "TCG Library",
           "price": 60,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -1567,7 +2354,14 @@
           "cheapest": 60.0
         }
       ],
-      "marketValue": 60.0
+      "marketValue": 60,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-032+%E7%AB%88%E9%96%80%E7%82%AD%E6%B2%BB%E9%83%8E+C",
+        "updated": "2026-10-06"
+      }
     },
     "A01-033": {
       "price": 60,
@@ -1590,13 +2384,22 @@
         {
           "shop": "TCG Library",
           "price": 60,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -1616,7 +2419,14 @@
           "cheapest": 60.0
         }
       ],
-      "marketValue": 60.0
+      "marketValue": 60,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-033+%E7%AB%88%E9%96%80%E7%A6%B0%E8%B1%86%E5%AD%90+C",
+        "updated": "2026-10-06"
+      }
     },
     "A01-034": {
       "price": 60,
@@ -1639,13 +2449,22 @@
         {
           "shop": "TCG Library",
           "price": 60,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -1665,7 +2484,14 @@
           "cheapest": 60.0
         }
       ],
-      "marketValue": 60.0
+      "marketValue": 60,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-034+%E6%88%91%E5%A6%BB%E5%96%84%E9%80%B8+C",
+        "updated": "2026-10-06"
+      }
     },
     "A01-035": {
       "price": 60,
@@ -1688,13 +2514,22 @@
         {
           "shop": "TCG Library",
           "price": 60,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -1714,7 +2549,14 @@
           "cheapest": 60.0
         }
       ],
-      "marketValue": 60.0
+      "marketValue": 60,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-035+%E5%98%B4%E5%B9%B3%E4%BC%8A%E4%B9%8B%E5%8A%A9+C",
+        "updated": "2026-10-06"
+      }
     },
     "A01-036": {
       "price": 60,
@@ -1737,13 +2579,22 @@
         {
           "shop": "TCG Library",
           "price": 60,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -1763,7 +2614,14 @@
           "cheapest": 60.0
         }
       ],
-      "marketValue": 60.0
+      "marketValue": 60,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-036+%E4%B8%8D%E6%AD%BB%E5%B7%9D%E7%8E%84%E5%BC%A5+C",
+        "updated": "2026-10-06"
+      }
     },
     "A01-037": {
       "price": 60,
@@ -1786,13 +2644,22 @@
         {
           "shop": "TCG Library",
           "price": 60,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -1812,7 +2679,14 @@
           "cheapest": 60.0
         }
       ],
-      "marketValue": 60.0
+      "marketValue": 60,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-037+%E5%86%A8%E5%B2%A1%E7%BE%A9%E5%8B%87+C",
+        "updated": "2026-10-06"
+      }
     },
     "A01-038": {
       "price": 60,
@@ -1835,13 +2709,22 @@
         {
           "shop": "TCG Library",
           "price": 60,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -1861,7 +2744,14 @@
           "cheapest": 60.0
         }
       ],
-      "marketValue": 60.0
+      "marketValue": 60,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-038+%E8%83%A1%E8%9D%B6%E3%81%97%E3%81%AE%E3%81%B6+C",
+        "updated": "2026-10-06"
+      }
     },
     "A01-039": {
       "price": 60,
@@ -1884,13 +2774,22 @@
         {
           "shop": "TCG Library",
           "price": 60,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -1910,7 +2809,14 @@
           "cheapest": 60.0
         }
       ],
-      "marketValue": 60.0
+      "marketValue": 60,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-039+%E9%B1%97%E6%BB%9D%E5%B7%A6%E8%BF%91%E6%AC%A1+C",
+        "updated": "2026-10-06"
+      }
     },
     "A01-040": {
       "price": 60,
@@ -1933,13 +2839,22 @@
         {
           "shop": "TCG Library",
           "price": 60,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -1959,7 +2874,14 @@
           "cheapest": 60.0
         }
       ],
-      "marketValue": 60.0
+      "marketValue": 60,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-040+%E9%8C%86%E5%85%8E+C",
+        "updated": "2026-10-06"
+      }
     },
     "A01-041": {
       "price": 60,
@@ -1982,13 +2904,22 @@
         {
           "shop": "TCG Library",
           "price": 60,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -2008,7 +2939,14 @@
           "cheapest": 60.0
         }
       ],
-      "marketValue": 60.0
+      "marketValue": 60,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-041+%E7%9C%9F%E8%8F%B0+C",
+        "updated": "2026-10-06"
+      }
     },
     "A01-042": {
       "price": 60,
@@ -2031,13 +2969,22 @@
         {
           "shop": "TCG Library",
           "price": 60,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -2057,7 +3004,14 @@
           "cheapest": 60.0
         }
       ],
-      "marketValue": 60.0
+      "marketValue": 60,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-042+%E6%89%8B%E9%AC%BC+C",
+        "updated": "2026-10-06"
+      }
     },
     "A01-043": {
       "price": 60,
@@ -2080,13 +3034,22 @@
         {
           "shop": "TCG Library",
           "price": 60,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -2106,7 +3069,14 @@
           "cheapest": 60.0
         }
       ],
-      "marketValue": 60.0
+      "marketValue": 60,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-043+%E6%9C%B1%E7%B4%97%E4%B8%B8+C",
+        "updated": "2026-10-06"
+      }
     },
     "A01-044": {
       "price": 60,
@@ -2129,13 +3099,22 @@
         {
           "shop": "TCG Library",
           "price": 60,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -2155,7 +3134,14 @@
           "cheapest": 60.0
         }
       ],
-      "marketValue": 60.0
+      "marketValue": 60,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-044+%E7%9F%A2%E7%90%B6%E7%BE%BD+C",
+        "updated": "2026-10-06"
+      }
     },
     "A01-045": {
       "price": 60,
@@ -2178,13 +3164,22 @@
         {
           "shop": "TCG Library",
           "price": 60,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -2204,7 +3199,14 @@
           "cheapest": 60.0
         }
       ],
-      "marketValue": 60.0
+      "marketValue": 60,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-045+%E7%B4%AF+C",
+        "updated": "2026-10-06"
+      }
     },
     "A01-046": {
       "price": 200,
@@ -2227,13 +3229,22 @@
         {
           "shop": "TCG Library",
           "price": 200,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -2253,7 +3264,14 @@
           "cheapest": 200.0
         }
       ],
-      "marketValue": 200.0
+      "marketValue": 200,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-046+%E9%AC%BC%E8%88%9E%E8%BE%BB%E7%84%A1%E6%83%A8+SR",
+        "updated": "2026-10-06"
+      }
     },
     "A01-047": {
       "price": 300,
@@ -2276,13 +3294,22 @@
         {
           "shop": "TCG Library",
           "price": 300,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -2302,7 +3329,14 @@
           "cheapest": 300.0
         }
       ],
-      "marketValue": 300.0
+      "marketValue": 300,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-047+%E7%8F%A0%E4%B8%96+SR",
+        "updated": "2026-10-06"
+      }
     },
     "A01-048": {
       "price": 200,
@@ -2325,13 +3359,22 @@
         {
           "shop": "TCG Library",
           "price": 200,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -2351,7 +3394,14 @@
           "cheapest": 200.0
         }
       ],
-      "marketValue": 200.0
+      "marketValue": 200,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-048+%E6%A0%97%E8%8A%B1%E8%90%BD%E3%82%AB%E3%83%8A%E3%83%B2+SR",
+        "updated": "2026-10-06"
+      }
     },
     "A01-049": {
       "price": 90,
@@ -2374,13 +3424,22 @@
         {
           "shop": "TCG Library",
           "price": 90,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -2400,7 +3459,14 @@
           "cheapest": 90.0
         }
       ],
-      "marketValue": 90.0
+      "marketValue": 90,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-049+%E7%99%BD%E9%AB%AE%E3%81%A8%E9%BB%92%E9%AB%AA+R",
+        "updated": "2026-10-06"
+      }
     },
     "A01-050": {
       "price": 140,
@@ -2423,13 +3489,22 @@
         {
           "shop": "TCG Library",
           "price": 140,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -2449,7 +3524,14 @@
           "cheapest": 140.0
         }
       ],
-      "marketValue": 140.0
+      "marketValue": 140,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-050+%E6%84%88%E5%8F%B2%E9%83%8E+R",
+        "updated": "2026-10-06"
+      }
     },
     "A01-051": {
       "price": 90,
@@ -2472,13 +3554,22 @@
         {
           "shop": "TCG Library",
           "price": 90,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -2498,7 +3589,14 @@
           "cheapest": 90.0
         }
       ],
-      "marketValue": 90.0
+      "marketValue": 90,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-051+%E8%9C%98%E8%9B%9B%E3%81%AE%E9%AC%BC%28%E7%88%B6%29+R",
+        "updated": "2026-10-06"
+      }
     },
     "A01-052": {
       "price": 90,
@@ -2521,13 +3619,22 @@
         {
           "shop": "TCG Library",
           "price": 90,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -2547,7 +3654,14 @@
           "cheapest": 90.0
         }
       ],
-      "marketValue": 90.0
+      "marketValue": 90,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-052+%E6%A1%91%E5%B3%B6%E6%85%88%E6%82%9F%E9%83%8E+R",
+        "updated": "2026-10-06"
+      }
     },
     "A01-053": {
       "price": 90,
@@ -2570,13 +3684,22 @@
         {
           "shop": "TCG Library",
           "price": 90,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -2596,7 +3719,14 @@
           "cheapest": 90.0
         }
       ],
-      "marketValue": 90.0
+      "marketValue": 90,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-053+%E9%8B%BC%E9%90%B5%E5%A1%9A%E8%9B%8D+R",
+        "updated": "2026-10-06"
+      }
     },
     "A01-054": {
       "price": 90,
@@ -2619,13 +3749,22 @@
         {
           "shop": "TCG Library",
           "price": 90,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -2645,7 +3784,14 @@
           "cheapest": 90.0
         }
       ],
-      "marketValue": 90.0
+      "marketValue": 90,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-054+%E9%9F%BF%E5%87%B1+R",
+        "updated": "2026-10-06"
+      }
     },
     "A01-055": {
       "price": 60,
@@ -2668,13 +3814,22 @@
         {
           "shop": "TCG Library",
           "price": 60,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -2694,7 +3849,14 @@
           "cheapest": 60.0
         }
       ],
-      "marketValue": 60.0
+      "marketValue": 60,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-055+%E7%A5%9E%E5%B4%8E%E3%82%A2%E3%82%AA%E3%82%A4+C",
+        "updated": "2026-10-06"
+      }
     },
     "A01-056": {
       "price": 60,
@@ -2717,13 +3879,22 @@
         {
           "shop": "TCG Library",
           "price": 60,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -2743,7 +3914,14 @@
           "cheapest": 60.0
         }
       ],
-      "marketValue": 60.0
+      "marketValue": 60,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-056+%E7%B4%AF%E3%81%AB%E5%88%BB%E3%81%BE%E3%82%8C%E3%81%9F%E5%89%A3%E5%A3%AB+C",
+        "updated": "2026-10-06"
+      }
     },
     "A01-057": {
       "price": 60,
@@ -2766,13 +3944,22 @@
         {
           "shop": "TCG Library",
           "price": 60,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -2792,7 +3979,14 @@
           "cheapest": 60.0
         }
       ],
-      "marketValue": 60.0
+      "marketValue": 60,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-057+%E3%81%8D%E3%82%88%E3%83%BB%E3%81%99%E3%81%BF%E3%83%BB%E3%81%AA%E3%81%BB+C",
+        "updated": "2026-10-06"
+      }
     },
     "A01-058": {
       "price": 60,
@@ -2815,13 +4009,22 @@
         {
           "shop": "TCG Library",
           "price": 60,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -2841,7 +4044,14 @@
           "cheapest": 60.0
         }
       ],
-      "marketValue": 60.0
+      "marketValue": 60,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-058+%E5%A4%A9%E7%8E%8B%E5%AF%BA%E6%9D%BE%E5%8F%B3%E8%A1%9B%E9%96%80+C",
+        "updated": "2026-10-06"
+      }
     },
     "A01-059": {
       "price": 60,
@@ -2864,13 +4074,22 @@
         {
           "shop": "TCG Library",
           "price": 60,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -2890,7 +4109,14 @@
           "cheapest": 60.0
         }
       ],
-      "marketValue": 60.0
+      "marketValue": 60,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-059+%E6%B2%BC%E3%81%AE%E9%AC%BC+C",
+        "updated": "2026-10-06"
+      }
     },
     "A01-060": {
       "price": 60,
@@ -2913,13 +4139,22 @@
         {
           "shop": "TCG Library",
           "price": 60,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01"
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01",
+          "stale": true
         }
       ],
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
+          "shop": "TCG Library",
+          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
@@ -2939,7 +4174,14 @@
           "cheapest": 60.0
         }
       ],
-      "marketValue": 60.0
+      "marketValue": 60,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A01-060+%E8%9C%98%E8%9B%9B%E3%81%AE%E9%AC%BC%28%E6%AF%8D%29+C",
+        "updated": "2026-10-06"
+      }
     },
     "A02-001": {
       "price": 880,
@@ -2949,7 +4191,8 @@
         {
           "shop": "FullAhead",
           "price": 880,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -2958,16 +4201,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-001+%E7%AB%88%E9%96%80%E7%82%AD%E6%B2%BB%E9%83%8E"
+          "url": "https://jp.mercari.com/search?keyword=A02-001+%E7%AB%88%E9%96%80%E7%82%AD%E6%B2%BB%E9%83%8E+UR"
         }
       ],
       "average": 880,
@@ -2979,7 +4226,14 @@
           "cheapest": 880.0
         }
       ],
-      "marketValue": 880.0
+      "marketValue": 880,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-001+%E7%AB%88%E9%96%80%E7%82%AD%E6%B2%BB%E9%83%8E+UR",
+        "updated": "2026-10-06"
+      }
     },
     "A02-002": {
       "price": 11800,
@@ -2989,7 +4243,8 @@
         {
           "shop": "FullAhead",
           "price": 11800,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -2998,16 +4253,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-002+%E7%AB%88%E9%96%80%E7%82%AD%E6%B2%BB%E9%83%8E"
+          "url": "https://jp.mercari.com/search?keyword=A02-002+%E7%AB%88%E9%96%80%E7%82%AD%E6%B2%BB%E9%83%8E+UR"
         }
       ],
       "average": 11800,
@@ -3019,7 +4278,14 @@
           "cheapest": 11800.0
         }
       ],
-      "marketValue": 11800.0
+      "marketValue": 11800,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-002+%E7%AB%88%E9%96%80%E7%82%AD%E6%B2%BB%E9%83%8E+UR",
+        "updated": "2026-10-06"
+      }
     },
     "A02-003": {
       "price": 620,
@@ -3029,7 +4295,8 @@
         {
           "shop": "FullAhead",
           "price": 620,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -3038,16 +4305,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-003+%E7%AB%88%E9%96%80%E7%A6%B0%E8%B1%86%E5%AD%90"
+          "url": "https://jp.mercari.com/search?keyword=A02-003+%E7%AB%88%E9%96%80%E7%A6%B0%E8%B1%86%E5%AD%90+UR"
         }
       ],
       "average": 620,
@@ -3059,7 +4330,14 @@
           "cheapest": 620.0
         }
       ],
-      "marketValue": 620.0
+      "marketValue": 620,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-003+%E7%AB%88%E9%96%80%E7%A6%B0%E8%B1%86%E5%AD%90+UR",
+        "updated": "2026-10-06"
+      }
     },
     "A02-004": {
       "price": 1180,
@@ -3069,7 +4347,8 @@
         {
           "shop": "FullAhead",
           "price": 1180,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -3078,16 +4357,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-004+%E6%88%91%E5%A6%BB%E5%96%84%E9%80%B8"
+          "url": "https://jp.mercari.com/search?keyword=A02-004+%E6%88%91%E5%A6%BB%E5%96%84%E9%80%B8+UR"
         }
       ],
       "average": 1180,
@@ -3099,7 +4382,14 @@
           "cheapest": 1180.0
         }
       ],
-      "marketValue": 1180.0
+      "marketValue": 1180,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-004+%E6%88%91%E5%A6%BB%E5%96%84%E9%80%B8+UR",
+        "updated": "2026-10-06"
+      }
     },
     "A02-005": {
       "price": 620,
@@ -3109,7 +4399,8 @@
         {
           "shop": "FullAhead",
           "price": 620,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -3118,16 +4409,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-005+%E5%98%B4%E5%B9%B3%E4%BC%8A%E4%B9%8B%E5%8A%A9"
+          "url": "https://jp.mercari.com/search?keyword=A02-005+%E5%98%B4%E5%B9%B3%E4%BC%8A%E4%B9%8B%E5%8A%A9+UR"
         }
       ],
       "average": 620,
@@ -3139,7 +4434,14 @@
           "cheapest": 620.0
         }
       ],
-      "marketValue": 620.0
+      "marketValue": 620,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-005+%E5%98%B4%E5%B9%B3%E4%BC%8A%E4%B9%8B%E5%8A%A9+UR",
+        "updated": "2026-10-06"
+      }
     },
     "A02-006": {
       "price": 5780,
@@ -3149,7 +4451,8 @@
         {
           "shop": "FullAhead",
           "price": 5780,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -3158,16 +4461,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-006+%E5%98%B4%E5%B9%B3%E4%BC%8A%E4%B9%8B%E5%8A%A9"
+          "url": "https://jp.mercari.com/search?keyword=A02-006+%E5%98%B4%E5%B9%B3%E4%BC%8A%E4%B9%8B%E5%8A%A9+UR"
         }
       ],
       "average": 5780,
@@ -3179,7 +4486,14 @@
           "cheapest": 5780.0
         }
       ],
-      "marketValue": 5780.0
+      "marketValue": 5780,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-006+%E5%98%B4%E5%B9%B3%E4%BC%8A%E4%B9%8B%E5%8A%A9+UR",
+        "updated": "2026-10-06"
+      }
     },
     "A02-007": {
       "price": 1480,
@@ -3189,7 +4503,8 @@
         {
           "shop": "FullAhead",
           "price": 1480,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -3198,16 +4513,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-007+%E5%86%A8%E5%B2%A1%E7%BE%A9%E5%8B%87"
+          "url": "https://jp.mercari.com/search?keyword=A02-007+%E5%86%A8%E5%B2%A1%E7%BE%A9%E5%8B%87+UR"
         }
       ],
       "average": 1480,
@@ -3219,7 +4538,14 @@
           "cheapest": 1480.0
         }
       ],
-      "marketValue": 1480.0
+      "marketValue": 1480,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-007+%E5%86%A8%E5%B2%A1%E7%BE%A9%E5%8B%87+UR",
+        "updated": "2026-10-06"
+      }
     },
     "A02-008": {
       "price": 1980,
@@ -3229,7 +4555,8 @@
         {
           "shop": "FullAhead",
           "price": 1980,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -3238,16 +4565,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-008+%E7%85%89%E7%8D%84%E6%9D%8F%E5%AF%BF%E9%83%8E"
+          "url": "https://jp.mercari.com/search?keyword=A02-008+%E7%85%89%E7%8D%84%E6%9D%8F%E5%AF%BF%E9%83%8E+UR"
         }
       ],
       "average": 1980,
@@ -3259,7 +4590,14 @@
           "cheapest": 1980.0
         }
       ],
-      "marketValue": 1980.0
+      "marketValue": 1980,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-008+%E7%85%89%E7%8D%84%E6%9D%8F%E5%AF%BF%E9%83%8E+UR",
+        "updated": "2026-10-06"
+      }
     },
     "A02-009": {
       "price": 12000,
@@ -3269,7 +4607,8 @@
         {
           "shop": "FullAhead",
           "price": 12000,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -3278,16 +4617,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-009+%E7%85%89%E7%8D%84%E6%9D%8F%E5%AF%BF%E9%83%8E"
+          "url": "https://jp.mercari.com/search?keyword=A02-009+%E7%85%89%E7%8D%84%E6%9D%8F%E5%AF%BF%E9%83%8E+UR"
         }
       ],
       "average": 12000,
@@ -3299,7 +4642,14 @@
           "cheapest": 12000.0
         }
       ],
-      "marketValue": 12000.0
+      "marketValue": 12000,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-009+%E7%85%89%E7%8D%84%E6%9D%8F%E5%AF%BF%E9%83%8E+UR",
+        "updated": "2026-10-06"
+      }
     },
     "A02-010": {
       "price": 620,
@@ -3309,7 +4659,8 @@
         {
           "shop": "FullAhead",
           "price": 620,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -3318,16 +4669,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-010+%E9%AD%98%E5%A4%A2"
+          "url": "https://jp.mercari.com/search?keyword=A02-010+%E9%AD%98%E5%A4%A2+UR"
         }
       ],
       "average": 620,
@@ -3339,7 +4694,14 @@
           "cheapest": 620.0
         }
       ],
-      "marketValue": 620.0
+      "marketValue": 620,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-010+%E9%AD%98%E5%A4%A2+UR",
+        "updated": "2026-10-06"
+      }
     },
     "A02-011": {
       "price": 5980,
@@ -3349,7 +4711,8 @@
         {
           "shop": "FullAhead",
           "price": 5980,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -3358,16 +4721,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-011+%E9%AD%98%E5%A4%A2"
+          "url": "https://jp.mercari.com/search?keyword=A02-011+%E9%AD%98%E5%A4%A2+UR"
         }
       ],
       "average": 5980,
@@ -3379,7 +4746,14 @@
           "cheapest": 5980.0
         }
       ],
-      "marketValue": 5980.0
+      "marketValue": 5980,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-011+%E9%AD%98%E5%A4%A2+UR",
+        "updated": "2026-10-06"
+      }
     },
     "A02-012": {
       "price": 200,
@@ -3389,7 +4763,8 @@
         {
           "shop": "FullAhead",
           "price": 200,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -3398,16 +4773,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-012+%E7%AB%88%E9%96%80%E7%82%AD%E6%B2%BB%E9%83%8E"
+          "url": "https://jp.mercari.com/search?keyword=A02-012+%E7%AB%88%E9%96%80%E7%82%AD%E6%B2%BB%E9%83%8E+SR"
         }
       ],
       "average": 200,
@@ -3419,7 +4798,14 @@
           "cheapest": 200.0
         }
       ],
-      "marketValue": 200.0
+      "marketValue": 200,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-012+%E7%AB%88%E9%96%80%E7%82%AD%E6%B2%BB%E9%83%8E+SR",
+        "updated": "2026-10-06"
+      }
     },
     "A02-013": {
       "price": 200,
@@ -3429,7 +4815,8 @@
         {
           "shop": "FullAhead",
           "price": 200,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -3438,16 +4825,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-013+%E7%AB%88%E9%96%80%E7%A6%B0%E8%B1%86%E5%AD%90"
+          "url": "https://jp.mercari.com/search?keyword=A02-013+%E7%AB%88%E9%96%80%E7%A6%B0%E8%B1%86%E5%AD%90+SR"
         }
       ],
       "average": 200,
@@ -3459,7 +4850,14 @@
           "cheapest": 200.0
         }
       ],
-      "marketValue": 200.0
+      "marketValue": 200,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-013+%E7%AB%88%E9%96%80%E7%A6%B0%E8%B1%86%E5%AD%90+SR",
+        "updated": "2026-10-06"
+      }
     },
     "A02-014": {
       "price": 180,
@@ -3469,7 +4867,8 @@
         {
           "shop": "FullAhead",
           "price": 180,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -3478,16 +4877,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-014+%E6%88%91%E5%A6%BB%E5%96%84%E9%80%B8"
+          "url": "https://jp.mercari.com/search?keyword=A02-014+%E6%88%91%E5%A6%BB%E5%96%84%E9%80%B8+SR"
         }
       ],
       "average": 180,
@@ -3499,7 +4902,14 @@
           "cheapest": 180.0
         }
       ],
-      "marketValue": 180.0
+      "marketValue": 180,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-014+%E6%88%91%E5%A6%BB%E5%96%84%E9%80%B8+SR",
+        "updated": "2026-10-06"
+      }
     },
     "A02-015": {
       "price": 150,
@@ -3509,7 +4919,8 @@
         {
           "shop": "FullAhead",
           "price": 150,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -3518,16 +4929,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-015+%E5%98%B4%E5%B9%B3%E4%BC%8A%E4%B9%8B%E5%8A%A9"
+          "url": "https://jp.mercari.com/search?keyword=A02-015+%E5%98%B4%E5%B9%B3%E4%BC%8A%E4%B9%8B%E5%8A%A9+SR"
         }
       ],
       "average": 150,
@@ -3539,7 +4954,14 @@
           "cheapest": 150.0
         }
       ],
-      "marketValue": 150.0
+      "marketValue": 150,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-015+%E5%98%B4%E5%B9%B3%E4%BC%8A%E4%B9%8B%E5%8A%A9+SR",
+        "updated": "2026-10-06"
+      }
     },
     "A02-016": {
       "price": 240,
@@ -3549,7 +4971,8 @@
         {
           "shop": "FullAhead",
           "price": 240,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -3558,16 +4981,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-016+%E5%86%A8%E5%B2%A1%E7%BE%A9%E5%8B%87"
+          "url": "https://jp.mercari.com/search?keyword=A02-016+%E5%86%A8%E5%B2%A1%E7%BE%A9%E5%8B%87+SR"
         }
       ],
       "average": 240,
@@ -3579,7 +5006,14 @@
           "cheapest": 240.0
         }
       ],
-      "marketValue": 240.0
+      "marketValue": 240,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-016+%E5%86%A8%E5%B2%A1%E7%BE%A9%E5%8B%87+SR",
+        "updated": "2026-10-06"
+      }
     },
     "A02-017": {
       "price": 240,
@@ -3589,7 +5023,8 @@
         {
           "shop": "FullAhead",
           "price": 240,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -3598,16 +5033,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-017+%E8%83%A1%E8%9D%B6%E3%81%97%E3%81%AE%E3%81%B6"
+          "url": "https://jp.mercari.com/search?keyword=A02-017+%E8%83%A1%E8%9D%B6%E3%81%97%E3%81%AE%E3%81%B6+SR"
         }
       ],
       "average": 240,
@@ -3619,7 +5058,14 @@
           "cheapest": 240.0
         }
       ],
-      "marketValue": 240.0
+      "marketValue": 240,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-017+%E8%83%A1%E8%9D%B6%E3%81%97%E3%81%AE%E3%81%B6+SR",
+        "updated": "2026-10-06"
+      }
     },
     "A02-018": {
       "price": 240,
@@ -3629,7 +5075,8 @@
         {
           "shop": "FullAhead",
           "price": 240,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -3638,16 +5085,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-018+%E7%85%89%E7%8D%84%E6%9D%8F%E5%AF%BF%E9%83%8E"
+          "url": "https://jp.mercari.com/search?keyword=A02-018+%E7%85%89%E7%8D%84%E6%9D%8F%E5%AF%BF%E9%83%8E+SR"
         }
       ],
       "average": 240,
@@ -3659,7 +5110,14 @@
           "cheapest": 240.0
         }
       ],
-      "marketValue": 240.0
+      "marketValue": 240,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-018+%E7%85%89%E7%8D%84%E6%9D%8F%E5%AF%BF%E9%83%8E+SR",
+        "updated": "2026-10-06"
+      }
     },
     "A02-019": {
       "price": 280,
@@ -3669,7 +5127,8 @@
         {
           "shop": "FullAhead",
           "price": 280,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -3678,16 +5137,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-019+%E9%8C%86%E5%85%8E"
+          "url": "https://jp.mercari.com/search?keyword=A02-019+%E9%8C%86%E5%85%8E+SR"
         }
       ],
       "average": 280,
@@ -3699,7 +5162,14 @@
           "cheapest": 280.0
         }
       ],
-      "marketValue": 280.0
+      "marketValue": 280,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-019+%E9%8C%86%E5%85%8E+SR",
+        "updated": "2026-10-06"
+      }
     },
     "A02-020": {
       "price": 150,
@@ -3709,7 +5179,8 @@
         {
           "shop": "FullAhead",
           "price": 150,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -3718,16 +5189,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-020+%E9%AD%98%E5%A4%A2"
+          "url": "https://jp.mercari.com/search?keyword=A02-020+%E9%AD%98%E5%A4%A2+SR"
         }
       ],
       "average": 150,
@@ -3739,7 +5214,14 @@
           "cheapest": 150.0
         }
       ],
-      "marketValue": 150.0
+      "marketValue": 150,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-020+%E9%AD%98%E5%A4%A2+SR",
+        "updated": "2026-10-06"
+      }
     },
     "A02-021": {
       "price": 100,
@@ -3749,7 +5231,8 @@
         {
           "shop": "FullAhead",
           "price": 100,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -3758,16 +5241,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-021+%E7%AB%88%E9%96%80%E7%A6%B0%E8%B1%86%E5%AD%90"
+          "url": "https://jp.mercari.com/search?keyword=A02-021+%E7%AB%88%E9%96%80%E7%A6%B0%E8%B1%86%E5%AD%90+R"
         }
       ],
       "average": 100,
@@ -3779,7 +5266,14 @@
           "cheapest": 100.0
         }
       ],
-      "marketValue": 100.0
+      "marketValue": 100,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-021+%E7%AB%88%E9%96%80%E7%A6%B0%E8%B1%86%E5%AD%90+R",
+        "updated": "2026-10-06"
+      }
     },
     "A02-022": {
       "price": 80,
@@ -3789,7 +5283,8 @@
         {
           "shop": "FullAhead",
           "price": 80,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -3798,16 +5293,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-022+%E6%88%91%E5%A6%BB%E5%96%84%E9%80%B8"
+          "url": "https://jp.mercari.com/search?keyword=A02-022+%E6%88%91%E5%A6%BB%E5%96%84%E9%80%B8+R"
         }
       ],
       "average": 80,
@@ -3819,7 +5318,14 @@
           "cheapest": 80.0
         }
       ],
-      "marketValue": 80.0
+      "marketValue": 80,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-022+%E6%88%91%E5%A6%BB%E5%96%84%E9%80%B8+R",
+        "updated": "2026-10-06"
+      }
     },
     "A02-023": {
       "price": 80,
@@ -3829,7 +5335,8 @@
         {
           "shop": "FullAhead",
           "price": 80,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -3838,16 +5345,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-023+%E4%B8%8D%E6%AD%BB%E5%B7%9D%E7%8E%84%E5%BC%A5"
+          "url": "https://jp.mercari.com/search?keyword=A02-023+%E4%B8%8D%E6%AD%BB%E5%B7%9D%E7%8E%84%E5%BC%A5+R"
         }
       ],
       "average": 80,
@@ -3859,7 +5370,14 @@
           "cheapest": 80.0
         }
       ],
-      "marketValue": 80.0
+      "marketValue": 80,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-023+%E4%B8%8D%E6%AD%BB%E5%B7%9D%E7%8E%84%E5%BC%A5+R",
+        "updated": "2026-10-06"
+      }
     },
     "A02-024": {
       "price": 100,
@@ -3869,7 +5387,8 @@
         {
           "shop": "FullAhead",
           "price": 100,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -3878,16 +5397,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-024+%E5%86%A8%E5%B2%A1%E7%BE%A9%E5%8B%87"
+          "url": "https://jp.mercari.com/search?keyword=A02-024+%E5%86%A8%E5%B2%A1%E7%BE%A9%E5%8B%87+R"
         }
       ],
       "average": 100,
@@ -3899,7 +5422,14 @@
           "cheapest": 100.0
         }
       ],
-      "marketValue": 100.0
+      "marketValue": 100,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-024+%E5%86%A8%E5%B2%A1%E7%BE%A9%E5%8B%87+R",
+        "updated": "2026-10-06"
+      }
     },
     "A02-025": {
       "price": 100,
@@ -3909,7 +5439,8 @@
         {
           "shop": "FullAhead",
           "price": 100,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -3918,16 +5449,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-025+%E8%83%A1%E8%9D%B6%E3%81%97%E3%81%AE%E3%81%B6"
+          "url": "https://jp.mercari.com/search?keyword=A02-025+%E8%83%A1%E8%9D%B6%E3%81%97%E3%81%AE%E3%81%B6+R"
         }
       ],
       "average": 100,
@@ -3939,7 +5474,14 @@
           "cheapest": 100.0
         }
       ],
-      "marketValue": 100.0
+      "marketValue": 100,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-025+%E8%83%A1%E8%9D%B6%E3%81%97%E3%81%AE%E3%81%B6+R",
+        "updated": "2026-10-06"
+      }
     },
     "A02-026": {
       "price": 100,
@@ -3949,7 +5491,8 @@
         {
           "shop": "FullAhead",
           "price": 100,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -3958,16 +5501,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-026+%E7%85%89%E7%8D%84%E6%9D%8F%E5%AF%BF%E9%83%8E"
+          "url": "https://jp.mercari.com/search?keyword=A02-026+%E7%85%89%E7%8D%84%E6%9D%8F%E5%AF%BF%E9%83%8E+R"
         }
       ],
       "average": 100,
@@ -3979,7 +5526,14 @@
           "cheapest": 100.0
         }
       ],
-      "marketValue": 100.0
+      "marketValue": 100,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-026+%E7%85%89%E7%8D%84%E6%9D%8F%E5%AF%BF%E9%83%8E+R",
+        "updated": "2026-10-06"
+      }
     },
     "A02-027": {
       "price": 100,
@@ -3989,7 +5543,8 @@
         {
           "shop": "FullAhead",
           "price": 100,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -3998,16 +5553,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-027+%E6%9D%91%E7%94%B0"
+          "url": "https://jp.mercari.com/search?keyword=A02-027+%E6%9D%91%E7%94%B0+R"
         }
       ],
       "average": 100,
@@ -4019,7 +5578,14 @@
           "cheapest": 100.0
         }
       ],
-      "marketValue": 100.0
+      "marketValue": 100,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-027+%E6%9D%91%E7%94%B0+R",
+        "updated": "2026-10-06"
+      }
     },
     "A02-028": {
       "price": 100,
@@ -4029,7 +5595,8 @@
         {
           "shop": "FullAhead",
           "price": 100,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -4038,16 +5605,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-028+%E9%8C%86%E5%85%8E"
+          "url": "https://jp.mercari.com/search?keyword=A02-028+%E9%8C%86%E5%85%8E+R"
         }
       ],
       "average": 100,
@@ -4059,7 +5630,14 @@
           "cheapest": 100.0
         }
       ],
-      "marketValue": 100.0
+      "marketValue": 100,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-028+%E9%8C%86%E5%85%8E+R",
+        "updated": "2026-10-06"
+      }
     },
     "A02-029": {
       "price": 80,
@@ -4069,7 +5647,8 @@
         {
           "shop": "FullAhead",
           "price": 80,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -4078,16 +5657,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-029+%E7%9C%9F%E8%8F%B0"
+          "url": "https://jp.mercari.com/search?keyword=A02-029+%E7%9C%9F%E8%8F%B0+R"
         }
       ],
       "average": 80,
@@ -4099,7 +5682,14 @@
           "cheapest": 80.0
         }
       ],
-      "marketValue": 80.0
+      "marketValue": 80,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-029+%E7%9C%9F%E8%8F%B0+R",
+        "updated": "2026-10-06"
+      }
     },
     "A02-030": {
       "price": 80,
@@ -4109,7 +5699,8 @@
         {
           "shop": "FullAhead",
           "price": 80,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -4118,16 +5709,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-030+%E7%B4%AF"
+          "url": "https://jp.mercari.com/search?keyword=A02-030+%E7%B4%AF+R"
         }
       ],
       "average": 80,
@@ -4139,7 +5734,14 @@
           "cheapest": 80.0
         }
       ],
-      "marketValue": 80.0
+      "marketValue": 80,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-030+%E7%B4%AF+R",
+        "updated": "2026-10-06"
+      }
     },
     "A02-031": {
       "price": 80,
@@ -4149,7 +5751,8 @@
         {
           "shop": "FullAhead",
           "price": 80,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -4158,16 +5761,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-031+%E9%AD%98%E5%A4%A2"
+          "url": "https://jp.mercari.com/search?keyword=A02-031+%E9%AD%98%E5%A4%A2+R"
         }
       ],
       "average": 80,
@@ -4179,7 +5786,14 @@
           "cheapest": 80.0
         }
       ],
-      "marketValue": 80.0
+      "marketValue": 80,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-031+%E9%AD%98%E5%A4%A2+R",
+        "updated": "2026-10-06"
+      }
     },
     "A02-032": {
       "price": 50,
@@ -4189,7 +5803,8 @@
         {
           "shop": "FullAhead",
           "price": 50,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -4198,16 +5813,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-032+%E7%AB%88%E9%96%80%E7%82%AD%E6%B2%BB%E9%83%8E"
+          "url": "https://jp.mercari.com/search?keyword=A02-032+%E7%AB%88%E9%96%80%E7%82%AD%E6%B2%BB%E9%83%8E+C"
         }
       ],
       "average": 50,
@@ -4219,7 +5838,14 @@
           "cheapest": 50.0
         }
       ],
-      "marketValue": 50.0
+      "marketValue": 50,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-032+%E7%AB%88%E9%96%80%E7%82%AD%E6%B2%BB%E9%83%8E+C",
+        "updated": "2026-10-06"
+      }
     },
     "A02-033": {
       "price": 50,
@@ -4229,7 +5855,8 @@
         {
           "shop": "FullAhead",
           "price": 50,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -4238,16 +5865,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-033+%E7%AB%88%E9%96%80%E7%A6%B0%E8%B1%86%E5%AD%90"
+          "url": "https://jp.mercari.com/search?keyword=A02-033+%E7%AB%88%E9%96%80%E7%A6%B0%E8%B1%86%E5%AD%90+C"
         }
       ],
       "average": 50,
@@ -4259,7 +5890,14 @@
           "cheapest": 50.0
         }
       ],
-      "marketValue": 50.0
+      "marketValue": 50,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-033+%E7%AB%88%E9%96%80%E7%A6%B0%E8%B1%86%E5%AD%90+C",
+        "updated": "2026-10-06"
+      }
     },
     "A02-034": {
       "price": 50,
@@ -4269,7 +5907,8 @@
         {
           "shop": "FullAhead",
           "price": 50,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -4278,16 +5917,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-034+%E6%88%91%E5%A6%BB%E5%96%84%E9%80%B8"
+          "url": "https://jp.mercari.com/search?keyword=A02-034+%E6%88%91%E5%A6%BB%E5%96%84%E9%80%B8+C"
         }
       ],
       "average": 50,
@@ -4299,7 +5942,14 @@
           "cheapest": 50.0
         }
       ],
-      "marketValue": 50.0
+      "marketValue": 50,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-034+%E6%88%91%E5%A6%BB%E5%96%84%E9%80%B8+C",
+        "updated": "2026-10-06"
+      }
     },
     "A02-035": {
       "price": 50,
@@ -4309,7 +5959,8 @@
         {
           "shop": "FullAhead",
           "price": 50,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -4318,16 +5969,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-035+%E5%98%B4%E5%B9%B3%E4%BC%8A%E4%B9%8B%E5%8A%A9"
+          "url": "https://jp.mercari.com/search?keyword=A02-035+%E5%98%B4%E5%B9%B3%E4%BC%8A%E4%B9%8B%E5%8A%A9+C"
         }
       ],
       "average": 50,
@@ -4339,7 +5994,14 @@
           "cheapest": 50.0
         }
       ],
-      "marketValue": 50.0
+      "marketValue": 50,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-035+%E5%98%B4%E5%B9%B3%E4%BC%8A%E4%B9%8B%E5%8A%A9+C",
+        "updated": "2026-10-06"
+      }
     },
     "A02-036": {
       "price": 50,
@@ -4349,7 +6011,8 @@
         {
           "shop": "FullAhead",
           "price": 50,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -4358,16 +6021,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-036+%E4%B8%8D%E6%AD%BB%E5%B7%9D%E7%8E%84%E5%BC%A5"
+          "url": "https://jp.mercari.com/search?keyword=A02-036+%E4%B8%8D%E6%AD%BB%E5%B7%9D%E7%8E%84%E5%BC%A5+C"
         }
       ],
       "average": 50,
@@ -4379,7 +6046,14 @@
           "cheapest": 50.0
         }
       ],
-      "marketValue": 50.0
+      "marketValue": 50,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-036+%E4%B8%8D%E6%AD%BB%E5%B7%9D%E7%8E%84%E5%BC%A5+C",
+        "updated": "2026-10-06"
+      }
     },
     "A02-037": {
       "price": 50,
@@ -4389,7 +6063,8 @@
         {
           "shop": "FullAhead",
           "price": 50,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -4398,16 +6073,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-037+%E5%86%A8%E5%B2%A1%E7%BE%A9%E5%8B%87"
+          "url": "https://jp.mercari.com/search?keyword=A02-037+%E5%86%A8%E5%B2%A1%E7%BE%A9%E5%8B%87+C"
         }
       ],
       "average": 50,
@@ -4419,7 +6098,14 @@
           "cheapest": 50.0
         }
       ],
-      "marketValue": 50.0
+      "marketValue": 50,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-037+%E5%86%A8%E5%B2%A1%E7%BE%A9%E5%8B%87+C",
+        "updated": "2026-10-06"
+      }
     },
     "A02-038": {
       "price": 50,
@@ -4429,7 +6115,8 @@
         {
           "shop": "FullAhead",
           "price": 50,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -4438,16 +6125,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-038+%E8%83%A1%E8%9D%B6%E3%81%97%E3%81%AE%E3%81%B6"
+          "url": "https://jp.mercari.com/search?keyword=A02-038+%E8%83%A1%E8%9D%B6%E3%81%97%E3%81%AE%E3%81%B6+C"
         }
       ],
       "average": 50,
@@ -4459,7 +6150,14 @@
           "cheapest": 50.0
         }
       ],
-      "marketValue": 50.0
+      "marketValue": 50,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-038+%E8%83%A1%E8%9D%B6%E3%81%97%E3%81%AE%E3%81%B6+C",
+        "updated": "2026-10-06"
+      }
     },
     "A02-039": {
       "price": 50,
@@ -4469,7 +6167,8 @@
         {
           "shop": "FullAhead",
           "price": 50,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -4478,16 +6177,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-039+%E6%9D%91%E7%94%B0"
+          "url": "https://jp.mercari.com/search?keyword=A02-039+%E6%9D%91%E7%94%B0+C"
         }
       ],
       "average": 50,
@@ -4499,7 +6202,14 @@
           "cheapest": 50.0
         }
       ],
-      "marketValue": 50.0
+      "marketValue": 50,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-039+%E6%9D%91%E7%94%B0+C",
+        "updated": "2026-10-06"
+      }
     },
     "A02-040": {
       "price": 50,
@@ -4509,7 +6219,8 @@
         {
           "shop": "FullAhead",
           "price": 50,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -4518,16 +6229,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-040+%E9%B1%97%E6%BB%9D%E5%B7%A6%E8%BF%91%E6%AC%A1"
+          "url": "https://jp.mercari.com/search?keyword=A02-040+%E9%B1%97%E6%BB%9D%E5%B7%A6%E8%BF%91%E6%AC%A1+C"
         }
       ],
       "average": 50,
@@ -4539,7 +6254,14 @@
           "cheapest": 50.0
         }
       ],
-      "marketValue": 50.0
+      "marketValue": 50,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-040+%E9%B1%97%E6%BB%9D%E5%B7%A6%E8%BF%91%E6%AC%A1+C",
+        "updated": "2026-10-06"
+      }
     },
     "A02-041": {
       "price": 50,
@@ -4549,7 +6271,8 @@
         {
           "shop": "FullAhead",
           "price": 50,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -4558,16 +6281,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-041+%E9%8C%86%E5%85%8E"
+          "url": "https://jp.mercari.com/search?keyword=A02-041+%E9%8C%86%E5%85%8E+C"
         }
       ],
       "average": 50,
@@ -4579,7 +6306,14 @@
           "cheapest": 50.0
         }
       ],
-      "marketValue": 50.0
+      "marketValue": 50,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-041+%E9%8C%86%E5%85%8E+C",
+        "updated": "2026-10-06"
+      }
     },
     "A02-042": {
       "price": 50,
@@ -4589,7 +6323,8 @@
         {
           "shop": "FullAhead",
           "price": 50,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -4598,16 +6333,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-042+%E7%9C%9F%E8%8F%B0"
+          "url": "https://jp.mercari.com/search?keyword=A02-042+%E7%9C%9F%E8%8F%B0+C"
         }
       ],
       "average": 50,
@@ -4619,7 +6358,14 @@
           "cheapest": 50.0
         }
       ],
-      "marketValue": 50.0
+      "marketValue": 50,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-042+%E7%9C%9F%E8%8F%B0+C",
+        "updated": "2026-10-06"
+      }
     },
     "A02-043": {
       "price": 50,
@@ -4629,7 +6375,8 @@
         {
           "shop": "FullAhead",
           "price": 50,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -4638,16 +6385,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-043+%E6%9C%B1%E7%B4%97%E4%B8%B8"
+          "url": "https://jp.mercari.com/search?keyword=A02-043+%E6%9C%B1%E7%B4%97%E4%B8%B8+C"
         }
       ],
       "average": 50,
@@ -4659,7 +6410,14 @@
           "cheapest": 50.0
         }
       ],
-      "marketValue": 50.0
+      "marketValue": 50,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-043+%E6%9C%B1%E7%B4%97%E4%B8%B8+C",
+        "updated": "2026-10-06"
+      }
     },
     "A02-044": {
       "price": 50,
@@ -4669,7 +6427,8 @@
         {
           "shop": "FullAhead",
           "price": 50,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -4678,16 +6437,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-044+%E7%9F%A2%E7%90%B6%E7%BE%BD"
+          "url": "https://jp.mercari.com/search?keyword=A02-044+%E7%9F%A2%E7%90%B6%E7%BE%BD+C"
         }
       ],
       "average": 50,
@@ -4699,7 +6462,14 @@
           "cheapest": 50.0
         }
       ],
-      "marketValue": 50.0
+      "marketValue": 50,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-044+%E7%9F%A2%E7%90%B6%E7%BE%BD+C",
+        "updated": "2026-10-06"
+      }
     },
     "A02-045": {
       "price": 50,
@@ -4709,7 +6479,8 @@
         {
           "shop": "FullAhead",
           "price": 50,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -4718,16 +6489,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-045+%E7%B4%AF"
+          "url": "https://jp.mercari.com/search?keyword=A02-045+%E7%B4%AF+C"
         }
       ],
       "average": 50,
@@ -4739,7 +6514,14 @@
           "cheapest": 50.0
         }
       ],
-      "marketValue": 50.0
+      "marketValue": 50,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-045+%E7%B4%AF+C",
+        "updated": "2026-10-06"
+      }
     },
     "A02-046": {
       "price": 150,
@@ -4749,7 +6531,8 @@
         {
           "shop": "FullAhead",
           "price": 150,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -4758,16 +6541,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-046+%E7%94%A3%E5%B1%8B%E6%95%B7%E8%80%80%E5%93%89"
+          "url": "https://jp.mercari.com/search?keyword=A02-046+%E7%94%A3%E5%B1%8B%E6%95%B7%E8%80%80%E5%93%89+SR"
         }
       ],
       "average": 150,
@@ -4779,7 +6566,14 @@
           "cheapest": 150.0
         }
       ],
-      "marketValue": 150.0
+      "marketValue": 150,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-046+%E7%94%A3%E5%B1%8B%E6%95%B7%E8%80%80%E5%93%89+SR",
+        "updated": "2026-10-06"
+      }
     },
     "A02-047": {
       "price": 100,
@@ -4789,7 +6583,8 @@
         {
           "shop": "FullAhead",
           "price": 100,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -4798,16 +6593,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-047+%E7%AB%88%E9%96%80%E7%82%AD%E5%8D%81%E9%83%8E"
+          "url": "https://jp.mercari.com/search?keyword=A02-047+%E7%AB%88%E9%96%80%E7%82%AD%E5%8D%81%E9%83%8E+R"
         }
       ],
       "average": 100,
@@ -4819,7 +6618,14 @@
           "cheapest": 100.0
         }
       ],
-      "marketValue": 100.0
+      "marketValue": 100,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-047+%E7%AB%88%E9%96%80%E7%82%AD%E5%8D%81%E9%83%8E+R",
+        "updated": "2026-10-06"
+      }
     },
     "A02-048": {
       "price": 100,
@@ -4829,7 +6635,8 @@
         {
           "shop": "FullAhead",
           "price": 100,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -4838,16 +6645,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-048+%E7%AB%88%E9%96%80%E8%91%B5%E6%9E%9D"
+          "url": "https://jp.mercari.com/search?keyword=A02-048+%E7%AB%88%E9%96%80%E8%91%B5%E6%9E%9D+R"
         }
       ],
       "average": 100,
@@ -4859,7 +6670,14 @@
           "cheapest": 100.0
         }
       ],
-      "marketValue": 100.0
+      "marketValue": 100,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-048+%E7%AB%88%E9%96%80%E8%91%B5%E6%9E%9D+R",
+        "updated": "2026-10-06"
+      }
     },
     "A02-049": {
       "price": 80,
@@ -4869,7 +6687,8 @@
         {
           "shop": "FullAhead",
           "price": 80,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -4878,16 +6697,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-049+%E5%88%87%E3%82%8A%E8%A3%82%E3%81%8D%E9%AD%94%E3%81%AE%E9%AC%BC"
+          "url": "https://jp.mercari.com/search?keyword=A02-049+%E5%88%87%E3%82%8A%E8%A3%82%E3%81%8D%E9%AD%94%E3%81%AE%E9%AC%BC+R"
         }
       ],
       "average": 80,
@@ -4899,7 +6722,14 @@
           "cheapest": 80.0
         }
       ],
-      "marketValue": 80.0
+      "marketValue": 80,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-049+%E5%88%87%E3%82%8A%E8%A3%82%E3%81%8D%E9%AD%94%E3%81%AE%E9%AC%BC+R",
+        "updated": "2026-10-06"
+      }
     },
     "A02-050": {
       "price": 100,
@@ -4909,7 +6739,8 @@
         {
           "shop": "FullAhead",
           "price": 100,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -4918,16 +6749,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-050+%E3%83%81%E3%83%A5%E3%83%B3%E5%A4%AA%E9%83%8E"
+          "url": "https://jp.mercari.com/search?keyword=A02-050+%E3%83%81%E3%83%A5%E3%83%B3%E5%A4%AA%E9%83%8E+R"
         }
       ],
       "average": 100,
@@ -4939,7 +6774,14 @@
           "cheapest": 100.0
         }
       ],
-      "marketValue": 100.0
+      "marketValue": 100,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-050+%E3%83%81%E3%83%A5%E3%83%B3%E5%A4%AA%E9%83%8E+R",
+        "updated": "2026-10-06"
+      }
     },
     "A02-051": {
       "price": 100,
@@ -4949,7 +6791,8 @@
         {
           "shop": "FullAhead",
           "price": 100,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -4958,16 +6801,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-051+%E8%83%A1%E8%9D%B6%E3%82%AB%E3%83%8A%E3%82%A8"
+          "url": "https://jp.mercari.com/search?keyword=A02-051+%E8%83%A1%E8%9D%B6%E3%82%AB%E3%83%8A%E3%82%A8+R"
         }
       ],
       "average": 100,
@@ -4979,7 +6826,14 @@
           "cheapest": 100.0
         }
       ],
-      "marketValue": 100.0
+      "marketValue": 100,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-051+%E8%83%A1%E8%9D%B6%E3%82%AB%E3%83%8A%E3%82%A8+R",
+        "updated": "2026-10-06"
+      }
     },
     "A02-052": {
       "price": 100,
@@ -4989,7 +6843,8 @@
         {
           "shop": "FullAhead",
           "price": 100,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -4998,16 +6853,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-052+%E5%96%84%E9%80%B8%E3%81%AE%E5%85%84%E5%BC%9F%E5%AD%90"
+          "url": "https://jp.mercari.com/search?keyword=A02-052+%E5%96%84%E9%80%B8%E3%81%AE%E5%85%84%E5%BC%9F%E5%AD%90+R"
         }
       ],
       "average": 100,
@@ -5019,7 +6878,14 @@
           "cheapest": 100.0
         }
       ],
-      "marketValue": 100.0
+      "marketValue": 100,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-052+%E5%96%84%E9%80%B8%E3%81%AE%E5%85%84%E5%BC%9F%E5%AD%90+R",
+        "updated": "2026-10-06"
+      }
     },
     "A02-053": {
       "price": 100,
@@ -5029,7 +6895,8 @@
         {
           "shop": "FullAhead",
           "price": 100,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -5038,16 +6905,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-053+%E7%85%89%E7%8D%84%E5%8D%83%E5%AF%BF%E9%83%8E"
+          "url": "https://jp.mercari.com/search?keyword=A02-053+%E7%85%89%E7%8D%84%E5%8D%83%E5%AF%BF%E9%83%8E+R"
         }
       ],
       "average": 100,
@@ -5059,7 +6930,14 @@
           "cheapest": 100.0
         }
       ],
-      "marketValue": 100.0
+      "marketValue": 100,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-053+%E7%85%89%E7%8D%84%E5%8D%83%E5%AF%BF%E9%83%8E+R",
+        "updated": "2026-10-06"
+      }
     },
     "A02-054": {
       "price": 50,
@@ -5069,7 +6947,8 @@
         {
           "shop": "FullAhead",
           "price": 50,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -5078,16 +6957,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-054+%E3%81%8A%E5%A0%82%E3%81%AE%E9%AC%BC"
+          "url": "https://jp.mercari.com/search?keyword=A02-054+%E3%81%8A%E5%A0%82%E3%81%AE%E9%AC%BC+C"
         }
       ],
       "average": 50,
@@ -5099,7 +6982,14 @@
           "cheapest": 50.0
         }
       ],
-      "marketValue": 50.0
+      "marketValue": 50,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-054+%E3%81%8A%E5%A0%82%E3%81%AE%E9%AC%BC+C",
+        "updated": "2026-10-06"
+      }
     },
     "A02-055": {
       "price": 50,
@@ -5109,7 +6999,8 @@
         {
           "shop": "FullAhead",
           "price": 50,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -5118,16 +7009,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-055+%E3%81%B5%E3%81%8F"
+          "url": "https://jp.mercari.com/search?keyword=A02-055+%E3%81%B5%E3%81%8F+C"
         }
       ],
       "average": 50,
@@ -5139,7 +7034,14 @@
           "cheapest": 50.0
         }
       ],
-      "marketValue": 50.0
+      "marketValue": 50,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-055+%E3%81%B5%E3%81%8F+C",
+        "updated": "2026-10-06"
+      }
     },
     "A02-056": {
       "price": 50,
@@ -5149,7 +7051,8 @@
         {
           "shop": "FullAhead",
           "price": 50,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -5158,16 +7061,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-056+%E9%9A%A0"
+          "url": "https://jp.mercari.com/search?keyword=A02-056+%E9%9A%A0+C"
         }
       ],
       "average": 50,
@@ -5179,7 +7086,14 @@
           "cheapest": 50.0
         }
       ],
-      "marketValue": 50.0
+      "marketValue": 50,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-056+%E9%9A%A0+C",
+        "updated": "2026-10-06"
+      }
     },
     "A02-057": {
       "price": 50,
@@ -5189,7 +7103,8 @@
         {
           "shop": "FullAhead",
           "price": 50,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -5198,16 +7113,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-057+%E8%9C%98%E8%9B%9B%E3%81%AE%E9%AC%BC%28%E5%A7%89%29"
+          "url": "https://jp.mercari.com/search?keyword=A02-057+%E8%9C%98%E8%9B%9B%E3%81%AE%E9%AC%BC%28%E5%A7%89%29+C"
         }
       ],
       "average": 50,
@@ -5219,7 +7138,14 @@
           "cheapest": 50.0
         }
       ],
-      "marketValue": 50.0
+      "marketValue": 50,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-057+%E8%9C%98%E8%9B%9B%E3%81%AE%E9%AC%BC%28%E5%A7%89%29+C",
+        "updated": "2026-10-06"
+      }
     },
     "A02-058": {
       "price": 50,
@@ -5229,7 +7155,8 @@
         {
           "shop": "FullAhead",
           "price": 50,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -5238,16 +7165,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-058+%E4%BA%BA%E8%B2%B7%E3%81%84"
+          "url": "https://jp.mercari.com/search?keyword=A02-058+%E4%BA%BA%E8%B2%B7%E3%81%84+C"
         }
       ],
       "average": 50,
@@ -5259,7 +7190,14 @@
           "cheapest": 50.0
         }
       ],
-      "marketValue": 50.0
+      "marketValue": 50,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-058+%E4%BA%BA%E8%B2%B7%E3%81%84+C",
+        "updated": "2026-10-06"
+      }
     },
     "A02-059": {
       "price": 50,
@@ -5269,7 +7207,8 @@
         {
           "shop": "FullAhead",
           "price": 50,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -5278,16 +7217,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-059+%E8%97%A4%E3%81%AE%E8%8A%B1%E3%81%AE%E5%AE%B6%E7%B4%8B%E3%81%AE%E5%AE%B6%E3%81%AE%E3%81%8A%E5%A9%86%E3%81%95%E3%82%93"
+          "url": "https://jp.mercari.com/search?keyword=A02-059+%E8%97%A4%E3%81%AE%E8%8A%B1%E3%81%AE%E5%AE%B6%E7%B4%8B%E3%81%AE%E5%AE%B6%E3%81%AE%E3%81%8A%E5%A9%86%E3%81%95%E3%82%93+C"
         }
       ],
       "average": 50,
@@ -5299,7 +7242,14 @@
           "cheapest": 50.0
         }
       ],
-      "marketValue": 50.0
+      "marketValue": 50,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-059+%E8%97%A4%E3%81%AE%E8%8A%B1%E3%81%AE%E5%AE%B6%E7%B4%8B%E3%81%AE%E5%AE%B6%E3%81%AE%E3%81%8A%E5%A9%86%E3%81%95%E3%82%93+C",
+        "updated": "2026-10-06"
+      }
     },
     "A02-060": {
       "price": 50,
@@ -5309,7 +7259,8 @@
         {
           "shop": "FullAhead",
           "price": 50,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "stale": true
         }
       ],
       "shopLinks": [
@@ -5318,16 +7269,20 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
         },
         {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
+        },
+        {
           "shop": "TCG Library",
           "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=A02-060+%E4%BC%9D%E4%BB%A4%E5%BD%B9%E3%81%AE%E9%AC%BC%E6%AE%BA%E9%9A%8A%E5%A3%AB"
+          "url": "https://jp.mercari.com/search?keyword=A02-060+%E4%BC%9D%E4%BB%A4%E5%BD%B9%E3%81%AE%E9%AC%BC%E6%AE%BA%E9%9A%8A%E5%A3%AB+C"
         }
       ],
       "average": 50,
@@ -5339,38 +7294,28 @@
           "cheapest": 50.0
         }
       ],
-      "marketValue": 50.0
+      "marketValue": 50,
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=A02-060+%E4%BC%9D%E4%BB%A4%E5%BD%B9%E3%81%AE%E9%AC%BC%E6%AE%BA%E9%9A%8A%E5%A3%AB+C",
+        "updated": "2026-10-06"
+      }
     },
-    "P01-001": {
-      "price": 3980,
-      "updated": "2026-10-05",
-      "sources": [
-        {
-          "name": "FullAhead",
-          "url": "https://item.rakuten.co.jp/fullahead/kynbs-p01-001/"
-        }
-      ],
-      "offers": [
-        {
-          "shop": "FullAhead",
-          "price": 3980,
-          "url": "https://item.rakuten.co.jp/fullahead/kynbs-p01-001/"
-        }
-      ],
-      "average": 3980,
-      "marketValue": 3980,
-      "history": [
-        {
-          "date": "2026-10-05",
-          "market": 3980,
-          "average": 3980,
-          "cheapest": 3980
-        }
-      ],
+    "P02-001": {
+      "offers": [],
+      "price": null,
+      "marketValue": null,
+      "average": null,
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
         },
         {
           "shop": "TCG Library",
@@ -5378,62 +7323,35 @@
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=P01-001"
+          "url": "https://jp.mercari.com/search?keyword=P02-001+%E7%85%89%E7%8D%84%E6%9D%8F%E5%AF%BF%E9%83%8E+PR"
         }
-      ]
+      ],
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=P02-001+%E7%85%89%E7%8D%84%E6%9D%8F%E5%AF%BF%E9%83%8E+PR",
+        "updated": "2026-10-06"
+      },
+      "history": []
     },
-    "P01-002": {
-      "price": 240,
-      "updated": "2026-10-05",
-      "sources": [
-        {
-          "name": "TCG Library",
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
-        },
-        {
-          "name": "FullAhead",
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
-        },
-        {
-          "name": "Surugaya",
-          "url": "https://www.suruga-ya.jp/search?category=5010801&search_word=P01-002"
-        }
-      ],
-      "offers": [
-        {
-          "shop": "TCG Library",
-          "price": 600,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
-        },
-        {
-          "shop": "FullAhead",
-          "price": 480,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
-        },
-        {
-          "shop": "Surugaya",
-          "price": 240,
-          "url": "https://www.suruga-ya.jp/search?category=5010801&search_word=P01-002"
-        }
-      ],
-      "average": 440,
-      "marketValue": 480,
-      "history": [
-        {
-          "date": "2026-10-05",
-          "market": 480,
-          "average": 440,
-          "cheapest": 240
-        }
-      ],
+    "P02-002": {
+      "offers": [],
+      "price": null,
+      "marketValue": null,
+      "average": null,
       "shopLinks": [
         {
           "shop": "FullAhead",
           "url": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
+        {
+          "shop": "FullAhead Rakuten",
+          "url": "https://item.rakuten.co.jp/fullahead/c/0000012537/"
         },
         {
           "shop": "TCG Library",
@@ -5441,144 +7359,34 @@
         },
         {
           "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
+          "url": "https://item.rakuten.co.jp/karintou10/c/0000006149/"
         },
         {
           "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=P01-002"
-        }
-      ]
-    },
-    "P01-003": {
-      "price": 100,
-      "updated": "2026-10-05",
-      "sources": [
-        {
-          "name": "TCG Library",
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
-        },
-        {
-          "name": "FullAhead",
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
-        },
-        {
-          "name": "Surugaya",
-          "url": "https://www.suruga-ya.jp/search?category=501080178&search_word=P01-003"
+          "url": "https://jp.mercari.com/search?keyword=P02-002+%E8%83%A1%E8%9D%B6%E3%81%97%E3%81%AE%E3%81%B6+PR"
         }
       ],
-      "offers": [
-        {
-          "shop": "TCG Library",
-          "price": 100,
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
-        },
-        {
-          "shop": "FullAhead",
-          "price": 280,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
-        },
-        {
-          "shop": "Surugaya",
-          "price": 160,
-          "url": "https://www.suruga-ya.jp/search?category=501080178&search_word=P01-003"
-        }
-      ],
-      "average": 180,
-      "marketValue": 160,
-      "history": [
-        {
-          "date": "2026-10-05",
-          "market": 160,
-          "average": 180,
-          "cheapest": 100
-        }
-      ],
-      "shopLinks": [
-        {
-          "shop": "FullAhead",
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
-        },
-        {
-          "shop": "TCG Library",
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
-        },
-        {
-          "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
-        },
-        {
-          "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=P01-003"
-        }
-      ]
-    },
-    "P01-005": {
-      "price": 300,
-      "updated": "2026-10-05",
-      "sources": [
-        {
-          "name": "FullAhead",
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
-        },
-        {
-          "name": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=P01-005+我妻善逸+PR"
-        },
-        {
-          "name": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=P01-005+我妻善逸+PR"
-        }
-      ],
-      "offers": [
-        {
-          "shop": "FullAhead",
-          "price": 380,
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
-        },
-        {
-          "shop": "メルカリ",
-          "price": 300,
-          "url": "https://jp.mercari.com/search?keyword=P01-005+我妻善逸+PR"
-        },
-        {
-          "shop": "メルカリ",
-          "price": 600,
-          "url": "https://jp.mercari.com/search?keyword=P01-005+我妻善逸+PR"
-        }
-      ],
-      "average": 427,
-      "marketValue": 380,
-      "history": [
-        {
-          "date": "2026-10-05",
-          "market": 380,
-          "average": 427,
-          "cheapest": 300
-        }
-      ],
-      "shopLinks": [
-        {
-          "shop": "FullAhead",
-          "url": "https://pt-fullahead.com/shopbrand/kynbs/"
-        },
-        {
-          "shop": "TCG Library",
-          "url": "https://tcg-library.com/collections/kimetsu-nichirin-battle-slash"
-        },
-        {
-          "shop": "カードショップ カリントウ",
-          "url": "https://item.rakuten.co.jp/karintou10/c/0000006150/"
-        },
-        {
-          "shop": "メルカリ",
-          "url": "https://jp.mercari.com/search?keyword=P01-005"
-        }
-      ]
+      "mercari": {
+        "status": "manual-search",
+        "median": null,
+        "samples": [],
+        "url": "https://jp.mercari.com/search?keyword=P02-002+%E8%83%A1%E8%9D%B6%E3%81%97%E3%81%AE%E3%81%B6+PR",
+        "updated": "2026-10-06"
+      },
+      "history": []
     }
   },
   "version": 6,
   "v6": 2,
   "historyPolicy": "One dated snapshot per successful daily updater run; all historical dates are retained permanently. Missing days remain missing; no historical values are invented.",
   "pricePolicy": "Market value is the median of distinct positive source prices. Unavailable sources are not treated as ¥0. Historical daily snapshots use only prices successfully fetched on that date.",
+  "sourcesFetchedToday": [
+    "FullAhead",
+    "FullAhead Rakuten",
+    "TCG Library A01",
+    "TCG Library all",
+    "カードショップ カリントウ A01",
+    "カードショップ カリントウ A02"
+  ],
   "mercariNote": "Mercari is kept as a direct search/reference link. Automated scraping is disabled; an unavailable Mercari value is never treated as ¥0."
 }

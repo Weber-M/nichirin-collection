@@ -1,7 +1,12 @@
 {
-  "updated": "2026-10-05",
+  "updated": "2026-10-06",
   "source": "https://p.eagate.573.jp/game/kimetsu/bslash/news/index.html",
   "items": [
+    {
+      "date": "2026.10.06",
+      "title": "バージョンアップのお知らせ",
+      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/1006.html"
+    },
     {
       "date": "2026.09.25",
       "title": "不具合対応のお知らせ",
@@ -18,19 +23,49 @@
       "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/0918.html"
     },
     {
-      "date": "2026.09.18",
-      "title": "「ランクマッチ」の解禁が9月24日（木）10時からに決定！！",
-      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/0918_1.html"
+      "date": "2026.09.17",
+      "title": "現在確認されている不具合につきまして",
+      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/0917.html"
     },
     {
-      "date": "2026.09.16",
-      "title": "2弾カードリスト公開！",
-      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/0916.html"
+      "date": "2026.09.10",
+      "title": "エクストラバトル挑戦状が登場！",
+      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/0910.html"
     },
     {
-      "date": "2026.09.09",
-      "title": "「日輪刀手引ノ書・壱」発売！煉󠄁獄杏寿郎のPRカードも同梱！",
-      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/0909.html"
+      "date": "2026.09.08",
+      "title": "バージョンアップのお知らせ",
+      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/0908.html"
+    },
+    {
+      "date": "2026.09.03",
+      "title": "9月3日は我妻善逸の誕生日！",
+      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/0903.html"
+    },
+    {
+      "date": "2026.08.18",
+      "title": "バージョンアップのお知らせ",
+      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/0818.html"
+    },
+    {
+      "date": "2026.08.17",
+      "title": "不具合対応のお知らせ",
+      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/0817.html"
+    },
+    {
+      "date": "2026.08.07",
+      "title": "現在確認されている不具合につきまして",
+      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/0807.html"
+    },
+    {
+      "date": "2026.08.05",
+      "title": "バージョンアップのお知らせ",
+      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/0805.html"
+    },
+    {
+      "date": "2026.07.27",
+      "title": "現在確認されている不具合につきまして",
+      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/0727.html"
     },
     {
       "date": "2026.07.21",
@@ -38,9 +73,19 @@
       "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/0721_1.html"
     },
     {
+      "date": "2026.07.21",
+      "title": "バージョンアップのお知らせ",
+      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/0721_2.html"
+    },
+    {
       "date": "2026.07.03",
       "title": "最強ジャンプ8月号の付録に炭治郎のPRカードが登場！",
       "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/0703.html"
+    },
+    {
+      "date": "2026.06.19",
+      "title": "『ジャンプビクトリーカーニバル2026』に出展決定！",
+      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/0619.html"
     }
   ]
 }
