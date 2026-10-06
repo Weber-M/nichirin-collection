@@ -124,6 +124,19 @@ header{position:sticky;top:0;z-index:10;background:rgba(9,9,11,.92);backdrop-fil
 .v6-history button,.v6-compare { padding:5px 8px; font-size:10px; }
 
 .news-panel{max-width:1180px;margin:10px auto 0;padding:12px;border:1px solid #292931;border-radius:13px;background:#111116}.news-head{display:flex;align-items:center;justify-content:space-between;gap:10px}.news-head h2{font-size:16px;margin:0}.news-head a,.news-item a{color:#e8bd52;text-decoration:none}.news-list{margin-top:7px}.news-item{display:flex;gap:9px;padding:7px 0;border-top:1px solid #292931;font-size:12px}.news-date{color:#9b9ba5;white-space:nowrap}.news-link{text-decoration:none;display:inline-block}.news-item-title{min-width:0}.promo-note{font-size:10px;color:#9b9ba5;margin-top:3px}
+
+/* V6 market panel: compact by default, expands only when clicked */
+.v6-market { max-width: min(360px, 72vw); transition: max-height .18s ease, padding .18s ease; }
+.v6-market.collapsed { cursor: pointer; }
+.v6-market.collapsed .v6-market-details { display: none; }
+.v6-market.expanded { max-width: min(430px, 84vw); }
+.v6-market .v6-market-main { cursor: pointer; }
+.v6-market.collapsed .v6-market-main { justify-content: flex-start; }
+.v6-market.collapsed .v6-estimate { font-size: 20px; }
+.v6-market.collapsed .v6-market-main > div:first-child { flex: 1; }
+.v6-market.collapsed .v6-compact-label { display: block; }
+.v6-market.expanded .v6-compact-label { display: none; }
+.v6-market-details { margin-top: 8px; }
 </style></head><body>
 <header><h1>鬼滅の刃 日輪バトルスラッシュ</h1><div class="sub">My Collection — 公式ロゴ使用・タップで拡大・裏返し。所持ボタンはカード画像とは別です。</div><div class="stats"><div class="stat"><b id="count">—</b><span>COLLECTED</span></div><div class="stat"><b id="pct">—</b><span>COMPLETE</span></div><div class="stat"><b id="value">—</b><span>OWNED VALUE</span></div><div class="stat"><b id="setValue">—</b><span>SET VALUE</span></div></div></header>
 <div class="toolbar"><div class="row"><button class="pill active" data-set="ALL">ALL</button><button class="pill" data-set="A01">A01</button><button class="pill" data-set="A02">A02</button><button class="pill" data-owned="missing">未所持</button><button class="pill" data-owned="owned">所持</button><select id="rar"><option value="ALL">全レアリティ</option><option value="UR">UR</option><option value="SR">SR</option><option value="R">R</option><option value="C">C</option><option value="PR">PR</option></select></div><div class="row"><input id="search" class="search" placeholder="カード番号・名前を検索"><button id="refreshPrices" class="tool">↻ 価格更新</button><a class="tool news-link" href="https://p.eagate.573.jp/game/kimetsu/bslash/news/index.html" target="_blank" rel="noopener">📰 公式ニュース</a><button id="settings" class="tool">⚙ 設定</button></div></div>
@@ -157,22 +170,40 @@ function drawHistory(c){const canvas=$('v6-chart');if(!canvas)return;const rect=
 function selectHistoryPoint(c,clientX){const canvas=$('v6-chart'),info=$('v6-history-info');if(!canvas||!info||!canvas._historyPoints?.length)return;const r=canvas.getBoundingClientRect();const x=clientX-r.left;let best=canvas._historyPoints[0],dist=Math.abs(best.x-x);canvas._historyPoints.forEach(p=>{const d=Math.abs(p.x-x);if(d<dist){dist=d;best=p}});if(dist>32){info.textContent='点を選択すると、その日の価格を表示します。';return}const pt=best.pt;info.innerHTML=`<b>${escapeHtml(pt.date)}</b>　市場価格 ¥${Number(pt.market).toLocaleString()}${Number.isFinite(Number(pt.average))?'　平均 ¥'+Number(pt.average).toLocaleString():''}${Number.isFinite(Number(pt.cheapest))?'　最安 ¥'+Number(pt.cheapest).toLocaleString():''}`}
 function renderMarketPanel(c){
 const pd=cardDataPrice(c),offers=validOffers(c).sort((a,b)=>Number(a.price)-Number(b.price)),mv=marketValue(c),avg=cardAverage(c),low=offers.length?Number(offers[0].price):cardPrice(c),hist=historyData(c);
-let html=`<div class="v6-market"><h3>市場価格</h3><div class="v6-market-main"><div><div class="v6-estimate">${mv!=null?'¥'+mv.toLocaleString():'—'}</div><div class="v6-sub">複数ショップの中央値${avg!=null?' ・ 平均 ¥'+avg.toLocaleString():''}</div><div class="v6-sub">最安 ${low!=null?'¥'+Number(low).toLocaleString():'—'}</div></div><button id="v6-offers-toggle" class="tool v6-compare">価格を見る ▼</button></div><div id="v6-offers" class="v6-offers">${offers.length?offers.map((x,i)=>`<div class="v6-offer"><a href="${escapeHtml(x.url)}" target="_blank" rel="noopener">${escapeHtml(x.shop)}${x.stale?'（前回取得）':''} ↗</a><span>${Number(x.price).toLocaleString()}円${i===0?' ★':''}</span></div>`).join(''):'<div class="v6-offer"><span>自動取得できた価格なし</span></div>'}<div class="v6-offer"><a href="${escapeHtml(mercariUrl(c))}" target="_blank" rel="noopener">メルカリ ↗</a><span>自動取得せず検索で確認</span></div></div><div class="v6-history"><button id="v6-history-toggle" class="tool">価格推移を見る</button><canvas id="v6-chart" class="v6-chart" hidden></canvas><div id="v6-history-info" class="v6-note">点を選択すると、その日の価格を表示します。</div><div id="v6-history-note" class="v6-note">${hist.length}日分を保存中。履歴は削除・上限設定なしです。</div></div></div>`;
+const expanded=!!state.detailsExpanded;
+let html=`<div class="v6-market ${expanded?'expanded':'collapsed'}" id="v6-market">
+<div class="v6-market-main" id="v6-market-main" role="button" tabindex="0" aria-expanded="${expanded}">
+<div><div class="v6-estimate">${mv!=null?'¥'+mv.toLocaleString():'—'}</div>
+<div class="v6-sub">市場価格</div>
+<div class="v6-sub v6-compact-label">クリックして詳細を見る</div></div>
+<div class="v6-compact-label" style="font-size:18px;opacity:.75">›</div>
+</div>
+<div class="v6-market-details" ${expanded?'':'hidden'}>
+<div class="v6-sub">複数ショップの中央値${avg!=null?' ・ 平均 ¥'+avg.toLocaleString():''}</div>
+<div class="v6-sub">最安 ${low!=null?'¥'+Number(low).toLocaleString():'—'}</div>
+<div style="margin-top:8px"><button id="v6-offers-toggle" class="tool v6-compare" type="button">価格を見る ▼</button></div>
+<div id="v6-offers" class="v6-offers">${offers.length?offers.map((x,i)=>`<div class="v6-offer"><a href="${escapeHtml(x.url)}" target="_blank" rel="noopener">${escapeHtml(x.shop)}${x.stale?'（前回取得）':''} ↗</a><span>${Number(x.price).toLocaleString()}円${i===0?' ★':''}</span></div>`).join(''):'<div class="v6-offer"><span>自動取得できた価格なし</span></div>'}<div class="v6-offer"><a href="${escapeHtml(mercariUrl(c))}" target="_blank" rel="noopener">メルカリ ↗</a><span>自動取得せず検索で確認</span></div></div>
+<div class="v6-history"><button id="v6-history-toggle" class="tool" type="button">価格推移を見る</button><canvas id="v6-chart" class="v6-chart" hidden></canvas><div id="v6-history-info" class="v6-note">点を選択すると、その日の価格を表示します。</div><div id="v6-history-note" class="v6-note">${hist.length}日分を保存中。履歴は削除・上限設定なしです。</div></div>
+</div></div>`;
 $('vprices').innerHTML=html;
+const panel=$('v6-market'),main=$('v6-market-main'),details=panel?.querySelector('.v6-market-details');
+function expandMarket(){state.detailsExpanded=true;panel.classList.remove('collapsed');panel.classList.add('expanded');if(details)details.hidden=false;main?.setAttribute('aria-expanded','true');}
+main?.addEventListener('click',e=>{e.stopPropagation();if(!state.detailsExpanded)expandMarket();});
+main?.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&!state.detailsExpanded){e.preventDefault();expandMarket();}});
 const cb=$('v6-offers-toggle');
-if(cb)cb.onclick=()=>{state.detailsExpanded=true;const el=$('v6-offers');const isOpen=el.classList.toggle('open');cb.textContent=isOpen?'価格を隠す ▲':'価格を見る ▼';};
+if(cb)cb.onclick=e=>{e.stopPropagation();const el=$('v6-offers');const isOpen=el.classList.toggle('open');cb.textContent=isOpen?'価格を隠す ▲':'価格を見る ▼';};
 const hb=$('v6-history-toggle');
-if(hb)hb.onclick=()=>{state.detailsExpanded=true;const ch=$('v6-chart');const isHidden=ch.hidden;ch.hidden=!isHidden;hb.textContent=isHidden?'価格推移を隠す ▲':'価格推移を見る';if(isHidden)drawHistory(c)};
-const ch=$('v6-chart');if(ch)ch.addEventListener('pointerup',e=>selectHistoryPoint(c,e.clientX));
+if(hb)hb.onclick=e=>{e.stopPropagation();const ch=$('v6-chart');const isHidden=ch.hidden;ch.hidden=!isHidden;hb.textContent=isHidden?'価格推移を隠す ▲':'価格推移を見る';if(isHidden)drawHistory(c)};
+const ch=$('v6-chart');if(ch)ch.addEventListener('pointerup',e=>{e.stopPropagation();selectHistoryPoint(c,e.clientX)});
+const links=panel?.querySelectorAll('a');links?.forEach(a=>a.addEventListener('click',e=>e.stopPropagation()));
 }
+
 function collapseViewerDetails(){
 state.detailsExpanded=false;
-const offers=$('v6-offers'); if(offers)offers.classList.remove('open');
-const cb=$('v6-offers-toggle'); if(cb)cb.textContent='価格を見る ▼';
-const ch=$('v6-chart'); if(ch)ch.hidden=true;
-const hb=$('v6-history-toggle'); if(hb)hb.textContent='価格推移を見る';
-const info=$('v6-history-info'); if(info)info.textContent='点を選択すると、その日の価格を表示します。';
+const c=state.cards[state.current];
+if(c)renderMarketPanel(c);
 }
+
 function syncViewer(){const c=state.cards[state.current];$('viewer').style.setProperty('--viewer-bg',c.img?`url("${c.img}")`:'none');$('vlabel').textContent=`${c.id}  ${c.name} · ${c.rarity}`;$('ownBtn').textContent=isOwned(c.id)?'✓ 所持':'○ 未所持';$('ownBtn').classList.toggle('on',isOwned(c.id));renderMarketPanel(c);const url=state.flipped?c.back:c.img;if(url){$('big').style.display='block';$('noimage').style.display='none';$('big').src=url;$('big').alt=c.name}else{$('big').style.display='none';$('noimage').style.display='grid';$('noimage').innerHTML=`<b>${c.id}</b><br>${c.name}<br><small>${c.promoSource?escapeHtml(c.promoSource)+'<br>画像は後から追加できます':'画像なし'}</small>`}}
 function move(d){state.current=(state.current+d+state.cards.length)%state.cards.length;state.flipped=false;state.detailsExpanded=false;syncViewer()}
 async function loadNews(){try{const r=await fetch('data/news.json?ts='+Date.now(),{cache:'no-store'});const d=await r.json();const items=(d.items||[]).slice(0,6);$('newsList').innerHTML=items.length?items.map(x=>`<div class="news-item"><span class="news-date">${escapeHtml(x.date)}</span><a class="news-item-title" href="${escapeHtml(x.url)}" target="_blank" rel="noopener">${escapeHtml(x.title)} ↗</a></div>`).join(''):'<span class="num">ニュースがありません。</span>'}catch(e){$('newsList').innerHTML='<a href="https://p.eagate.573.jp/game/kimetsu/bslash/news/index.html" target="_blank" rel="noopener">公式ニュース一覧を開く ↗</a>'}}
@@ -182,10 +213,13 @@ function openSettings(){$('modal').classList.add('open');renderSources()}
 function renderSources(){const sets=state.sets.map(s=>`<section><b>${s.id}</b><div>${(s.sources||[]).length?s.sources.map(x=>`<p><a href="${x.url}" target="_blank" rel="noopener">${x.name}</a></p>`).join(''):'<span class="num">販売店リンクは後から追加できます。</span>'}</div></section>`).join('');$('sources').innerHTML=sets}
 function exportCollection(){const blob=new Blob([JSON.stringify(saved,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='nichirin-collection.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}
 function importCollection(file){const fr=new FileReader();fr.onload=()=>{try{const x=JSON.parse(fr.result);Object.keys(saved).forEach(k=>delete saved[k]);Object.assign(saved,x);localStorage.setItem('nichirin-owned',JSON.stringify(saved));render()}catch{alert('バックアップを読み込めませんでした。')}};fr.readAsText(file)}
-$('big').onclick=()=>{const c=state.cards[state.current];if(state.detailsExpanded){collapseViewerDetails();return}if(c.back){state.flipped=!state.flipped;syncViewer()}};
+$('big').onclick=e=>{e.stopPropagation();const c=state.cards[state.current];if(state.detailsExpanded){collapseViewerDetails();return}if(c.back){state.flipped=!state.flipped;syncViewer()}};
 $('ownBtn').onclick=e=>{e.stopPropagation();toggleOwned(state.cards[state.current].id)};$('close').onclick=()=>$('overlay').classList.remove('open');$('prev').onclick=()=>move(-1);$('next').onclick=()=>move(1);
 $('rar').onchange=e=>{state.rarity=e.target.value;render()};$('search').oninput=e=>{state.q=e.target.value;render()};$('refreshPrices').onclick=refreshPrices;$('settings').onclick=openSettings;$('modalClose').onclick=()=>$('modal').classList.remove('open');$('export').onclick=exportCollection;$('import').onchange=e=>e.target.files[0]&&importCollection(e.target.files[0]);
 document.querySelectorAll('[data-set]').forEach(b=>b.onclick=()=>{document.querySelectorAll('[data-set]').forEach(x=>x.classList.remove('active'));b.classList.add('active');state.set=b.dataset.set;render()});document.querySelectorAll('[data-owned]').forEach(b=>b.onclick=()=>{state.own=state.own===b.dataset.owned?'ALL':b.dataset.owned;document.querySelectorAll('[data-owned]').forEach(x=>x.classList.remove('active'));if(state.own!=='ALL')b.classList.add('active');render()});
+$('viewer').addEventListener('click',e=>{if(e.target===$('viewer') && state.detailsExpanded)collapseViewerDetails();});
+$('overlay').addEventListener('click',e=>{if(e.target===$('overlay') && state.detailsExpanded)collapseViewerDetails();});
+$('vprices').addEventListener('click',e=>e.stopPropagation());
 document.addEventListener('keydown',e=>{if(!$('overlay').classList.contains('open'))return;if(e.key==='Escape')$('overlay').classList.remove('open');if(e.key==='ArrowLeft')move(-1);if(e.key==='ArrowRight')move(1)});
 let sx=0;$('viewer').addEventListener('touchstart',e=>sx=e.changedTouches[0].clientX,{passive:true});$('viewer').addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>60)move(dx<0?1:-1)},{passive:true});
 window.addEventListener('resize',()=>{const ch=$('v6-chart');if(ch&&!ch.hidden&&$('overlay').classList.contains('open'))drawHistory(state.cards[state.current])});
