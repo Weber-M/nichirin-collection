@@ -3,6 +3,11 @@
   "source": "https://p.eagate.573.jp/game/kimetsu/bslash/news/index.html",
   "items": [
     {
+      "date": "2026.10.09",
+      "title": "ランクマッチシーズン1の開催期間とアイテムを公開！",
+      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/event/rankmatch/001/index.html"
+    },
+    {
       "date": "2026.10.06",
       "title": "バージョンアップのお知らせ",
       "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/1006.html"
@@ -23,9 +28,24 @@
       "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/0918.html"
     },
     {
+      "date": "2026.09.18",
+      "title": "｢ランクマッチ」の解禁が9月24日（木）10時からに決定！！",
+      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/howto/mode_vs.html"
+    },
+    {
       "date": "2026.09.17",
       "title": "現在確認されている不具合につきまして",
       "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/0917.html"
+    },
+    {
+      "date": "2026.09.16",
+      "title": "2弾カードリスト公開！",
+      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/card/index.html?part=2"
+    },
+    {
+      "date": "2026.09.14",
+      "title": "ゲーム内イベント「頂を目指せ！ランキングバトル」開催！",
+      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/event/ranking/index.html"
     },
     {
       "date": "2026.09.10",
@@ -43,6 +63,16 @@
       "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/0903.html"
     },
     {
+      "date": "2026.08.27",
+      "title": "ゲーム内イベント「大ダメージで大量ゲット！アイテムくじバトル」に冨岡義勇が参戦！",
+      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/event/lottery/index.html"
+    },
+    {
+      "date": "2026.08.20",
+      "title": "ゲーム内イベント「大ダメージで大量ゲット！アイテムくじバトル」に竈門禰󠄀豆子が参戦！",
+      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/event/lottery/index.html"
+    },
+    {
       "date": "2026.08.18",
       "title": "バージョンアップのお知らせ",
       "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/0818.html"
@@ -53,39 +83,24 @@
       "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/0817.html"
     },
     {
+      "date": "2026.08.12",
+      "title": "ゲーム内イベント「大ダメージで大量ゲット！アイテムくじバトル」開催！",
+      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/event/lottery/index.html"
+    },
+    {
       "date": "2026.08.07",
       "title": "現在確認されている不具合につきまして",
       "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/0807.html"
     },
     {
       "date": "2026.08.05",
+      "title": "｢バーサスモード」の解禁が8月7日（金）10時からに決定！！ ｢カジュアルマッチ」では、隣同士での対戦が可能になるぞ！",
+      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/howto/mode_vs.html"
+    },
+    {
+      "date": "2026.08.05",
       "title": "バージョンアップのお知らせ",
       "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/0805.html"
-    },
-    {
-      "date": "2026.07.27",
-      "title": "現在確認されている不具合につきまして",
-      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/0727.html"
-    },
-    {
-      "date": "2026.07.21",
-      "title": "Vジャンプ9月特大号の付録に累のPRカードが登場！",
-      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/0721_1.html"
-    },
-    {
-      "date": "2026.07.21",
-      "title": "バージョンアップのお知らせ",
-      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/0721_2.html"
-    },
-    {
-      "date": "2026.07.03",
-      "title": "最強ジャンプ8月号の付録に炭治郎のPRカードが登場！",
-      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/0703.html"
-    },
-    {
-      "date": "2026.06.19",
-      "title": "『ジャンプビクトリーカーニバル2026』に出展決定！",
-      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/0619.html"
     }
   ]
 }
