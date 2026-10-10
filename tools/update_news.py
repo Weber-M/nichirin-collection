@@ -129,7 +129,6 @@ OUT.write_text(
 )
 
 print(f"Saved {min(len(items), 20)} articles to {OUT}")
-```
 
 if **name** == "**main**":
 main()
