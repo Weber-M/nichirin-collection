@@ -18,48 +18,46 @@ UA = "Mozilla/5.0 (compatible; NichirinCollectionNewsUpdater/1.0)"
 DATE_RE = re.compile(r"(20\d{2})[./年](\d{2})[./月](\d{2})")
 
 class NewsParser(HTMLParser):
-"""Collect links to individual official news articles."""
+    """Collect links to individual official news articles."""
 
-```
-def __init__(self):
-    super().__init__(convert_charrefs=True)
-    self.links = []
-    self.current_href = None
-    self.current_text = []
-
-def handle_starttag(self, tag, attrs):
-    if tag.lower() == "a":
-        self.current_href = dict(attrs).get("href")
-        self.current_text = []
-
-def handle_data(self, data):
-    if self.current_href is not None:
-        self.current_text.append(data)
-
-def handle_endtag(self, tag):
-    if tag.lower() == "a" and self.current_href is not None:
-        self.links.append(
-            (self.current_href, " ".join(self.current_text))
-        )
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.links = []
         self.current_href = None
         self.current_text = []
-```
+    
+    def handle_starttag(self, tag, attrs):
+        if tag.lower() == "a":
+            self.current_href = dict(attrs).get("href")
+            self.current_text = []
+    
+    def handle_data(self, data):
+        if self.current_href is not None:
+            self.current_text.append(data)
+    
+    def handle_endtag(self, tag):
+        if tag.lower() == "a" and self.current_href is not None:
+            self.links.append(
+                (self.current_href, " ".join(self.current_text))
+            )
+            self.current_href = None
+            self.current_text = []
 
 def fetch():
-request = Request(
-URL,
-headers={
-"User-Agent": UA,
-"Accept-Language": "ja,en;q=0.8",
-},
-)
-with urlopen(request, timeout=30) as response:
-return response.read().decode("utf-8", "replace")
+    request = Request(
+    URL,
+    headers={
+    "User-Agent": UA,
+    "Accept-Language": "ja,en;q=0.8",
+    },
+    )
+    with urlopen(request, timeout=30) as response:
+    return response.read().decode("utf-8", "replace")
 
 def main():
-html = fetch()
-parser = NewsParser()
-parser.feed(html)
+    html = fetch()
+    parser = NewsParser()
+    parser.feed(html)
 
 ```
 items = []
