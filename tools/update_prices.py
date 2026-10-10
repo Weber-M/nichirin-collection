@@ -188,6 +188,10 @@ def main():
 
             try:
                 prices = parse_shop(get(url))
+                print(
+                    f"PRICE DEBUG | {src['name']} | page {page} "
+                    f"| extracted {len(prices)} card prices"
+                )
                 successful_sources.add(src['name'])
             except Exception as e:
                 print('WARN', src['name'], page, e)
