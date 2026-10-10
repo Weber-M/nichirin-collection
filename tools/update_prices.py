@@ -194,6 +194,17 @@ def main():
                 # )
                 # successful_sources.add(src['name'])
                 html = get(url)
+                if src["kind"] == "rakuten" and len(html) < 200:
+                    print(f"RAKUTEN RESPONSE | {src['name']} | {html!r}")
+                
+                if src["kind"] == "fullahead":
+                    print(f"FULLAHEAD RAW TITLE | {html[:300]!r}")
+                
+                if src["kind"] == "tcg" and page == 1:
+                    match = re.search(r"A01-001", html)
+                    if match:
+                        print(f"TCG RAW CARD SNIPPET | {html[max(0, match.start()-300):match.start()+700]!r}")
+                      
                 prices = parse_shop(html)
                 
                 if not prices:
@@ -313,6 +324,15 @@ def main():
         'sourcesFetchedToday': sorted(successful_sources),
         'mercariNote': 'Mercari is kept as a direct search/reference link. Automated scraping is disabled; an unavailable Mercari value is never treated as ¥0.',
     }
+    
+   fresh_count = sum(len(source_prices) for source_prices in fetched.values())
+
+    if fresh_count == 0:
+        raise RuntimeError(
+            "No fresh card prices were collected. "
+            "Existing prices.json was not updated."
+        )
+    
     OUT.write_text(json.dumps(out, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print('Updated', OUT, 'cards=', len(cards), 'sources=', ', '.join(sorted(successful_sources)))
 
