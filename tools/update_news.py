@@ -51,7 +51,7 @@ def fetch():
     "Accept-Language": "ja,en;q=0.8",
     },
     )
-    with urlopen(request, timeout=30) as response:
+with urlopen(request, timeout=30) as response:
     return response.read().decode("utf-8", "replace")
 
 def main():
@@ -59,7 +59,6 @@ def main():
     parser = NewsParser()
     parser.feed(html)
 
-```
 items = []
 seen = set()
 
