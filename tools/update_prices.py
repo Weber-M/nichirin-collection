@@ -325,7 +325,10 @@ def main():
         'mercariNote': 'Mercari is kept as a direct search/reference link. Automated scraping is disabled; an unavailable Mercari value is never treated as ¥0.',
     }
     
-   fresh_count = sum(len(source_prices) for source_prices in fetched.values())
+    fresh_count = sum(
+        len(source_prices)
+        for source_prices in fetched.values()
+    )
 
     if fresh_count == 0:
         raise RuntimeError(
