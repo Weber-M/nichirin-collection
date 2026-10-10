@@ -9,7 +9,7 @@ from pathlib import Path
 from urllib.parse import urljoin
 from urllib.request import Request, urlopen
 
-ROOT = Path(**file**).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "news.json"
 
 URL = "https://p.eagate.573.jp/game/kimetsu/bslash/news/index.html"
