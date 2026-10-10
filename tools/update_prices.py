@@ -187,12 +187,45 @@ def main():
                 url = src['base'] if page == 1 else f"{src['base']}?p={page}"
 
             try:
-                prices = parse_shop(get(url))
+                # prices = parse_shop(get(url))
+                # print(
+                #     f"PRICE DEBUG | {src['name']} | page {page} "
+                #     f"| extracted {len(prices)} card prices"
+                # )
+                # successful_sources.add(src['name'])
+                html = get(url)
+                prices = parse_shop(html)
+                
+                if not prices:
+                    text = clean(html)
+                    card_id_count = len(
+                        re.findall(r"\b(?:A|P|T)\d{2}-\d{3}\b", text)
+                    )
+                    yen_count = len(
+                        re.findall(r"(?:¥|￥)\s*[0-9,]+|[0-9,]+\s*円", text)
+                    )
+                    page_title = re.search(
+                        r"<title[^>]*>(.*?)</title>",
+                        html,
+                        re.I | re.S,
+                    )
+                    title = (
+                        re.sub(r"\s+", " ", page_title.group(1)).strip()
+                        if page_title else "(no title)"
+                    )
+                    print(
+                        f"FETCH DEBUG | {src['name']} | page {page} "
+                        f"| chars={len(html)} | card_ids={card_id_count} "
+                        f"| price_tokens={yen_count} | title={title[:120]}"
+                    )
+                
                 print(
                     f"PRICE DEBUG | {src['name']} | page {page} "
                     f"| extracted {len(prices)} card prices"
                 )
-                successful_sources.add(src['name'])
+                
+                if prices:
+                    successful_sources.add(src["name"])
             except Exception as e:
                 print('WARN', src['name'], page, e)
                 continue
