@@ -7,7 +7,7 @@ import re
 import time
 from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
 from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -72,10 +72,11 @@ def main():
 
         article_url = urljoin(URL, href)
 
-        if not re.search(
-            r"/news/\d{4}/[^/?#]+\.html(?:[?#].*)?$",
-            article_url,
-            re.I,
+        parsed_url = urlparse(article_url)
+
+        if (
+            parsed_url.netloc.lower() != "p.eagate.573.jp"
+            or not parsed_url.path.startswith("/game/kimetsu/bslash/")
         ):
             continue
 
