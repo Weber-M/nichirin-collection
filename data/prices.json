@@ -7380,13 +7380,6 @@
   "v6": 2,
   "historyPolicy": "One dated snapshot per successful daily updater run; all historical dates are retained permanently. Missing days remain missing; no historical values are invented.",
   "pricePolicy": "Market value is the median of distinct positive source prices. Unavailable sources are not treated as ¥0. Historical daily snapshots use only prices successfully fetched on that date.",
-  "sourcesFetchedToday": [
-    "FullAhead",
-    "FullAhead Rakuten",
-    "TCG Library A01",
-    "TCG Library all",
-    "カードショップ カリントウ A01",
-    "カードショップ カリントウ A02"
-  ],
+  "sourcesFetchedToday": [],
   "mercariNote": "Mercari is kept as a direct search/reference link. Automated scraping is disabled; an unavailable Mercari value is never treated as ¥0."
 }
