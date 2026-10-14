@@ -1,616 +1,220 @@
 #!/usr/bin/env python3
-"""Daily price updater for Nichirin Battle Slash V6.
-
-Price policy
-------------
-* Uses multiple public shop sources when they are reachable.
-* A source that cannot be fetched is NOT treated as ¥0.
-* The current market estimate is the median of the distinct source prices
-  successfully fetched for that card on this run.
-* Previous offers are retained as last-known values when a source temporarily
-  fails, but today's history point uses ONLY prices fetched successfully today.
-* One history snapshot is stored per calendar day. Existing history is never
-  truncated, so the project can accumulate a multi-year price history.
-* Mercari gets a direct search link, but this updater does not scrape Mercari.
-  Mercari's current platform terms prohibit automated scraping/crawling, so an
-  unavailable Mercari value remains unavailable rather than becoming ¥0.
-"""
-
-import html as html_module
-import json
-import re
-import statistics
-import time
+# See the accompanying response for the intended pricing policy.
+# This file is a safe updater foundation; all current observations are asking prices.
+import csv, html, json, re, statistics, time
+from collections import Counter
+from datetime import date
+from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
-import csv
-from collections import Counter
 
-ROOT = Path(__file__).resolve().parents[1]
-CATALOG = ROOT / "data" / "catalog.json"
-OUT = ROOT / "data" / "prices.json"
-TODAY = time.strftime("%Y-%m-%d", time.gmtime())
-
-UA = (
-    "Mozilla/5.0 (X11; Linux x86_64) "
-    "AppleWebKit/537.36 (KHTML, like Gecko) "
-    "Chrome/130.0.0.0 Safari/537.36"
-)
-
-CARD_ID = r"\b([APT]\d{2}-\d{3})\b"
-CARD_ID_RE = re.compile(CARD_ID, re.I)
-
-SOURCES = [
-    {
-        "name": "FullAhead",
-        "shop": "FullAhead",
-        "base": "https://pt-fullahead.com/shopbrand/kynbs/",
-        "pages": range(1, 5),
-        "kind": "fullahead",
-    },
-    {
-        "name": "FullAhead Rakuten",
-        "shop": "FullAhead Rakuten",
-        "base": "https://item.rakuten.co.jp/fullahead/c/0000012537/",
-        "pages": range(1, 3),
-        "kind": "rakuten",
-    },
-    {
-        "name": "TCG Library A01",
-        "shop": "TCG Library",
-        "base": (
-            "https://tcg-library.com/collections/"
-            "kimetsu-nichirin-battle-slash-a01"
-        ),
-        "pages": range(1, 3),
-        "kind": "tcg",
-    },
-    {
-        "name": "TCG Library all",
-        "shop": "TCG Library",
-        "base": (
-            "https://tcg-library.com/collections/"
-            "kimetsu-nichirin-battle-slash"
-        ),
-        "pages": range(1, 4),
-        "kind": "tcg",
-    },
-    {
-        "name": "カードショップ カリントウ A01",
-        "shop": "カードショップ カリントウ",
-        "base": "https://item.rakuten.co.jp/karintou10/c/0000006149/",
-        "pages": range(1, 2),
-        "kind": "rakuten",
-    },
-    {
-        "name": "カードショップ カリントウ A02",
-        "shop": "カードショップ カリントウ",
-        "base": "https://item.rakuten.co.jp/karintou10/c/0000006150/",
-        "pages": range(1, 2),
-        "kind": "rakuten",
-    },
+ROOT=Path(__file__).resolve().parents[1]
+CATALOG=ROOT/'data/catalog.json'
+OUT=ROOT/'data/prices.json'
+AUDIT=ROOT/'data/price_audit.csv'
+TODAY=date.today().isoformat()
+UA='Mozilla/5.0 (compatible; NichirinCollectionPriceUpdater/4.0)'
+SOURCES=[
+ {'name':'FullAhead','shop':'FullAhead','base':'https://pt-fullahead.com/shopbrand/kynbs/','pages':range(1,6),'kind':'fullahead'},
+ {'name':'FullAhead Rakuten','shop':'FullAhead Rakuten','base':'https://item.rakuten.co.jp/fullahead/c/0000012537/','pages':range(1,3),'kind':'rakuten'},
+ {'name':'TCG Library A01','shop':'TCG Library','base':'https://tcg-library.com/collections/kimetsu-nichirin-battle-slash-a01','pages':range(1,3),'kind':'tcg'},
+ {'name':'TCG Library all','shop':'TCG Library','base':'https://tcg-library.com/collections/kimetsu-nichirin-battle-slash','pages':range(1,4),'kind':'tcg'},
+ {'name':'カードショップ カリントウ A01','shop':'カードショップ カリントウ','base':'https://item.rakuten.co.jp/karintou10/c/0000006149/','pages':range(1,2),'kind':'rakuten'},
+ {'name':'カードショップ カリントウ A02','shop':'カードショップ カリントウ','base':'https://item.rakuten.co.jp/karintou10/c/0000006150/','pages':range(1,2),'kind':'rakuten'},
 ]
-
-SHOP_LINKS = {
-    "FullAhead": "https://pt-fullahead.com/shopbrand/kynbs/",
-    "FullAhead Rakuten": (
-        "https://item.rakuten.co.jp/fullahead/c/0000012537/"
-    ),
-    "TCG Library": (
-        "https://tcg-library.com/collections/"
-        "kimetsu-nichirin-battle-slash"
-    ),
-    "カードショップ カリントウ": (
-        "https://item.rakuten.co.jp/karintou10/c/0000006149/"
-    ),
+SHOP_LINKS={
+ 'FullAhead':'https://pt-fullahead.com/shopbrand/kynbs/',
+ 'FullAhead Rakuten':'https://item.rakuten.co.jp/fullahead/c/0000012537/',
+ 'TCG Library':'https://tcg-library.com/collections/kimetsu-nichirin-battle-slash',
+ 'カードショップ カリントウ':'https://item.rakuten.co.jp/karintou10/c/0000006149/',
 }
+ID_RE=re.compile(r'\b((?:A|P|T)\d{2}-\d{3})\b')
+PRICE_RE=re.compile(r'(?:¥|￥)\s*([0-9][0-9,]*)|([0-9][0-9,]*)\s*円')
+EXCLUDED=('キズ格安','傷あり','ジャンク','まとめ売り','セット販売','売り切れ','SOLD OUT')
 
+class TextParser(HTMLParser):
+ def __init__(self): super().__init__(convert_charrefs=True); self.parts=[]
+ def handle_data(self,data):
+  if data.strip(): self.parts.append(data.strip())
 
 def get(url):
-    """Fetch a page and decode it using its declared character encoding."""
-    request = Request(
-        url,
-        headers={
-            "User-Agent": UA,
-            "Accept-Language": "ja,en;q=0.8",
-        },
-    )
+ req=Request(url,headers={'User-Agent':UA,'Accept-Language':'ja,en;q=0.8'})
+ with urlopen(req,timeout=25) as r:
+  raw=r.read(); enc=r.headers.get_content_charset() or 'utf-8'
+ for e in (enc,'utf-8','cp932','shift_jis','euc_jp'):
+  try:return raw.decode(e)
+  except (UnicodeDecodeError,LookupError):pass
+ return raw.decode('utf-8','replace')
 
-    with urlopen(request, timeout=30) as response:
-        raw = response.read()
-        charset = response.headers.get_content_charset()
+def visible_text(page):
+ page=re.sub(r'<script\b[^>]*>[\s\S]*?</script>',' ',page,flags=re.I)
+ page=re.sub(r'<style\b[^>]*>[\s\S]*?</style>',' ',page,flags=re.I)
+ p=TextParser();p.feed(page)
+ return re.sub(r'\s+',' ',html.unescape(' '.join(p.parts)))
 
-    if not charset:
-        head = raw[:10000].decode("latin-1", "ignore")
-        match = re.search(
-            r"""charset\s*=\s*["']?\s*([a-zA-Z0-9._-]+)""",
-            head,
-            re.I,
-        )
-        if match:
-            charset = match.group(1)
+def page_url(src,page):
+ if src['kind']=='fullahead':return src['base'] if page==1 else f"{src['base']}page{page}/order/"
+ if src['kind']=='tcg':return src['base'] if page==1 else f"{src['base']}?page={page}"
+ return src['base'] if page==1 else f"{src['base']}?p={page}"
 
-    candidates = []
-    if charset:
-        candidates.append(charset)
-
-    candidates.extend(["utf-8", "cp932", "shift_jis", "euc_jp"])
-
-    tried = set()
-    for encoding in candidates:
-        if encoding.lower() in tried:
-            continue
-        tried.add(encoding.lower())
-        try:
-            return raw.decode(encoding, "strict")
-        except (UnicodeDecodeError, LookupError):
-            continue
-
-    return raw.decode("utf-8", "replace")
-
-
-def clean(html):
-    """Convert HTML into readable text for ordinary shop listings."""
-    html = re.sub(
-        r"<script\b[\s\S]*?</script>",
-        " ",
-        html,
-        flags=re.I,
-    )
-    html = re.sub(
-        r"<style\b[\s\S]*?</style>",
-        " ",
-        html,
-        flags=re.I,
-    )
-    html = re.sub(r"<[^>]+>", " ", html)
-    html = html_module.unescape(html)
-    html = html.replace("\xa0", " ")
-    return re.sub(r"\s+", " ", html).strip()
-
-
-def valid_price(value):
-    try:
-        price = int(float(value))
-    except (TypeError, ValueError, OverflowError):
-        return None
-
-    if 1 <= price <= 1_000_000:
-        return price
-    return None
-
-
-def parse_shop(html):
-    """
-    Parse ordinary Japanese listings where the card ID precedes its price.
-
-    Prefer a regular listing over a listing explicitly labelled キズ格安
-    when both appear on the same page.
-    """
-    text = clean(html)
-    out = {}
-    damaged = {}
-
-    pattern = re.compile(
-        CARD_ID
-        + r".{0,320}?"
-        + r"(?:[¥￥]\s*)?([0-9][0-9,]*)\s*円",
-        re.I | re.S,
-    )
-
-    for match in pattern.finditer(text):
-        cid = match.group(1).upper()
-        price = valid_price(match.group(2))
-        if price is None:
-            continue
-
-        prefix = text[max(0, match.start() - 45):match.start()]
-        is_damaged = "キズ格安" in prefix
-
-        # Keep the first regular listing, but allow it to replace a
-        # previously seen damaged-card listing.
-        if cid not in out or (damaged.get(cid, True) and not is_damaged):
-            out[cid] = price
-            damaged[cid] = is_damaged
-
-    return out
-
-
-def parse_tcg_library(html):
-    """
-    Read TCG Library's embedded Shopify product records.
-
-    Records contain a JPY price and a product title such as
-    竈門炭治郎（A01-001）［UR］.
-    """
-    # Some product data is embedded as an escaped JSON string.
-    normalized = re.sub(r"\\+\"", '"', html)
-    normalized = normalized.replace(r"\/", "/")
-
-    out = {}
-
-    record_pattern = re.compile(
-        r'"price"\s*:\s*\{\s*'
-        r'"amount"\s*:\s*([0-9]+(?:\.[0-9]+)?)\s*,\s*'
-        r'"currencyCode"\s*:\s*"JPY"\s*'
-        r'\}\s*,\s*"product"\s*:\s*\{(.*?)\}',
-        re.S,
-    )
-
-    title_pattern = re.compile(r'"title"\s*:\s*"([^"]*)"')
-
-    for match in record_pattern.finditer(normalized):
-        price = valid_price(match.group(1))
-        if price is None:
-            continue
-
-        product = match.group(2)
-        title_match = title_pattern.search(product)
-        if not title_match:
-            continue
-
-        title = html_module.unescape(title_match.group(1))
-        id_match = CARD_ID_RE.search(title)
-        if not id_match:
-            continue
-
-        cid = id_match.group(1).upper()
-
-        # Preserve the first occurrence within a source page.
-        out.setdefault(cid, price)
-
-    return out
-
-
-def parse_prices(html, kind):
-    if kind == "tcg":
-        return parse_tcg_library(html)
-    if kind == "fullahead":
-        return parse_shop(html)
-    if kind == "rakuten":
-        # Do not treat an access-denied/reference page as product data.
-        if len(html) < 200 or "Reference #" in html:
-            return {}
-        return parse_shop(html)
-    return {}
-
-
-def source_url(src, cid):
-    return src["base"]
-
+def parse_listings(page_html,src,url,known_ids):
+ text=visible_text(page_html); ids=list(ID_RE.finditer(text)); found=[]
+ for i,m in enumerate(ids):
+  cid=m.group(1)
+  if cid not in known_ids:continue
+  # First inspect the text following this product ID up to the next ID. If the
+  # site places price before the title, inspect the immediately preceding
+  # product segment instead. Never let the segment cross another card ID.
+  next_start=ids[i+1].start() if i+1<len(ids) else min(len(text),m.end()+320)
+  segment=text[m.end():next_start]
+  vals=[]
+  for pm in PRICE_RE.finditer(segment):
+   raw=pm.group(1) or pm.group(2)
+   try:v=int(raw.replace(',',''))
+   except (ValueError,AttributeError):continue
+   if 1<=v<=1000000:vals.append(v)
+  if not vals:
+   prev_end=ids[i-1].end() if i>0 else max(0,m.start()-180)
+   segment=text[prev_end:m.start()]
+   for pm in PRICE_RE.finditer(segment):
+    raw=pm.group(1) or pm.group(2)
+    try:v=int(raw.replace(',',''))
+    except (ValueError,AttributeError):continue
+    if 1<=v<=1000000:vals.append(v)
+  segment_for_exclusions=text[max(0,m.start()-120):min(len(text),next_start+120)]
+  if any(x.lower() in segment_for_exclusions.lower() for x in EXCLUDED):continue
+  vals=list(dict.fromkeys(vals))
+  # Ambiguous segments are omitted rather than assigned a possibly unrelated price.
+  if len(vals)!=1:continue
+  found.append({'card_id':cid,'shop':src['shop'],'source':src['name'],'price':vals[0],
+                'url':url,'date':TODAY,'type':'asking',
+                'listingKey':f"{src['shop']}|{cid}|{vals[0]}|{url}|{i}"})
+ # De-duplicate repeated occurrences in the same fetched page.
+ out=[];seen=set()
+ for o in found:
+  k=(o['card_id'],o['shop'],o['price'],o['url'],o['listingKey'])
+  if k not in seen:seen.add(k);out.append(o)
+ return out
 
 def mercari_url(card):
-    query = " ".join(
-        value
-        for value in (
-            card["id"],
-            card.get("name", ""),
-            str(card.get("rarity", "")).replace("*", ""),
-        )
-        if value
-    )
-    return "https://jp.mercari.com/search?" + urlencode(
-        {"keyword": query}
-    )
+ q=' '.join(x for x in [card['id'],card.get('name',''),str(card.get('rarity','')).replace('*','')] if x)
+ return 'https://jp.mercari.com/search?'+urlencode({'keyword':q})
 
+def weighted_median(pairs):
+ pairs=sorted((float(v),float(w)) for v,w in pairs if v>0 and w>0)
+ if not pairs:return None
+ halfway=sum(w for _,w in pairs)/2;acc=0
+ for v,w in pairs:
+  acc+=w
+  if acc>=halfway:return int(round(v))
+ return int(round(pairs[-1][0]))
 
-def median(values):
-    values = [
-        int(value)
-        for value in values
-        if isinstance(value, (int, float)) and value > 0
-    ]
-    if not values:
-        return None
-    return int(round(statistics.median(values)))
+def recency_weight(o):
+ try:age=max(0,(date.fromisoformat(TODAY)-date.fromisoformat(o.get('observedDate',o.get('updated',TODAY)))).days)
+ except (ValueError,TypeError):age=36500
+ return 0.5**(age/30)
 
-
-def make_history_point(values):
-    values = [
-        int(value)
-        for value in values
-        if isinstance(value, (int, float)) and value > 0
-    ]
-    if not values:
-        return None
-
-    return {
-        "date": TODAY,
-        "market": median(values),
-        "average": int(round(sum(values) / len(values))),
-        "cheapest": min(values),
-    }
-
+def estimate(offers):
+ fresh=[o for o in offers if not o.get('stale') and isinstance(o.get('price'),(int,float)) and o['price']>0]
+ if not fresh:return None
+ by_shop={}
+ for o in fresh:by_shop.setdefault(o.get('shop','Unknown'),[]).append(o)
+ pairs=[]
+ for shop,items in by_shop.items():
+  # Equal total weight per shop; multiple listings improve the shop's median
+  # but do not let a large catalogue dominate the whole market.
+  for o in items:pairs.append((o['price'],recency_weight(o)/len(items)))
+ med=weighted_median(pairs); total=sum(w for _,w in pairs)
+ avg=int(round(sum(v*w for v,w in pairs)/total)) if total else None
+ n=len(fresh); ns=len(by_shop)
+ confidence='high' if ns>=3 and n>=8 else 'medium' if ns>=2 and n>=3 else 'low'
+ return {'market':med,'weightedAverage':avg,'cheapest':min(int(o['price']) for o in fresh),
+         'listingCount':n,'shopCount':ns,'confidence':confidence}
 
 def main():
-    catalog = json.loads(CATALOG.read_text(encoding="utf-8"))
-    old = (
-        json.loads(OUT.read_text(encoding="utf-8"))
-        if OUT.exists()
-        else {"cards": {}}
-    )
-    oldcards = old.get("cards", {})
+ catalog=json.loads(CATALOG.read_text(encoding='utf-8'))
+ old=json.loads(OUT.read_text(encoding='utf-8')) if OUT.exists() else {'cards':{}}
+ oldcards=old.get('cards',{}); card_by_id={c['id']:c for c in catalog['cards']}
+ cards={cid:dict(oldcards.get(cid,{})) for cid in card_by_id}
+ fetched={cid:[] for cid in cards};audit=[];successful=set()
+ for src in SOURCES:
+  for page in src['pages']:
+   url=page_url(src,page)
+   try:
+    obs=parse_listings(get(url),src,url,card_by_id)
+    print(f"PRICE DEBUG | {src['name']} | page {page} | extracted {len(obs)} listing observations")
+    if obs:successful.add(src['name'])
+    for o in obs:
+     fetched[o['card_id']].append(o)
+     audit.append({'date':TODAY,'card_id':o['card_id'],'card_name':card_by_id[o['card_id']].get('name',''),
+      'shop':o['shop'],'source_page':o['source'],'page':page,'price_yen':o['price'],'decision':'OBSERVED',
+      'reason':'Current asking-price observation; not a completed sale','url':url,'listing_key':o['listingKey']})
+   except Exception as e:
+    print('WARN',src['name'],page,str(e)[:250])
+    audit.append({'date':TODAY,'card_id':'','card_name':'','shop':src['shop'],'source_page':src['name'],
+      'page':page,'price_yen':'','decision':'FETCH_FAILED','reason':str(e)[:300],'url':url,'listing_key':''})
+   time.sleep(.35)
+ for cid,card in card_by_id.items():
+  prev=cards[cid]; dedup=[];seen=set()
+  for o in fetched[cid]:
+   k=(o['shop'],o['price'],o['url'])
+   if k in seen:
+    audit.append({'date':TODAY,'card_id':cid,'card_name':card.get('name',''),'shop':o['shop'],
+      'source_page':o['source'],'page':'','price_yen':o['price'],'decision':'DUPLICATE',
+      'reason':'Same shop, price and URL repeated on another collection page','url':o['url'],'listing_key':o['listingKey']})
+   else:seen.add(k);dedup.append(o)
+  prior=prev.get('offers',[]); old_by_key={}
+  for o in prior:
+   if isinstance(o,dict) and o.get('price'):
+    old_by_key[(str(o.get('shop','')),int(o.get('price',0) or 0),str(o.get('url','')))]=o
+  newkeys={(o['shop'],int(o['price']),o['url']) for o in dedup}
+  combined=[{'shop':o['shop'],'source':o['source'],'price':int(o['price']),'url':o['url'],
+    'updated':TODAY,'observedDate':TODAY,'stale':False,'type':'asking','listingKey':o['listingKey']} for o in dedup]
+  for k,o in old_by_key.items():
+   if k not in newkeys:
+    stale=dict(o);stale['stale']=True;combined.append(stale)
+  prev['offers']=combined
+  # Save one dated median/average/lowest/count for each shop observed today.
+  shop_history=prev.get('shopHistory',[])
+  if not isinstance(shop_history,list):shop_history=[]
+  todays_shops={o['shop'] for o in dedup}
+  shop_history=[x for x in shop_history if not (isinstance(x,dict) and x.get('date')==TODAY and x.get('shop') in todays_shops)]
+  by_shop={}
+  for o in dedup:by_shop.setdefault(o['shop'],[]).append(int(o['price']))
+  for shop,vals in sorted(by_shop.items()):
+   med=int(round(statistics.median(vals)))
+   shop_history.append({'date':TODAY,'shop':shop,'price':med,'median':med,
+    'average':int(round(sum(vals)/len(vals))),'cheapest':min(vals),'listingCount':len(vals),'type':'asking'})
+  shop_history.sort(key=lambda x:(str(x.get('date','')),str(x.get('shop',''))))
+  prev['shopHistory']=shop_history
+  est=estimate(dedup)
+  if est:
+   prev.update({'price':est['cheapest'],'marketValue':est['market'],'average':est['weightedAverage'],
+    'weightedAverage':est['weightedAverage'],'confidence':est['confidence'],'listingCount':est['listingCount'],
+    'shopCount':est['shopCount'],'updated':TODAY})
+  prev['shopLinks']=[{'shop':k,'url':v} for k,v in SHOP_LINKS.items()]
+  prev['shopLinks'].append({'shop':'メルカリ','url':mercari_url(card)})
+  prev['mercari']={'status':'manual-search','median':None,'samples':[],'url':mercari_url(card),'updated':TODAY}
+  hist=prev.get('history',[])
+  if not isinstance(hist,list):hist=[]
+  hist=[x for x in hist if not (isinstance(x,dict) and x.get('date')==TODAY)]
+  if est:hist.append({'date':TODAY,'market':est['market'],'average':est['weightedAverage'],
+    'cheapest':est['cheapest'],'listingCount':est['listingCount'],'shopCount':est['shopCount'],
+    'confidence':est['confidence']})
+  hist.sort(key=lambda x:str(x.get('date','')));prev['history']=hist;cards[cid]=prev
+ fields=['date','card_id','card_name','shop','source_page','page','price_yen','decision','reason','url','listing_key']
+ with AUDIT.open('w',encoding='utf-8-sig',newline='') as f:
+  w=csv.DictWriter(f,fieldnames=fields);w.writeheader();w.writerows(audit)
+ out={**{k:v for k,v in old.items() if k not in {'cards','updated','sourcesFetchedToday'}},
+  'updated':TODAY,'cards':cards,'version':6,'v6':2,
+  'historyPolicy':'One daily market snapshot per observed day; per-shop daily medians are stored in each card shopHistory. Missing days remain missing.',
+  'pricePolicy':'Market value is a recency-weighted median of current asking-price observations; total influence is balanced by shop. No completed-sale prices are invented.',
+  'sourcesFetchedToday':sorted(successful),
+  'mercariNote':'Mercari is a manual search link only; no automated scraping or invented sold prices.'}
+ OUT.write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+ print('Updated',OUT,'cards=',len(cards),'observations=',sum(len(v) for v in fetched.values()))
+ print('Sources with observations:',', '.join(sorted(successful)) or '(none)')
+ print('Audit:',AUDIT,dict(Counter(x['decision'] for x in audit)))
 
-    cards = {
-        card["id"]: dict(oldcards.get(card["id"], {}))
-        for card in catalog["cards"]
-    }
-    card_by_id = {card["id"]: card for card in catalog["cards"]}
-
-    # Fresh offers collected during this run, one per actual shop.
-    fetched = {cid: {} for cid in cards}
-    successful_sources = set()
-    page_results = {}
-    audit_rows = []
-
-    for src in SOURCES:
-        for page in src["pages"]:
-            if src["kind"] == "fullahead":
-                url = (
-                    src["base"]
-                    if page == 1
-                    else f"{src['base']}page{page}/order/"
-                )
-            elif src["kind"] == "tcg":
-                url = (
-                    src["base"]
-                    if page == 1
-                    else f"{src['base']}?page={page}"
-                )
-            else:
-                url = (
-                    src["base"]
-                    if page == 1
-                    else f"{src['base']}?p={page}"
-                )
-
-            try:
-                page_html = get(url)
-                prices = parse_prices(page_html, src["kind"])
-                page_results[(src["name"], page)] = prices
-
-                print(
-                    f"PRICE DEBUG | {src['name']} | page {page} "
-                    f"| extracted {len(prices)} card prices"
-                )
-
-                if not prices:
-                    title_match = re.search(
-                        r"<title[^>]*>(.*?)</title>",
-                        page_html,
-                        re.I | re.S,
-                    )
-                    title = (
-                        clean(title_match.group(1))
-                        if title_match
-                        else "(no title)"
-                    )
-                    print(
-                        f"FETCH DEBUG | {src['name']} | page {page} "
-                        f"| chars={len(page_html)} | title={title[:100]}"
-                    )
-
-                if prices:
-                    successful_sources.add(src["name"])
-
-                for cid, price in prices.items():
-                    if cid not in cards:
-                        continue
-
-                    # Two category pages belonging to one shop are not
-                    # counted as two independent price sources. Keep the
-                    # first price collected from that shop for this card.
-                    existing = fetched[cid].get(src["shop"])
-
-                    if existing is None:
-                        fetched[cid][src["shop"]] = {
-                            "shop": src["shop"],
-                            "source": src["name"],
-                            "price": price,
-                            "url": source_url(src, cid),
-                            "updated": TODAY,
-                            "stale": False,
-                        }
-                        decision = "USED"
-                        reason = "First price found for this card at this shop"
-                    else:
-                        decision = "IGNORED"
-                        reason = (
-                            f"Same shop already selected {existing['price']} JPY "
-                            f"from {existing['source']}; current page price was {price} JPY"
-                        )
-                    
-                    audit_rows.append({
-                        "date": TODAY,
-                        "card_id": cid,
-                        "card_name": card_by_id[cid]["name"],
-                        "shop": src["shop"],
-                        "source_page": src["name"],
-                        "page": page,
-                        "price_yen": price,
-                        "decision": decision,
-                        "reason": reason,
-                        "url": url,
-                    })
-
-            except Exception as error:
-                print("WARN", src["name"], page, repr(error))
-
-            time.sleep(0.5)
-
-    fresh_count = sum(len(offers) for offers in fetched.values())
-
-    print("Fresh card/shop prices:", fresh_count)
-    print("Sources with extracted prices:", ", ".join(sorted(successful_sources)))
-
-    # Crucially, do not write a new file if no prices were collected.
-    if fresh_count == 0:
-        raise RuntimeError(
-            "No fresh card prices were collected. "
-            "Existing prices.json was not updated."
-        )
-
-    for cid, card in card_by_id.items():
-        previous = cards[cid]
-        today_offers = list(fetched[cid].values())
-
-        old_offers = {
-            offer.get("shop"): offer
-            for offer in previous.get("offers", [])
-            if (
-                isinstance(offer, dict)
-                and offer.get("shop")
-                and valid_price(offer.get("price")) is not None
-            )
-        }
-
-        combined = []
-        fresh_shops = set()
-
-        for offer in today_offers:
-            combined.append(offer)
-            fresh_shops.add(offer["shop"])
-
-        for shop, offer in old_offers.items():
-            if shop not in fresh_shops:
-                stale = dict(offer)
-                stale["stale"] = True
-                combined.append(stale)
-
-        combined.sort(
-            key=lambda offer: (
-                str(offer.get("shop", "")),
-                float(offer.get("price", 0)),
-            )
-        )
-        previous["offers"] = combined
-
-        fresh_values = [
-            offer["price"]
-            for offer in today_offers
-            if valid_price(offer.get("price")) is not None
-        ]
-
-        if fresh_values:
-            # All displayed estimates use today's data only.
-            previous["price"] = min(fresh_values)
-            previous["marketValue"] = median(fresh_values)
-            previous["average"] = int(
-                round(sum(fresh_values) / len(fresh_values))
-            )
-            previous["updated"] = TODAY
-            previous["freshSourceCount"] = len(fresh_values)
-        else:
-            # Preserve last-known estimates if this card had no fresh data.
-            previous.setdefault("price", None)
-            previous.setdefault("marketValue", None)
-            previous.setdefault("average", None)
-            previous["freshSourceCount"] = 0
-
-        previous["shopLinks"] = [
-            {"shop": name, "url": url}
-            for name, url in SHOP_LINKS.items()
-        ]
-        previous["shopLinks"].append(
-            {
-                "shop": "メルカリ",
-                "url": mercari_url(card),
-            }
-        )
-
-        # Mercari is a manual reference link, not an automated price source.
-        previous["mercari"] = {
-            "status": "manual-search",
-            "median": None,
-            "samples": [],
-            "url": mercari_url(card),
-            "updated": TODAY,
-        }
-
-        history = previous.get("history")
-        if not isinstance(history, list):
-            history = []
-
-        # Keep all earlier dates, replacing only today's snapshot on reruns.
-        history = [
-            point
-            for point in history
-            if isinstance(point, dict) and point.get("date") != TODAY
-        ]
-
-        point = make_history_point(fresh_values)
-        if point is not None:
-            history.append(point)
-
-        history.sort(key=lambda point: str(point.get("date", "")))
-        previous["history"] = history
-        cards[cid] = previous
-
-    output = {
-        "updated": TODAY,
-        "cards": cards,
-        "version": 6,
-        "v6": 2,
-        "historyPolicy": (
-            "One snapshot per date when fresh prices are collected. "
-            "All existing history dates are retained. "
-            "Missing dates are not invented."
-        ),
-        "pricePolicy": (
-            "Current marketValue and average use fresh positive prices "
-            "from distinct shops collected during the current run. "
-            "Old offers are retained and marked stale."
-        ),
-        "sourcesFetchedToday": sorted(successful_sources),
-        "mercariNote": (
-            "Mercari is a direct search link only; its prices are not "
-            "automatically scraped or treated as zero."
-        ),
-    }
-
-    # Write only after the complete update has been built successfully.
-    OUT.write_text(
-        json.dumps(output, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-    )
-
-    audit_path = ROOT / "data" / "price_audit.csv"
-
-    fieldnames = [
-        "date",
-        "card_id",
-        "card_name",
-        "shop",
-        "source_page",
-        "page",
-        "price_yen",
-        "decision",
-        "reason",
-        "url",
-    ]
-    
-    with audit_path.open("w", encoding="utf-8-sig", newline="") as file:
-        writer = csv.DictWriter(file, fieldnames=fieldnames)
-        writer.writeheader()
-        writer.writerows(audit_rows)
-    
-    counts = Counter(row["decision"] for row in audit_rows)
-    
-    print("Audit file:", audit_path)
-    print("Audit decisions:", dict(counts))
-
-    print(
-        "Updated",
-        OUT,
-        "cards=",
-        len(cards),
-        "fresh_prices=",
-        fresh_count,
-        "sources=",
-        ", ".join(sorted(successful_sources)),
-    )
-
-
-if __name__ == "__main__":
-    main()
+if __name__=='__main__':main()
