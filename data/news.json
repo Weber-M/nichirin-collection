@@ -1,7 +1,17 @@
 {
-  "updated": "2026-10-10",
+  "updated": "2026-10-14",
   "source": "https://p.eagate.573.jp/game/kimetsu/bslash/news/index.html",
   "items": [
+    {
+      "date": "2026.10.14",
+      "title": "ゲーム内イベント「第2回 全集中！チャレンジバトル」開催！",
+      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/event/challenge/002/index.html"
+    },
+    {
+      "date": "2026.10.14",
+      "title": "バージョンアップのお知らせ",
+      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/1014.html"
+    },
     {
       "date": "2026.10.09",
       "title": "ランクマッチシーズン1の開催期間とアイテムを公開！",
@@ -91,16 +101,6 @@
       "date": "2026.08.07",
       "title": "現在確認されている不具合につきまして",
       "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/0807.html"
-    },
-    {
-      "date": "2026.08.05",
-      "title": "｢バーサスモード」の解禁が8月7日（金）10時からに決定！！ ｢カジュアルマッチ」では、隣同士での対戦が可能になるぞ！",
-      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/howto/mode_vs.html"
-    },
-    {
-      "date": "2026.08.05",
-      "title": "バージョンアップのお知らせ",
-      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/0805.html"
     }
   ]
 }
