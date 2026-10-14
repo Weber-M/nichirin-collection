@@ -24,6 +24,8 @@ import time
 from pathlib import Path
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
+import csv
+from collections import Counter
 
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG = ROOT / "data" / "catalog.json"
@@ -340,6 +342,7 @@ def main():
     fetched = {cid: {} for cid in cards}
     successful_sources = set()
     page_results = {}
+    audit_rows = []
 
     for src in SOURCES:
         for page in src["pages"]:
@@ -398,17 +401,38 @@ def main():
                     # Two category pages belonging to one shop are not
                     # counted as two independent price sources. Keep the
                     # first price collected from that shop for this card.
-                    fetched[cid].setdefault(
-                        src["shop"],
-                        {
+                    existing = fetched[cid].get(src["shop"])
+
+                    if existing is None:
+                        fetched[cid][src["shop"]] = {
                             "shop": src["shop"],
                             "source": src["name"],
                             "price": price,
                             "url": source_url(src, cid),
                             "updated": TODAY,
                             "stale": False,
-                        },
-                    )
+                        }
+                        decision = "USED"
+                        reason = "First price found for this card at this shop"
+                    else:
+                        decision = "IGNORED"
+                        reason = (
+                            f"Same shop already selected {existing['price']} JPY "
+                            f"from {existing['source']}; current page price was {price} JPY"
+                        )
+                    
+                    audit_rows.append({
+                        "date": TODAY,
+                        "card_id": cid,
+                        "card_name": card_by_id[cid]["name"],
+                        "shop": src["shop"],
+                        "source_page": src["name"],
+                        "page": page,
+                        "price_yen": price,
+                        "decision": decision,
+                        "reason": reason,
+                        "url": url,
+                    })
 
             except Exception as error:
                 print("WARN", src["name"], page, repr(error))
@@ -550,6 +574,31 @@ def main():
         json.dumps(output, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
+
+    audit_path = ROOT / "data" / "price_audit.csv"
+
+    fieldnames = [
+        "date",
+        "card_id",
+        "card_name",
+        "shop",
+        "source_page",
+        "page",
+        "price_yen",
+        "decision",
+        "reason",
+        "url",
+    ]
+    
+    with audit_path.open("w", encoding="utf-8-sig", newline="") as file:
+        writer = csv.DictWriter(file, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(audit_rows)
+    
+    counts = Counter(row["decision"] for row in audit_rows)
+    
+    print("Audit file:", audit_path)
+    print("Audit decisions:", dict(counts))
 
     print(
         "Updated",
