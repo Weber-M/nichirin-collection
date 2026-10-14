@@ -12,7 +12,17 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: {python-version: '3.x'}
+        
       - run: python tools/update_prices.py
+      - name: Upload price audit
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: price-audit
+          path: data/price_audit.csv
+          if-no-files-found: warn
+          retention-days: 14
+
       - run: python tools/update_news.py
       - name: Commit updated prices
         run: |
