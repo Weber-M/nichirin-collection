@@ -1,10 +1,10 @@
 {
   "version": 6,
   "v6": 2,
-  "historyPolicy": "One daily market snapshot per observed day; per-shop daily medians are stored in each card shopHistory. Missing days remain missing.",
-  "pricePolicy": "Market value is a recency-weighted median of current asking-price observations; total influence is balanced by shop. No completed-sale prices are invented.",
-  "mercariNote": "Mercari is a manual search link only; no automated scraping or invented sold prices.",
-  "updated": "2026-10-14",
+  "historyPolicy": "Daily market snapshots are added only on days with fresh observations. Per-shop daily summaries are stored in each card shopHistory; missing days are not forward-filled.",
+  "pricePolicy": "Market value is a recency-weighted median of live asking-price observations, with equal total influence per shop. Asking prices are not completed sales.",
+  "mercariNote": "Mercari is a manual search link only; no automated completed-sale prices are included.",
+  "updated": "2026-10-15",
   "cards": {
     "P01-001": {
       "price": 3980,
@@ -60,13 +60,17 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=P01-001+%E7%AB%88%E9%96%80%E7%A6%B0%E8%B1%86%E5%AD%90+PR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 0,
-      "shopHistory": []
+      "shopHistory": [],
+      "weightedAverage": 3980,
+      "confidence": "low",
+      "listingCount": 0,
+      "shopCount": 0
     },
     "P01-002": {
-      "price": 480,
+      "price": 240,
       "updated": "2026-10-14",
       "sources": [
         {
@@ -106,8 +110,8 @@
           "stale": true
         }
       ],
-      "average": 540,
-      "marketValue": 540,
+      "average": 438,
+      "marketValue": 480,
       "history": [
         {
           "date": "2026-10-05",
@@ -143,10 +147,14 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=P01-002+%E7%AB%88%E9%96%80%E7%82%AD%E6%B2%BB%E9%83%8E+PR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
-      "shopHistory": []
+      "shopHistory": [],
+      "weightedAverage": 438,
+      "confidence": "low",
+      "listingCount": 0,
+      "shopCount": 0
     },
     "P01-003": {
       "price": 100,
@@ -189,8 +197,8 @@
           "stale": true
         }
       ],
-      "average": 240,
-      "marketValue": 240,
+      "average": 213,
+      "marketValue": 160,
       "history": [
         {
           "date": "2026-10-05",
@@ -226,13 +234,17 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=P01-003+%E7%B4%AF+PR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
-      "shopHistory": []
+      "shopHistory": [],
+      "weightedAverage": 213,
+      "confidence": "low",
+      "listingCount": 0,
+      "shopCount": 0
     },
     "P01-005": {
-      "price": 680,
+      "price": 600,
       "updated": "2026-10-14",
       "sources": [
         {
@@ -264,8 +276,8 @@
           "stale": true
         }
       ],
-      "average": 680,
-      "marketValue": 680,
+      "average": 640,
+      "marketValue": 600,
       "history": [
         {
           "date": "2026-10-05",
@@ -301,10 +313,14 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=P01-005+%E6%88%91%E5%A6%BB%E5%96%84%E9%80%B8+PR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
-      "shopHistory": []
+      "shopHistory": [],
+      "weightedAverage": 640,
+      "confidence": "low",
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A01-001": {
       "price": 348,
@@ -372,19 +388,23 @@
           "cheapest": 1120.0
         }
       ],
-      "marketValue": 624,
+      "marketValue": 348,
       "mercari": {
         "status": "manual-search",
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-001+%E7%AB%88%E9%96%80%E7%82%AD%E6%B2%BB%E9%83%8E+UR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
-      "shopHistory": []
+      "shopHistory": [],
+      "weightedAverage": 624,
+      "confidence": "low",
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A01-002": {
-      "price": 7280,
+      "price": 6200,
       "updated": "2026-10-14",
       "sources": [
         {
@@ -408,7 +428,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A01-002|7280|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|16"
         },
@@ -443,7 +463,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-002+%E7%AB%88%E9%96%80%E7%82%AD%E6%B2%BB%E9%83%8E+UR"
         }
       ],
-      "average": 7280,
+      "average": 6740,
       "history": [
         {
           "date": "2026-09-28",
@@ -461,13 +481,13 @@
           "confidence": "low"
         }
       ],
-      "marketValue": 7280,
+      "marketValue": 6200,
       "mercari": {
         "status": "manual-search",
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-002+%E7%AB%88%E9%96%80%E7%82%AD%E6%B2%BB%E9%83%8E+UR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
@@ -482,13 +502,13 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 7280,
+      "weightedAverage": 6740,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A01-003": {
-      "price": 520,
+      "price": 248,
       "updated": "2026-10-14",
       "sources": [
         {
@@ -512,7 +532,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A01-003|520|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|17"
         },
@@ -555,7 +575,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-003+%E7%AB%88%E9%96%80%E7%A6%B0%E8%B1%86%E5%AD%90+UR"
         }
       ],
-      "average": 520,
+      "average": 492,
       "history": [
         {
           "date": "2026-09-28",
@@ -579,7 +599,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-003+%E7%AB%88%E9%96%80%E7%A6%B0%E8%B1%86%E5%AD%90+UR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -594,10 +614,10 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 520,
+      "weightedAverage": 492,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A01-004": {
       "price": 5980,
@@ -624,7 +644,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A01-004|5980|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|18"
         },
@@ -659,7 +679,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-004+%E7%AB%88%E9%96%80%E7%A6%B0%E8%B1%86%E5%AD%90+UR"
         }
       ],
-      "average": 5980,
+      "average": 6440,
       "history": [
         {
           "date": "2026-09-28",
@@ -683,7 +703,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-004+%E7%AB%88%E9%96%80%E7%A6%B0%E8%B1%86%E5%AD%90+UR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
@@ -698,13 +718,13 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 5980,
+      "weightedAverage": 6440,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A01-005": {
-      "price": 680,
+      "price": 348,
       "updated": "2026-10-14",
       "sources": [
         {
@@ -728,7 +748,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A01-005|680|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|19"
         },
@@ -771,7 +791,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-005+%E6%88%91%E5%A6%BB%E5%96%84%E9%80%B8+UR"
         }
       ],
-      "average": 680,
+      "average": 607,
       "history": [
         {
           "date": "2026-09-28",
@@ -795,7 +815,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-005+%E6%88%91%E5%A6%BB%E5%96%84%E9%80%B8+UR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -810,13 +830,13 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 680,
+      "weightedAverage": 607,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A01-006": {
-      "price": 380,
+      "price": 148,
       "updated": "2026-10-14",
       "sources": [
         {
@@ -840,7 +860,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A01-006|380|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|20"
         },
@@ -883,7 +903,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-006+%E5%98%B4%E5%B9%B3%E4%BC%8A%E4%B9%8B%E5%8A%A9+UR"
         }
       ],
-      "average": 380,
+      "average": 282,
       "history": [
         {
           "date": "2026-09-28",
@@ -901,13 +921,13 @@
           "confidence": "low"
         }
       ],
-      "marketValue": 380,
+      "marketValue": 300,
       "mercari": {
         "status": "manual-search",
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-006+%E5%98%B4%E5%B9%B3%E4%BC%8A%E4%B9%8B%E5%8A%A9+UR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -922,13 +942,13 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 380,
+      "weightedAverage": 282,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A01-007": {
-      "price": 1380,
+      "price": 998,
       "updated": "2026-10-14",
       "sources": [
         {
@@ -952,7 +972,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A01-007|1380|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|21"
         },
@@ -995,7 +1015,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-007+%E5%86%A8%E5%B2%A1%E7%BE%A9%E5%8B%87+UR"
         }
       ],
-      "average": 1380,
+      "average": 1094,
       "history": [
         {
           "date": "2026-09-28",
@@ -1013,13 +1033,13 @@
           "confidence": "low"
         }
       ],
-      "marketValue": 1380,
+      "marketValue": 1000,
       "mercari": {
         "status": "manual-search",
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-007+%E5%86%A8%E5%B2%A1%E7%BE%A9%E5%8B%87+UR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -1034,13 +1054,13 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 1380,
+      "weightedAverage": 1094,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A01-008": {
-      "price": 12800,
+      "price": 9400,
       "updated": "2026-10-14",
       "sources": [
         {
@@ -1064,7 +1084,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A01-008|12800|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|22"
         },
@@ -1099,7 +1119,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-008+%E5%86%A8%E5%B2%A1%E7%BE%A9%E5%8B%87+UR"
         }
       ],
-      "average": 12800,
+      "average": 11100,
       "history": [
         {
           "date": "2026-09-28",
@@ -1117,13 +1137,13 @@
           "confidence": "low"
         }
       ],
-      "marketValue": 12800,
+      "marketValue": 9400,
       "mercari": {
         "status": "manual-search",
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-008+%E5%86%A8%E5%B2%A1%E7%BE%A9%E5%8B%87+UR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
@@ -1138,13 +1158,13 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 12800,
+      "weightedAverage": 11100,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A01-009": {
-      "price": 1480,
+      "price": 898,
       "updated": "2026-10-14",
       "sources": [
         {
@@ -1168,7 +1188,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A01-009|1480|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|23"
         },
@@ -1211,7 +1231,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-009+%E8%83%A1%E8%9D%B6%E3%81%97%E3%81%AE%E3%81%B6+UR"
         }
       ],
-      "average": 1480,
+      "average": 1044,
       "history": [
         {
           "date": "2026-09-28",
@@ -1229,13 +1249,13 @@
           "confidence": "low"
         }
       ],
-      "marketValue": 1480,
+      "marketValue": 900,
       "mercari": {
         "status": "manual-search",
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-009+%E8%83%A1%E8%9D%B6%E3%81%97%E3%81%AE%E3%81%B6+UR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -1250,10 +1270,10 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 1480,
+      "weightedAverage": 1044,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A01-010": {
       "price": 7200,
@@ -1319,13 +1339,17 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-010+%E8%83%A1%E8%9D%B6%E3%81%97%E3%81%AE%E3%81%B6+UR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
-      "shopHistory": []
+      "shopHistory": [],
+      "weightedAverage": 7200,
+      "confidence": "low",
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A01-011": {
-      "price": 380,
+      "price": 148,
       "updated": "2026-10-14",
       "sources": [
         {
@@ -1349,7 +1373,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A01-011|380|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|24"
         },
@@ -1392,7 +1416,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-011+%E7%B4%AF+UR"
         }
       ],
-      "average": 380,
+      "average": 282,
       "history": [
         {
           "date": "2026-09-28",
@@ -1410,13 +1434,13 @@
           "confidence": "low"
         }
       ],
-      "marketValue": 380,
+      "marketValue": 300,
       "mercari": {
         "status": "manual-search",
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-011+%E7%B4%AF+UR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -1431,13 +1455,13 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 380,
+      "weightedAverage": 282,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A01-012": {
-      "price": 100,
+      "price": 58,
       "updated": "2026-10-14",
       "sources": [
         {
@@ -1461,7 +1485,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A01-012|100|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|25"
         },
@@ -1504,7 +1528,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-012+%E7%AB%88%E9%96%80%E7%82%AD%E6%B2%BB%E9%83%8E+SR"
         }
       ],
-      "average": 100,
+      "average": 90,
       "history": [
         {
           "date": "2026-09-28",
@@ -1528,7 +1552,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-012+%E7%AB%88%E9%96%80%E7%82%AD%E6%B2%BB%E9%83%8E+SR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -1543,13 +1567,13 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 100,
+      "weightedAverage": 90,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A01-013": {
-      "price": 100,
+      "price": 58,
       "updated": "2026-10-14",
       "sources": [
         {
@@ -1573,7 +1597,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A01-013|100|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|26"
         },
@@ -1616,7 +1640,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-013+%E7%AB%88%E9%96%80%E7%A6%B0%E8%B1%86%E5%AD%90+SR"
         }
       ],
-      "average": 100,
+      "average": 90,
       "history": [
         {
           "date": "2026-09-28",
@@ -1640,7 +1664,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-013+%E7%AB%88%E9%96%80%E7%A6%B0%E8%B1%86%E5%AD%90+SR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -1655,13 +1679,13 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 100,
+      "weightedAverage": 90,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A01-014": {
-      "price": 100,
+      "price": 58,
       "updated": "2026-10-14",
       "sources": [
         {
@@ -1685,7 +1709,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A01-014|100|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|27"
         },
@@ -1728,7 +1752,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-014+%E6%88%91%E5%A6%BB%E5%96%84%E9%80%B8+SR"
         }
       ],
-      "average": 100,
+      "average": 90,
       "history": [
         {
           "date": "2026-09-28",
@@ -1752,7 +1776,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-014+%E6%88%91%E5%A6%BB%E5%96%84%E9%80%B8+SR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -1767,14 +1791,14 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 100,
+      "weightedAverage": 90,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A01-015": {
       "price": 100,
-      "updated": "2026-10-14",
+      "updated": "2026-10-15",
       "sources": [
         {
           "name": "TCG Library",
@@ -1795,11 +1819,12 @@
           "source": "FullAhead",
           "price": 100,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/",
-          "updated": "2026-10-14",
-          "observedDate": "2026-10-14",
+          "updated": "2026-10-15",
+          "observedDate": "2026-10-15",
           "stale": false,
           "type": "asking",
-          "listingKey": "FullAhead|A01-015|100|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|28"
+          "listingKey": "FullAhead|A01-015|100|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|27",
+          "sourceUrl": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/"
         },
         {
           "shop": "FullAhead",
@@ -1856,6 +1881,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-15",
+          "market": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 100,
@@ -1864,12 +1898,22 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-015+%E5%98%B4%E5%B9%B3%E4%BC%8A%E4%B9%8B%E5%8A%A9+SR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
         {
           "date": "2026-10-14",
+          "shop": "FullAhead",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
+        },
+        {
+          "date": "2026-10-15",
           "shop": "FullAhead",
           "price": 100,
           "median": 100,
@@ -1885,7 +1929,7 @@
       "shopCount": 1
     },
     "A01-016": {
-      "price": 120,
+      "price": 100,
       "updated": "2026-10-14",
       "sources": [
         {
@@ -1909,7 +1953,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A01-016|120|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|29"
         },
@@ -1952,7 +1996,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-016+%E5%86%A8%E5%B2%A1%E7%BE%A9%E5%8B%87+SR"
         }
       ],
-      "average": 120,
+      "average": 110,
       "history": [
         {
           "date": "2026-09-28",
@@ -1970,13 +2014,13 @@
           "confidence": "low"
         }
       ],
-      "marketValue": 120,
+      "marketValue": 100,
       "mercari": {
         "status": "manual-search",
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-016+%E5%86%A8%E5%B2%A1%E7%BE%A9%E5%8B%87+SR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -1991,13 +2035,13 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 120,
+      "weightedAverage": 110,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A01-017": {
-      "price": 180,
+      "price": 100,
       "updated": "2026-10-14",
       "sources": [
         {
@@ -2021,7 +2065,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A01-017|180|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|30"
         },
@@ -2064,7 +2108,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-017+%E8%83%A1%E8%9D%B6%E3%81%97%E3%81%AE%E3%81%B6+SR"
         }
       ],
-      "average": 180,
+      "average": 140,
       "history": [
         {
           "date": "2026-09-28",
@@ -2082,13 +2126,13 @@
           "confidence": "low"
         }
       ],
-      "marketValue": 180,
+      "marketValue": 100,
       "mercari": {
         "status": "manual-search",
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-017+%E8%83%A1%E8%9D%B6%E3%81%97%E3%81%AE%E3%81%B6+SR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -2103,13 +2147,13 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 180,
+      "weightedAverage": 140,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A01-018": {
-      "price": 480,
+      "price": 100,
       "updated": "2026-10-14",
       "sources": [
         {
@@ -2133,7 +2177,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A01-018|480|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|31"
         },
@@ -2176,7 +2220,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-018+%E9%8C%86%E5%85%8E+SR"
         }
       ],
-      "average": 480,
+      "average": 207,
       "history": [
         {
           "date": "2026-09-28",
@@ -2194,13 +2238,13 @@
           "confidence": "low"
         }
       ],
-      "marketValue": 480,
+      "marketValue": 100,
       "mercari": {
         "status": "manual-search",
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-018+%E9%8C%86%E5%85%8E+SR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -2215,10 +2259,10 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 480,
+      "weightedAverage": 207,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A01-019": {
       "price": 100,
@@ -2245,7 +2289,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A01-019|100|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|32"
         },
@@ -2312,7 +2356,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-019+%E7%B4%AF+SR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -2329,11 +2373,11 @@
       ],
       "weightedAverage": 100,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A01-020": {
-      "price": 80,
+      "price": 38,
       "updated": "2026-10-14",
       "sources": [
         {
@@ -2357,7 +2401,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A01-020|80|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|33"
         },
@@ -2400,7 +2444,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-020+%E7%AB%88%E9%96%80%E7%82%AD%E6%B2%BB%E9%83%8E+R"
         }
       ],
-      "average": 80,
+      "average": 79,
       "history": [
         {
           "date": "2026-09-28",
@@ -2424,7 +2468,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-020+%E7%AB%88%E9%96%80%E7%82%AD%E6%B2%BB%E9%83%8E+R",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -2439,13 +2483,13 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 80,
+      "weightedAverage": 79,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A01-021": {
-      "price": 80,
+      "price": 38,
       "updated": "2026-10-14",
       "sources": [
         {
@@ -2469,7 +2513,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A01-021|80|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|34"
         },
@@ -2512,7 +2556,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-021+%E7%AB%88%E9%96%80%E7%A6%B0%E8%B1%86%E5%AD%90+R"
         }
       ],
-      "average": 80,
+      "average": 79,
       "history": [
         {
           "date": "2026-09-28",
@@ -2536,7 +2580,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-021+%E7%AB%88%E9%96%80%E7%A6%B0%E8%B1%86%E5%AD%90+R",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -2551,13 +2595,13 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 80,
+      "weightedAverage": 79,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A01-022": {
-      "price": 80,
+      "price": 38,
       "updated": "2026-10-14",
       "sources": [
         {
@@ -2581,7 +2625,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A01-022|80|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|35"
         },
@@ -2624,7 +2668,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-022+%E6%88%91%E5%A6%BB%E5%96%84%E9%80%B8+R"
         }
       ],
-      "average": 80,
+      "average": 79,
       "history": [
         {
           "date": "2026-09-28",
@@ -2648,7 +2692,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-022+%E6%88%91%E5%A6%BB%E5%96%84%E9%80%B8+R",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -2663,14 +2707,14 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 80,
+      "weightedAverage": 79,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A01-023": {
       "price": 80,
-      "updated": "2026-10-14",
+      "updated": "2026-10-15",
       "sources": [
         {
           "name": "TCG Library",
@@ -2691,11 +2735,12 @@
           "source": "FullAhead",
           "price": 80,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/",
-          "updated": "2026-10-14",
-          "observedDate": "2026-10-14",
+          "updated": "2026-10-15",
+          "observedDate": "2026-10-15",
           "stale": false,
           "type": "asking",
-          "listingKey": "FullAhead|A01-023|80|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|36"
+          "listingKey": "FullAhead|A01-023|80|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|34",
+          "sourceUrl": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/"
         },
         {
           "shop": "FullAhead",
@@ -2736,7 +2781,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-023+%E5%98%B4%E5%B9%B3%E4%BC%8A%E4%B9%8B%E5%8A%A9+R"
         }
       ],
-      "average": 80,
+      "average": 86,
       "history": [
         {
           "date": "2026-09-28",
@@ -2752,6 +2797,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-15",
+          "market": 80,
+          "average": 86,
+          "cheapest": 80,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 80,
@@ -2760,7 +2814,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-023+%E5%98%B4%E5%B9%B3%E4%BC%8A%E4%B9%8B%E5%8A%A9+R",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -2773,16 +2827,26 @@
           "cheapest": 80,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-15",
+          "shop": "FullAhead",
+          "price": 80,
+          "median": 80,
+          "average": 80,
+          "cheapest": 80,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 80,
+      "weightedAverage": 86,
       "confidence": "low",
       "listingCount": 1,
       "shopCount": 1
     },
     "A01-024": {
       "price": 80,
-      "updated": "2026-10-14",
+      "updated": "2026-10-15",
       "sources": [
         {
           "name": "TCG Library",
@@ -2803,11 +2867,12 @@
           "source": "FullAhead",
           "price": 80,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/",
-          "updated": "2026-10-14",
-          "observedDate": "2026-10-14",
+          "updated": "2026-10-15",
+          "observedDate": "2026-10-15",
           "stale": false,
           "type": "asking",
-          "listingKey": "FullAhead|A01-024|80|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|37"
+          "listingKey": "FullAhead|A01-024|80|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|35",
+          "sourceUrl": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/"
         },
         {
           "shop": "FullAhead",
@@ -2864,6 +2929,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-15",
+          "market": 80,
+          "average": 80,
+          "cheapest": 80,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 80,
@@ -2872,12 +2946,22 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-024+%E4%B8%8D%E6%AD%BB%E5%B7%9D%E7%8E%84%E5%BC%A5+R",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
         {
           "date": "2026-10-14",
+          "shop": "FullAhead",
+          "price": 80,
+          "median": 80,
+          "average": 80,
+          "cheapest": 80,
+          "listingCount": 1,
+          "type": "asking"
+        },
+        {
+          "date": "2026-10-15",
           "shop": "FullAhead",
           "price": 80,
           "median": 80,
@@ -2893,7 +2977,7 @@
       "shopCount": 1
     },
     "A01-025": {
-      "price": 100,
+      "price": 58,
       "updated": "2026-10-14",
       "sources": [
         {
@@ -2917,7 +3001,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A01-025|100|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|38"
         },
@@ -2960,7 +3044,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-025+%E5%86%A8%E5%B2%A1%E7%BE%A9%E5%8B%87+R"
         }
       ],
-      "average": 100,
+      "average": 90,
       "history": [
         {
           "date": "2026-09-28",
@@ -2984,7 +3068,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-025+%E5%86%A8%E5%B2%A1%E7%BE%A9%E5%8B%87+R",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -2999,10 +3083,10 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 100,
+      "weightedAverage": 90,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A01-026": {
       "price": 80,
@@ -3029,7 +3113,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A01-026|80|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|39"
         },
@@ -3072,7 +3156,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-026+%E8%83%A1%E8%9D%B6%E3%81%97%E3%81%AE%E3%81%B6+R"
         }
       ],
-      "average": 80,
+      "average": 90,
       "history": [
         {
           "date": "2026-09-28",
@@ -3096,7 +3180,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-026+%E8%83%A1%E8%9D%B6%E3%81%97%E3%81%AE%E3%81%B6+R",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -3111,10 +3195,10 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 80,
+      "weightedAverage": 90,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A01-027": {
       "price": 80,
@@ -3141,7 +3225,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A01-027|80|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|40"
         },
@@ -3184,7 +3268,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-027+%E9%B1%97%E6%BB%9D%E5%B7%A6%E8%BF%91%E6%AC%A1+R"
         }
       ],
-      "average": 80,
+      "average": 90,
       "history": [
         {
           "date": "2026-09-28",
@@ -3208,7 +3292,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-027+%E9%B1%97%E6%BB%9D%E5%B7%A6%E8%BF%91%E6%AC%A1+R",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -3223,13 +3307,13 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 80,
+      "weightedAverage": 90,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A01-028": {
-      "price": 80,
+      "price": 38,
       "updated": "2026-10-14",
       "sources": [
         {
@@ -3253,7 +3337,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A01-028|80|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|41"
         },
@@ -3296,7 +3380,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-028+%E7%9C%9F%E8%8F%B0+R"
         }
       ],
-      "average": 80,
+      "average": 79,
       "history": [
         {
           "date": "2026-09-28",
@@ -3320,7 +3404,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-028+%E7%9C%9F%E8%8F%B0+R",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -3335,14 +3419,14 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 80,
+      "weightedAverage": 79,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A01-029": {
       "price": 80,
-      "updated": "2026-10-14",
+      "updated": "2026-10-15",
       "sources": [
         {
           "name": "TCG Library",
@@ -3363,11 +3447,12 @@
           "source": "FullAhead",
           "price": 80,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/",
-          "updated": "2026-10-14",
-          "observedDate": "2026-10-14",
+          "updated": "2026-10-15",
+          "observedDate": "2026-10-15",
           "stale": false,
           "type": "asking",
-          "listingKey": "FullAhead|A01-029|80|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|42"
+          "listingKey": "FullAhead|A01-029|80|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|40",
+          "sourceUrl": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/"
         },
         {
           "shop": "FullAhead",
@@ -3424,6 +3509,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-15",
+          "market": 80,
+          "average": 80,
+          "cheapest": 80,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 80,
@@ -3432,12 +3526,22 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-029+%E6%89%8B%E9%AC%BC+R",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
         {
           "date": "2026-10-14",
+          "shop": "FullAhead",
+          "price": 80,
+          "median": 80,
+          "average": 80,
+          "cheapest": 80,
+          "listingCount": 1,
+          "type": "asking"
+        },
+        {
+          "date": "2026-10-15",
           "shop": "FullAhead",
           "price": 80,
           "median": 80,
@@ -3454,7 +3558,7 @@
     },
     "A01-030": {
       "price": 80,
-      "updated": "2026-10-14",
+      "updated": "2026-10-15",
       "sources": [
         {
           "name": "TCG Library",
@@ -3475,11 +3579,12 @@
           "source": "FullAhead",
           "price": 80,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/",
-          "updated": "2026-10-14",
-          "observedDate": "2026-10-14",
+          "updated": "2026-10-15",
+          "observedDate": "2026-10-15",
           "stale": false,
           "type": "asking",
-          "listingKey": "FullAhead|A01-030|80|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|43"
+          "listingKey": "FullAhead|A01-030|80|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|41",
+          "sourceUrl": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/"
         },
         {
           "shop": "FullAhead",
@@ -3520,7 +3625,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-030+%E6%9C%B1%E7%B4%97%E4%B8%B8+R"
         }
       ],
-      "average": 80,
+      "average": 86,
       "history": [
         {
           "date": "2026-09-28",
@@ -3536,6 +3641,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-15",
+          "market": 80,
+          "average": 86,
+          "cheapest": 80,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 80,
@@ -3544,7 +3658,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-030+%E6%9C%B1%E7%B4%97%E4%B8%B8+R",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -3557,16 +3671,26 @@
           "cheapest": 80,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-15",
+          "shop": "FullAhead",
+          "price": 80,
+          "median": 80,
+          "average": 80,
+          "cheapest": 80,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 80,
+      "weightedAverage": 86,
       "confidence": "low",
       "listingCount": 1,
       "shopCount": 1
     },
     "A01-031": {
       "price": 80,
-      "updated": "2026-10-14",
+      "updated": "2026-10-15",
       "sources": [
         {
           "name": "TCG Library",
@@ -3587,11 +3711,12 @@
           "source": "FullAhead",
           "price": 80,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/",
-          "updated": "2026-10-14",
-          "observedDate": "2026-10-14",
+          "updated": "2026-10-15",
+          "observedDate": "2026-10-15",
           "stale": false,
           "type": "asking",
-          "listingKey": "FullAhead|A01-031|80|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|44"
+          "listingKey": "FullAhead|A01-031|80|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|42",
+          "sourceUrl": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/"
         },
         {
           "shop": "FullAhead",
@@ -3632,7 +3757,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-031+%E7%9F%A2%E7%90%B6%E7%BE%BD+R"
         }
       ],
-      "average": 80,
+      "average": 86,
       "history": [
         {
           "date": "2026-09-28",
@@ -3648,6 +3773,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-15",
+          "market": 80,
+          "average": 86,
+          "cheapest": 80,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 80,
@@ -3656,7 +3790,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-031+%E7%9F%A2%E7%90%B6%E7%BE%BD+R",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -3669,9 +3803,19 @@
           "cheapest": 80,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-15",
+          "shop": "FullAhead",
+          "price": 80,
+          "median": 80,
+          "average": 80,
+          "cheapest": 80,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 80,
+      "weightedAverage": 86,
       "confidence": "low",
       "listingCount": 1,
       "shopCount": 1
@@ -3701,7 +3845,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A01-032|50|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|45"
         },
@@ -3744,7 +3888,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-032+%E7%AB%88%E9%96%80%E7%82%AD%E6%B2%BB%E9%83%8E+C"
         }
       ],
-      "average": 50,
+      "average": 75,
       "history": [
         {
           "date": "2026-09-28",
@@ -3768,7 +3912,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-032+%E7%AB%88%E9%96%80%E7%82%AD%E6%B2%BB%E9%83%8E+C",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -3783,10 +3927,10 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 50,
+      "weightedAverage": 75,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A01-033": {
       "price": 50,
@@ -3813,7 +3957,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A01-033|50|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|46"
         },
@@ -3856,7 +4000,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-033+%E7%AB%88%E9%96%80%E7%A6%B0%E8%B1%86%E5%AD%90+C"
         }
       ],
-      "average": 50,
+      "average": 75,
       "history": [
         {
           "date": "2026-09-28",
@@ -3880,7 +4024,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-033+%E7%AB%88%E9%96%80%E7%A6%B0%E8%B1%86%E5%AD%90+C",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -3895,10 +4039,10 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 50,
+      "weightedAverage": 75,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A01-034": {
       "price": 50,
@@ -3925,7 +4069,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A01-034|50|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|47"
         },
@@ -3968,7 +4112,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-034+%E6%88%91%E5%A6%BB%E5%96%84%E9%80%B8+C"
         }
       ],
-      "average": 50,
+      "average": 75,
       "history": [
         {
           "date": "2026-09-28",
@@ -3992,7 +4136,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-034+%E6%88%91%E5%A6%BB%E5%96%84%E9%80%B8+C",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -4007,14 +4151,14 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 50,
+      "weightedAverage": 75,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A01-035": {
       "price": 50,
-      "updated": "2026-10-14",
+      "updated": "2026-10-15",
       "sources": [
         {
           "name": "TCG Library",
@@ -4035,11 +4179,12 @@
           "source": "FullAhead",
           "price": 50,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/",
-          "updated": "2026-10-14",
-          "observedDate": "2026-10-14",
+          "updated": "2026-10-15",
+          "observedDate": "2026-10-15",
           "stale": false,
           "type": "asking",
-          "listingKey": "FullAhead|A01-035|50|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|48"
+          "listingKey": "FullAhead|A01-035|50|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|46",
+          "sourceUrl": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/"
         },
         {
           "shop": "FullAhead",
@@ -4080,7 +4225,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-035+%E5%98%B4%E5%B9%B3%E4%BC%8A%E4%B9%8B%E5%8A%A9+C"
         }
       ],
-      "average": 50,
+      "average": 64,
       "history": [
         {
           "date": "2026-09-28",
@@ -4096,6 +4241,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-15",
+          "market": 50,
+          "average": 64,
+          "cheapest": 50,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 50,
@@ -4104,7 +4258,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-035+%E5%98%B4%E5%B9%B3%E4%BC%8A%E4%B9%8B%E5%8A%A9+C",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -4117,16 +4271,26 @@
           "cheapest": 50,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-15",
+          "shop": "FullAhead",
+          "price": 50,
+          "median": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 50,
+      "weightedAverage": 64,
       "confidence": "low",
       "listingCount": 1,
       "shopCount": 1
     },
     "A01-036": {
       "price": 50,
-      "updated": "2026-10-14",
+      "updated": "2026-10-15",
       "sources": [
         {
           "name": "TCG Library",
@@ -4147,11 +4311,12 @@
           "source": "FullAhead",
           "price": 50,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/",
-          "updated": "2026-10-14",
-          "observedDate": "2026-10-14",
+          "updated": "2026-10-15",
+          "observedDate": "2026-10-15",
           "stale": false,
           "type": "asking",
-          "listingKey": "FullAhead|A01-036|50|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|49"
+          "listingKey": "FullAhead|A01-036|50|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|47",
+          "sourceUrl": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/"
         },
         {
           "shop": "FullAhead",
@@ -4192,7 +4357,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-036+%E4%B8%8D%E6%AD%BB%E5%B7%9D%E7%8E%84%E5%BC%A5+C"
         }
       ],
-      "average": 50,
+      "average": 64,
       "history": [
         {
           "date": "2026-09-28",
@@ -4208,6 +4373,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-15",
+          "market": 50,
+          "average": 64,
+          "cheapest": 50,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 50,
@@ -4216,7 +4390,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-036+%E4%B8%8D%E6%AD%BB%E5%B7%9D%E7%8E%84%E5%BC%A5+C",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -4229,16 +4403,26 @@
           "cheapest": 50,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-15",
+          "shop": "FullAhead",
+          "price": 50,
+          "median": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 50,
+      "weightedAverage": 64,
       "confidence": "low",
       "listingCount": 1,
       "shopCount": 1
     },
     "A01-037": {
       "price": 50,
-      "updated": "2026-10-14",
+      "updated": "2026-10-15",
       "sources": [
         {
           "name": "TCG Library",
@@ -4254,6 +4438,18 @@
         }
       ],
       "offers": [
+        {
+          "shop": "FullAhead",
+          "source": "FullAhead",
+          "price": 50,
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/",
+          "updated": "2026-10-15",
+          "observedDate": "2026-10-15",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "FullAhead|A01-037|50|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|48",
+          "sourceUrl": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/"
+        },
         {
           "shop": "FullAhead",
           "source": "FullAhead",
@@ -4293,29 +4489,53 @@
           "url": "https://jp.mercari.com/search?keyword=A01-037+%E5%86%A8%E5%B2%A1%E7%BE%A9%E5%8B%87+C"
         }
       ],
-      "average": 75,
+      "average": 64,
       "history": [
         {
           "date": "2026-09-28",
           "market": 60.0,
           "average": 60,
           "cheapest": 60.0
+        },
+        {
+          "date": "2026-10-15",
+          "market": 50,
+          "average": 64,
+          "cheapest": 50,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
-      "marketValue": 75,
+      "marketValue": 50,
       "mercari": {
         "status": "manual-search",
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-037+%E5%86%A8%E5%B2%A1%E7%BE%A9%E5%8B%87+C",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
-      "shopHistory": []
+      "shopHistory": [
+        {
+          "date": "2026-10-15",
+          "shop": "FullAhead",
+          "price": 50,
+          "median": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "type": "asking"
+        }
+      ],
+      "weightedAverage": 64,
+      "confidence": "low",
+      "listingCount": 1,
+      "shopCount": 1
     },
     "A01-038": {
       "price": 50,
-      "updated": "2026-10-14",
+      "updated": "2026-10-15",
       "sources": [
         {
           "name": "TCG Library",
@@ -4331,6 +4551,18 @@
         }
       ],
       "offers": [
+        {
+          "shop": "FullAhead",
+          "source": "FullAhead",
+          "price": 50,
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/",
+          "updated": "2026-10-15",
+          "observedDate": "2026-10-15",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "FullAhead|A01-038|50|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|49",
+          "sourceUrl": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/"
+        },
         {
           "shop": "FullAhead",
           "source": "FullAhead",
@@ -4370,25 +4602,49 @@
           "url": "https://jp.mercari.com/search?keyword=A01-038+%E8%83%A1%E8%9D%B6%E3%81%97%E3%81%AE%E3%81%B6+C"
         }
       ],
-      "average": 75,
+      "average": 64,
       "history": [
         {
           "date": "2026-09-28",
           "market": 60.0,
           "average": 60,
           "cheapest": 60.0
+        },
+        {
+          "date": "2026-10-15",
+          "market": 50,
+          "average": 64,
+          "cheapest": 50,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
-      "marketValue": 75,
+      "marketValue": 50,
       "mercari": {
         "status": "manual-search",
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-038+%E8%83%A1%E8%9D%B6%E3%81%97%E3%81%AE%E3%81%B6+C",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
-      "shopHistory": []
+      "shopHistory": [
+        {
+          "date": "2026-10-15",
+          "shop": "FullAhead",
+          "price": 50,
+          "median": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "type": "asking"
+        }
+      ],
+      "weightedAverage": 64,
+      "confidence": "low",
+      "listingCount": 1,
+      "shopCount": 1
     },
     "A01-039": {
       "price": 50,
@@ -4458,7 +4714,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-039+%E9%B1%97%E6%BB%9D%E5%B7%A6%E8%BF%91%E6%AC%A1+C"
         }
       ],
-      "average": 50,
+      "average": 64,
       "history": [
         {
           "date": "2026-09-28",
@@ -4482,7 +4738,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-039+%E9%B1%97%E6%BB%9D%E5%B7%A6%E8%BF%91%E6%AC%A1+C",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -4497,7 +4753,7 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 50,
+      "weightedAverage": 64,
       "confidence": "low",
       "listingCount": 1,
       "shopCount": 1
@@ -4570,7 +4826,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-040+%E9%8C%86%E5%85%8E+C"
         }
       ],
-      "average": 50,
+      "average": 64,
       "history": [
         {
           "date": "2026-09-28",
@@ -4594,7 +4850,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-040+%E9%8C%86%E5%85%8E+C",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -4609,7 +4865,7 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 50,
+      "weightedAverage": 64,
       "confidence": "low",
       "listingCount": 1,
       "shopCount": 1
@@ -4682,7 +4938,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-041+%E7%9C%9F%E8%8F%B0+C"
         }
       ],
-      "average": 50,
+      "average": 64,
       "history": [
         {
           "date": "2026-09-28",
@@ -4706,7 +4962,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-041+%E7%9C%9F%E8%8F%B0+C",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -4721,7 +4977,7 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 50,
+      "weightedAverage": 64,
       "confidence": "low",
       "listingCount": 1,
       "shopCount": 1
@@ -4794,7 +5050,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-042+%E6%89%8B%E9%AC%BC+C"
         }
       ],
-      "average": 50,
+      "average": 61,
       "history": [
         {
           "date": "2026-09-28",
@@ -4818,7 +5074,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-042+%E6%89%8B%E9%AC%BC+C",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -4833,7 +5089,7 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 50,
+      "weightedAverage": 61,
       "confidence": "low",
       "listingCount": 1,
       "shopCount": 1
@@ -4906,7 +5162,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-043+%E6%9C%B1%E7%B4%97%E4%B8%B8+C"
         }
       ],
-      "average": 50,
+      "average": 64,
       "history": [
         {
           "date": "2026-09-28",
@@ -4930,7 +5186,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-043+%E6%9C%B1%E7%B4%97%E4%B8%B8+C",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -4945,7 +5201,7 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 50,
+      "weightedAverage": 64,
       "confidence": "low",
       "listingCount": 1,
       "shopCount": 1
@@ -5018,7 +5274,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-044+%E7%9F%A2%E7%90%B6%E7%BE%BD+C"
         }
       ],
-      "average": 50,
+      "average": 64,
       "history": [
         {
           "date": "2026-09-28",
@@ -5042,7 +5298,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-044+%E7%9F%A2%E7%90%B6%E7%BE%BD+C",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -5057,7 +5313,7 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 50,
+      "weightedAverage": 64,
       "confidence": "low",
       "listingCount": 1,
       "shopCount": 1
@@ -5130,7 +5386,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-045+%E7%B4%AF+C"
         }
       ],
-      "average": 50,
+      "average": 61,
       "history": [
         {
           "date": "2026-09-28",
@@ -5154,7 +5410,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-045+%E7%B4%AF+C",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -5169,7 +5425,7 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 50,
+      "weightedAverage": 61,
       "confidence": "low",
       "listingCount": 1,
       "shopCount": 1
@@ -5242,7 +5498,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-046+%E9%AC%BC%E8%88%9E%E8%BE%BB%E7%84%A1%E6%83%A8+SR"
         }
       ],
-      "average": 280,
+      "average": 203,
       "history": [
         {
           "date": "2026-09-28",
@@ -5266,7 +5522,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-046+%E9%AC%BC%E8%88%9E%E8%BE%BB%E7%84%A1%E6%83%A8+SR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -5281,7 +5537,7 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 280,
+      "weightedAverage": 203,
       "confidence": "low",
       "listingCount": 1,
       "shopCount": 1
@@ -5354,7 +5610,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-047+%E7%8F%A0%E4%B8%96+SR"
         }
       ],
-      "average": 580,
+      "average": 388,
       "history": [
         {
           "date": "2026-09-28",
@@ -5378,7 +5634,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-047+%E7%8F%A0%E4%B8%96+SR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -5393,7 +5649,7 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 580,
+      "weightedAverage": 388,
       "confidence": "low",
       "listingCount": 1,
       "shopCount": 1
@@ -5466,7 +5722,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-048+%E6%A0%97%E8%8A%B1%E8%90%BD%E3%82%AB%E3%83%8A%E3%83%B2+SR"
         }
       ],
-      "average": 580,
+      "average": 395,
       "history": [
         {
           "date": "2026-09-28",
@@ -5490,7 +5746,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-048+%E6%A0%97%E8%8A%B1%E8%90%BD%E3%82%AB%E3%83%8A%E3%83%B2+SR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -5505,7 +5761,7 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 580,
+      "weightedAverage": 395,
       "confidence": "low",
       "listingCount": 1,
       "shopCount": 1
@@ -5578,7 +5834,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-049+%E7%99%BD%E9%AB%AE%E3%81%A8%E9%BB%92%E9%AB%AA+R"
         }
       ],
-      "average": 80,
+      "average": 86,
       "history": [
         {
           "date": "2026-09-28",
@@ -5602,7 +5858,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-049+%E7%99%BD%E9%AB%AE%E3%81%A8%E9%BB%92%E9%AB%AA+R",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -5617,7 +5873,7 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 80,
+      "weightedAverage": 86,
       "confidence": "low",
       "listingCount": 1,
       "shopCount": 1
@@ -5690,7 +5946,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-050+%E6%84%88%E5%8F%B2%E9%83%8E+R"
         }
       ],
-      "average": 320,
+      "average": 225,
       "history": [
         {
           "date": "2026-09-28",
@@ -5714,7 +5970,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-050+%E6%84%88%E5%8F%B2%E9%83%8E+R",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -5729,7 +5985,7 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 320,
+      "weightedAverage": 225,
       "confidence": "low",
       "listingCount": 1,
       "shopCount": 1
@@ -5826,7 +6082,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-051+%E8%9C%98%E8%9B%9B%E3%81%AE%E9%AC%BC%28%E7%88%B6%29+R",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -5914,7 +6170,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-052+%E6%A1%91%E5%B3%B6%E6%85%88%E6%82%9F%E9%83%8E+R"
         }
       ],
-      "average": 80,
+      "average": 86,
       "history": [
         {
           "date": "2026-09-28",
@@ -5938,7 +6194,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-052+%E6%A1%91%E5%B3%B6%E6%85%88%E6%82%9F%E9%83%8E+R",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -5953,7 +6209,7 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 80,
+      "weightedAverage": 86,
       "confidence": "low",
       "listingCount": 1,
       "shopCount": 1
@@ -6050,7 +6306,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-053+%E9%8B%BC%E9%90%B5%E5%A1%9A%E8%9B%8D+R",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -6138,7 +6394,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-054+%E9%9F%BF%E5%87%B1+R"
         }
       ],
-      "average": 80,
+      "average": 86,
       "history": [
         {
           "date": "2026-09-28",
@@ -6162,7 +6418,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-054+%E9%9F%BF%E5%87%B1+R",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -6177,7 +6433,7 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 80,
+      "weightedAverage": 86,
       "confidence": "low",
       "listingCount": 1,
       "shopCount": 1
@@ -6250,7 +6506,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-055+%E7%A5%9E%E5%B4%8E%E3%82%A2%E3%82%AA%E3%82%A4+C"
         }
       ],
-      "average": 50,
+      "average": 64,
       "history": [
         {
           "date": "2026-09-28",
@@ -6274,7 +6530,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-055+%E7%A5%9E%E5%B4%8E%E3%82%A2%E3%82%AA%E3%82%A4+C",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -6289,7 +6545,7 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 50,
+      "weightedAverage": 64,
       "confidence": "low",
       "listingCount": 1,
       "shopCount": 1
@@ -6362,7 +6618,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-056+%E7%B4%AF%E3%81%AB%E5%88%BB%E3%81%BE%E3%82%8C%E3%81%9F%E5%89%A3%E5%A3%AB+C"
         }
       ],
-      "average": 50,
+      "average": 64,
       "history": [
         {
           "date": "2026-09-28",
@@ -6386,7 +6642,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-056+%E7%B4%AF%E3%81%AB%E5%88%BB%E3%81%BE%E3%82%8C%E3%81%9F%E5%89%A3%E5%A3%AB+C",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -6401,7 +6657,7 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 50,
+      "weightedAverage": 64,
       "confidence": "low",
       "listingCount": 1,
       "shopCount": 1
@@ -6474,7 +6730,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-057+%E3%81%8D%E3%82%88%E3%83%BB%E3%81%99%E3%81%BF%E3%83%BB%E3%81%AA%E3%81%BB+C"
         }
       ],
-      "average": 50,
+      "average": 64,
       "history": [
         {
           "date": "2026-09-28",
@@ -6498,7 +6754,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-057+%E3%81%8D%E3%82%88%E3%83%BB%E3%81%99%E3%81%BF%E3%83%BB%E3%81%AA%E3%81%BB+C",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -6513,7 +6769,7 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 50,
+      "weightedAverage": 64,
       "confidence": "low",
       "listingCount": 1,
       "shopCount": 1
@@ -6586,7 +6842,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-058+%E5%A4%A9%E7%8E%8B%E5%AF%BA%E6%9D%BE%E5%8F%B3%E8%A1%9B%E9%96%80+C"
         }
       ],
-      "average": 50,
+      "average": 64,
       "history": [
         {
           "date": "2026-09-28",
@@ -6610,7 +6866,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-058+%E5%A4%A9%E7%8E%8B%E5%AF%BA%E6%9D%BE%E5%8F%B3%E8%A1%9B%E9%96%80+C",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
       "shopHistory": [
@@ -6625,7 +6881,7 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 50,
+      "weightedAverage": 64,
       "confidence": "low",
       "listingCount": 1,
       "shopCount": 1
@@ -6696,16 +6952,20 @@
           "cheapest": 60.0
         }
       ],
-      "marketValue": 64,
+      "marketValue": 28,
       "mercari": {
         "status": "manual-search",
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-059+%E6%B2%BC%E3%81%AE%E9%AC%BC+C",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
-      "shopHistory": []
+      "shopHistory": [],
+      "weightedAverage": 64,
+      "confidence": "low",
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A01-060": {
       "price": 28,
@@ -6773,16 +7033,20 @@
           "cheapest": 60.0
         }
       ],
-      "marketValue": 64,
+      "marketValue": 28,
       "mercari": {
         "status": "manual-search",
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A01-060+%E8%9C%98%E8%9B%9B%E3%81%AE%E9%AC%BC%28%E6%AF%8D%29+C",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 2,
-      "shopHistory": []
+      "shopHistory": [],
+      "weightedAverage": 64,
+      "confidence": "low",
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A02-001": {
       "price": 480,
@@ -6835,10 +7099,14 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-001+%E7%AB%88%E9%96%80%E7%82%AD%E6%B2%BB%E9%83%8E+UR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
-      "shopHistory": []
+      "shopHistory": [],
+      "weightedAverage": 480,
+      "confidence": "low",
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A02-002": {
       "price": 11800,
@@ -6889,10 +7157,14 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-002+%E7%AB%88%E9%96%80%E7%82%AD%E6%B2%BB%E9%83%8E+UR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 0,
-      "shopHistory": []
+      "shopHistory": [],
+      "weightedAverage": 11800,
+      "confidence": "low",
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A02-003": {
       "price": 380,
@@ -6906,7 +7178,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A02-003|380|https://pt-fullahead.com/shopbrand/kynbs/|29"
         }
@@ -6957,7 +7229,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-003+%E7%AB%88%E9%96%80%E7%A6%B0%E8%B1%86%E5%AD%90+UR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
@@ -6974,8 +7246,8 @@
       ],
       "weightedAverage": 380,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A02-004": {
       "price": 580,
@@ -6989,7 +7261,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A02-004|580|https://pt-fullahead.com/shopbrand/kynbs/|30"
         }
@@ -7040,7 +7312,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-004+%E6%88%91%E5%A6%BB%E5%96%84%E9%80%B8+UR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
@@ -7057,8 +7329,8 @@
       ],
       "weightedAverage": 580,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A02-005": {
       "price": 380,
@@ -7072,7 +7344,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A02-005|380|https://pt-fullahead.com/shopbrand/kynbs/|31"
         }
@@ -7123,7 +7395,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-005+%E5%98%B4%E5%B9%B3%E4%BC%8A%E4%B9%8B%E5%8A%A9+UR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
@@ -7140,8 +7412,8 @@
       ],
       "weightedAverage": 380,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A02-006": {
       "price": 3980,
@@ -7155,7 +7427,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A02-006|3980|https://pt-fullahead.com/shopbrand/kynbs/|32"
         },
@@ -7188,7 +7460,7 @@
           "url": "https://jp.mercari.com/search?keyword=A02-006+%E5%98%B4%E5%B9%B3%E4%BC%8A%E4%B9%8B%E5%8A%A9+UR"
         }
       ],
-      "average": 3980,
+      "average": 4890,
       "history": [
         {
           "date": "2026-09-29",
@@ -7206,13 +7478,13 @@
           "confidence": "low"
         }
       ],
-      "marketValue": 3980,
+      "marketValue": 5780,
       "mercari": {
         "status": "manual-search",
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-006+%E5%98%B4%E5%B9%B3%E4%BC%8A%E4%B9%8B%E5%8A%A9+UR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 0,
       "shopHistory": [
@@ -7227,10 +7499,10 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 3980,
+      "weightedAverage": 4890,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A02-007": {
       "price": 780,
@@ -7244,7 +7516,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A02-007|780|https://pt-fullahead.com/shopbrand/kynbs/|33"
         }
@@ -7295,7 +7567,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-007+%E5%86%A8%E5%B2%A1%E7%BE%A9%E5%8B%87+UR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
@@ -7312,8 +7584,8 @@
       ],
       "weightedAverage": 780,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A02-008": {
       "price": 1280,
@@ -7327,7 +7599,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A02-008|1280|https://pt-fullahead.com/shopbrand/kynbs/|34"
         },
@@ -7360,7 +7632,7 @@
           "url": "https://jp.mercari.com/search?keyword=A02-008+%E7%85%89%E7%8D%84%E6%9D%8F%E5%AF%BF%E9%83%8E+UR"
         }
       ],
-      "average": 1280,
+      "average": 1634,
       "history": [
         {
           "date": "2026-09-29",
@@ -7378,13 +7650,13 @@
           "confidence": "low"
         }
       ],
-      "marketValue": 1280,
+      "marketValue": 1980,
       "mercari": {
         "status": "manual-search",
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-008+%E7%85%89%E7%8D%84%E6%9D%8F%E5%AF%BF%E9%83%8E+UR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 0,
       "shopHistory": [
@@ -7399,10 +7671,10 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 1280,
+      "weightedAverage": 1634,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A02-009": {
       "price": 11800,
@@ -7416,7 +7688,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A02-009|11800|https://pt-fullahead.com/shopbrand/kynbs/|35"
         },
@@ -7449,7 +7721,7 @@
           "url": "https://jp.mercari.com/search?keyword=A02-009+%E7%85%89%E7%8D%84%E6%9D%8F%E5%AF%BF%E9%83%8E+UR"
         }
       ],
-      "average": 11800,
+      "average": 11901,
       "history": [
         {
           "date": "2026-09-29",
@@ -7467,13 +7739,13 @@
           "confidence": "low"
         }
       ],
-      "marketValue": 11800,
+      "marketValue": 12000,
       "mercari": {
         "status": "manual-search",
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-009+%E7%85%89%E7%8D%84%E6%9D%8F%E5%AF%BF%E9%83%8E+UR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 0,
       "shopHistory": [
@@ -7488,10 +7760,10 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 11800,
+      "weightedAverage": 11901,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A02-010": {
       "price": 380,
@@ -7505,7 +7777,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A02-010|380|https://pt-fullahead.com/shopbrand/kynbs/|36"
         }
@@ -7556,7 +7828,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-010+%E9%AD%98%E5%A4%A2+UR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
@@ -7573,8 +7845,8 @@
       ],
       "weightedAverage": 380,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A02-011": {
       "price": 3980,
@@ -7588,7 +7860,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A02-011|3980|https://pt-fullahead.com/shopbrand/kynbs/|37"
         },
@@ -7621,7 +7893,7 @@
           "url": "https://jp.mercari.com/search?keyword=A02-011+%E9%AD%98%E5%A4%A2+UR"
         }
       ],
-      "average": 3980,
+      "average": 4992,
       "history": [
         {
           "date": "2026-09-29",
@@ -7639,13 +7911,13 @@
           "confidence": "low"
         }
       ],
-      "marketValue": 3980,
+      "marketValue": 5980,
       "mercari": {
         "status": "manual-search",
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-011+%E9%AD%98%E5%A4%A2+UR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 0,
       "shopHistory": [
@@ -7660,10 +7932,10 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 3980,
+      "weightedAverage": 4992,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A02-012": {
       "price": 100,
@@ -7677,7 +7949,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A02-012|100|https://pt-fullahead.com/shopbrand/kynbs/|38"
         }
@@ -7728,7 +8000,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-012+%E7%AB%88%E9%96%80%E7%82%AD%E6%B2%BB%E9%83%8E+SR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
@@ -7745,8 +8017,8 @@
       ],
       "weightedAverage": 100,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A02-013": {
       "price": 100,
@@ -7760,7 +8032,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A02-013|100|https://pt-fullahead.com/shopbrand/kynbs/|39"
         }
@@ -7811,7 +8083,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-013+%E7%AB%88%E9%96%80%E7%A6%B0%E8%B1%86%E5%AD%90+SR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
@@ -7828,8 +8100,8 @@
       ],
       "weightedAverage": 100,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A02-014": {
       "price": 100,
@@ -7843,7 +8115,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A02-014|100|https://pt-fullahead.com/shopbrand/kynbs/|40"
         }
@@ -7894,7 +8166,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-014+%E6%88%91%E5%A6%BB%E5%96%84%E9%80%B8+SR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
@@ -7911,12 +8183,12 @@
       ],
       "weightedAverage": 100,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A02-015": {
       "price": 100,
-      "updated": "2026-10-14",
+      "updated": "2026-10-15",
       "sources": [],
       "offers": [
         {
@@ -7924,11 +8196,12 @@
           "source": "FullAhead",
           "price": 100,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/",
-          "updated": "2026-10-14",
-          "observedDate": "2026-10-14",
+          "updated": "2026-10-15",
+          "observedDate": "2026-10-15",
           "stale": false,
           "type": "asking",
-          "listingKey": "FullAhead|A02-015|100|https://pt-fullahead.com/shopbrand/kynbs/|41"
+          "listingKey": "FullAhead|A02-015|100|https://pt-fullahead.com/shopbrand/kynbs/|41",
+          "sourceUrl": "https://pt-fullahead.com/shopbrand/kynbs/"
         }
       ],
       "shopLinks": [
@@ -7969,6 +8242,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-15",
+          "market": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 100,
@@ -7977,12 +8259,22 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-015+%E5%98%B4%E5%B9%B3%E4%BC%8A%E4%B9%8B%E5%8A%A9+SR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
         {
           "date": "2026-10-14",
+          "shop": "FullAhead",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
+        },
+        {
+          "date": "2026-10-15",
           "shop": "FullAhead",
           "price": 100,
           "median": 100,
@@ -8009,7 +8301,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A02-016|120|https://pt-fullahead.com/shopbrand/kynbs/|42"
         }
@@ -8060,7 +8352,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-016+%E5%86%A8%E5%B2%A1%E7%BE%A9%E5%8B%87+SR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
@@ -8077,8 +8369,8 @@
       ],
       "weightedAverage": 120,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A02-017": {
       "price": 150,
@@ -8092,7 +8384,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A02-017|150|https://pt-fullahead.com/shopbrand/kynbs/|43"
         }
@@ -8143,7 +8435,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-017+%E8%83%A1%E8%9D%B6%E3%81%97%E3%81%AE%E3%81%B6+SR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
@@ -8160,8 +8452,8 @@
       ],
       "weightedAverage": 150,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A02-018": {
       "price": 150,
@@ -8175,7 +8467,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A02-018|150|https://pt-fullahead.com/shopbrand/kynbs/|44"
         }
@@ -8226,7 +8518,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-018+%E7%85%89%E7%8D%84%E6%9D%8F%E5%AF%BF%E9%83%8E+SR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
@@ -8243,8 +8535,8 @@
       ],
       "weightedAverage": 150,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A02-019": {
       "price": 120,
@@ -8258,7 +8550,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A02-019|120|https://pt-fullahead.com/shopbrand/kynbs/|45"
         }
@@ -8309,7 +8601,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-019+%E9%8C%86%E5%85%8E+SR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
@@ -8326,8 +8618,8 @@
       ],
       "weightedAverage": 120,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A02-020": {
       "price": 100,
@@ -8341,7 +8633,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A02-020|100|https://pt-fullahead.com/shopbrand/kynbs/|46"
         }
@@ -8392,7 +8684,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-020+%E9%AD%98%E5%A4%A2+SR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
@@ -8409,8 +8701,8 @@
       ],
       "weightedAverage": 100,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A02-021": {
       "price": 100,
@@ -8424,7 +8716,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A02-021|100|https://pt-fullahead.com/shopbrand/kynbs/|47"
         }
@@ -8475,7 +8767,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-021+%E7%AB%88%E9%96%80%E7%A6%B0%E8%B1%86%E5%AD%90+R",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
@@ -8492,8 +8784,8 @@
       ],
       "weightedAverage": 100,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A02-022": {
       "price": 80,
@@ -8507,7 +8799,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A02-022|80|https://pt-fullahead.com/shopbrand/kynbs/|48"
         }
@@ -8558,7 +8850,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-022+%E6%88%91%E5%A6%BB%E5%96%84%E9%80%B8+R",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
@@ -8575,8 +8867,8 @@
       ],
       "weightedAverage": 80,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A02-023": {
       "price": 80,
@@ -8590,7 +8882,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A02-023|80|https://pt-fullahead.com/shopbrand/kynbs/|49"
         }
@@ -8641,7 +8933,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-023+%E4%B8%8D%E6%AD%BB%E5%B7%9D%E7%8E%84%E5%BC%A5+R",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
@@ -8658,8 +8950,8 @@
       ],
       "weightedAverage": 80,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A02-024": {
       "price": 150,
@@ -8712,10 +9004,14 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-024+%E5%86%A8%E5%B2%A1%E7%BE%A9%E5%8B%87+R",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
-      "shopHistory": []
+      "shopHistory": [],
+      "weightedAverage": 150,
+      "confidence": "low",
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A02-025": {
       "price": 58,
@@ -8768,10 +9064,14 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-025+%E8%83%A1%E8%9D%B6%E3%81%97%E3%81%AE%E3%81%B6+R",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
-      "shopHistory": []
+      "shopHistory": [],
+      "weightedAverage": 58,
+      "confidence": "low",
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A02-026": {
       "price": 150,
@@ -8785,7 +9085,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A02-026|150|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|2"
         },
@@ -8844,7 +9144,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-026+%E7%85%89%E7%8D%84%E6%9D%8F%E5%AF%BF%E9%83%8E+R",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
@@ -8861,8 +9161,8 @@
       ],
       "weightedAverage": 150,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A02-027": {
       "price": 100,
@@ -8876,7 +9176,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A02-027|100|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|3"
         },
@@ -8935,7 +9235,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-027+%E6%9D%91%E7%94%B0+R",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
@@ -8952,8 +9252,8 @@
       ],
       "weightedAverage": 100,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A02-028": {
       "price": 100,
@@ -8967,7 +9267,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A02-028|100|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|4"
         },
@@ -9026,7 +9326,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-028+%E9%8C%86%E5%85%8E+R",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
@@ -9043,8 +9343,8 @@
       ],
       "weightedAverage": 100,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A02-029": {
       "price": 100,
@@ -9058,7 +9358,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A02-029|100|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|5"
         },
@@ -9117,7 +9417,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-029+%E7%9C%9F%E8%8F%B0+R",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
@@ -9134,8 +9434,8 @@
       ],
       "weightedAverage": 100,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A02-030": {
       "price": 80,
@@ -9149,7 +9449,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A02-030|80|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|6"
         },
@@ -9208,7 +9508,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-030+%E7%B4%AF+R",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
@@ -9225,8 +9525,8 @@
       ],
       "weightedAverage": 80,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A02-031": {
       "price": 80,
@@ -9240,7 +9540,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A02-031|80|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|7"
         },
@@ -9299,7 +9599,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-031+%E9%AD%98%E5%A4%A2+R",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
@@ -9316,8 +9616,8 @@
       ],
       "weightedAverage": 80,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A02-032": {
       "price": 50,
@@ -9331,7 +9631,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A02-032|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|8"
         },
@@ -9390,7 +9690,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-032+%E7%AB%88%E9%96%80%E7%82%AD%E6%B2%BB%E9%83%8E+C",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
@@ -9407,8 +9707,8 @@
       ],
       "weightedAverage": 50,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A02-033": {
       "price": 50,
@@ -9422,7 +9722,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A02-033|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|9"
         },
@@ -9481,7 +9781,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-033+%E7%AB%88%E9%96%80%E7%A6%B0%E8%B1%86%E5%AD%90+C",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
@@ -9498,8 +9798,8 @@
       ],
       "weightedAverage": 50,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A02-034": {
       "price": 50,
@@ -9513,7 +9813,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A02-034|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|10"
         },
@@ -9572,7 +9872,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-034+%E6%88%91%E5%A6%BB%E5%96%84%E9%80%B8+C",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
@@ -9589,12 +9889,12 @@
       ],
       "weightedAverage": 50,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A02-035": {
       "price": 50,
-      "updated": "2026-10-14",
+      "updated": "2026-10-15",
       "sources": [],
       "offers": [
         {
@@ -9602,11 +9902,12 @@
           "source": "FullAhead",
           "price": 50,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
-          "updated": "2026-10-14",
-          "observedDate": "2026-10-14",
+          "updated": "2026-10-15",
+          "observedDate": "2026-10-15",
           "stale": false,
           "type": "asking",
-          "listingKey": "FullAhead|A02-035|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|11"
+          "listingKey": "FullAhead|A02-035|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|11",
+          "sourceUrl": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/"
         },
         {
           "shop": "FullAhead",
@@ -9655,6 +9956,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-15",
+          "market": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 50,
@@ -9663,12 +9973,22 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-035+%E5%98%B4%E5%B9%B3%E4%BC%8A%E4%B9%8B%E5%8A%A9+C",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
         {
           "date": "2026-10-14",
+          "shop": "FullAhead",
+          "price": 50,
+          "median": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "type": "asking"
+        },
+        {
+          "date": "2026-10-15",
           "shop": "FullAhead",
           "price": 50,
           "median": 50,
@@ -9685,7 +10005,7 @@
     },
     "A02-036": {
       "price": 50,
-      "updated": "2026-10-14",
+      "updated": "2026-10-15",
       "sources": [],
       "offers": [
         {
@@ -9693,11 +10013,12 @@
           "source": "FullAhead",
           "price": 50,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
-          "updated": "2026-10-14",
-          "observedDate": "2026-10-14",
+          "updated": "2026-10-15",
+          "observedDate": "2026-10-15",
           "stale": false,
           "type": "asking",
-          "listingKey": "FullAhead|A02-036|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|12"
+          "listingKey": "FullAhead|A02-036|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|12",
+          "sourceUrl": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/"
         },
         {
           "shop": "FullAhead",
@@ -9746,6 +10067,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-15",
+          "market": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 50,
@@ -9754,12 +10084,22 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-036+%E4%B8%8D%E6%AD%BB%E5%B7%9D%E7%8E%84%E5%BC%A5+C",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
         {
           "date": "2026-10-14",
+          "shop": "FullAhead",
+          "price": 50,
+          "median": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "type": "asking"
+        },
+        {
+          "date": "2026-10-15",
           "shop": "FullAhead",
           "price": 50,
           "median": 50,
@@ -9776,7 +10116,7 @@
     },
     "A02-037": {
       "price": 50,
-      "updated": "2026-10-14",
+      "updated": "2026-10-15",
       "sources": [],
       "offers": [
         {
@@ -9784,11 +10124,12 @@
           "source": "FullAhead",
           "price": 50,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
-          "updated": "2026-10-14",
-          "observedDate": "2026-10-14",
+          "updated": "2026-10-15",
+          "observedDate": "2026-10-15",
           "stale": false,
           "type": "asking",
-          "listingKey": "FullAhead|A02-037|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|13"
+          "listingKey": "FullAhead|A02-037|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|13",
+          "sourceUrl": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/"
         },
         {
           "shop": "FullAhead",
@@ -9837,6 +10178,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-15",
+          "market": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 50,
@@ -9845,12 +10195,22 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-037+%E5%86%A8%E5%B2%A1%E7%BE%A9%E5%8B%87+C",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
         {
           "date": "2026-10-14",
+          "shop": "FullAhead",
+          "price": 50,
+          "median": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "type": "asking"
+        },
+        {
+          "date": "2026-10-15",
           "shop": "FullAhead",
           "price": 50,
           "median": 50,
@@ -9867,7 +10227,7 @@
     },
     "A02-038": {
       "price": 50,
-      "updated": "2026-10-14",
+      "updated": "2026-10-15",
       "sources": [],
       "offers": [
         {
@@ -9875,11 +10235,12 @@
           "source": "FullAhead",
           "price": 50,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
-          "updated": "2026-10-14",
-          "observedDate": "2026-10-14",
+          "updated": "2026-10-15",
+          "observedDate": "2026-10-15",
           "stale": false,
           "type": "asking",
-          "listingKey": "FullAhead|A02-038|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|14"
+          "listingKey": "FullAhead|A02-038|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|14",
+          "sourceUrl": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/"
         },
         {
           "shop": "FullAhead",
@@ -9928,6 +10289,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-15",
+          "market": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 50,
@@ -9936,12 +10306,22 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-038+%E8%83%A1%E8%9D%B6%E3%81%97%E3%81%AE%E3%81%B6+C",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
         {
           "date": "2026-10-14",
+          "shop": "FullAhead",
+          "price": 50,
+          "median": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "type": "asking"
+        },
+        {
+          "date": "2026-10-15",
           "shop": "FullAhead",
           "price": 50,
           "median": 50,
@@ -9958,7 +10338,7 @@
     },
     "A02-039": {
       "price": 50,
-      "updated": "2026-10-14",
+      "updated": "2026-10-15",
       "sources": [],
       "offers": [
         {
@@ -9966,11 +10346,12 @@
           "source": "FullAhead",
           "price": 50,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
-          "updated": "2026-10-14",
-          "observedDate": "2026-10-14",
+          "updated": "2026-10-15",
+          "observedDate": "2026-10-15",
           "stale": false,
           "type": "asking",
-          "listingKey": "FullAhead|A02-039|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|15"
+          "listingKey": "FullAhead|A02-039|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|15",
+          "sourceUrl": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/"
         },
         {
           "shop": "FullAhead",
@@ -10019,6 +10400,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-15",
+          "market": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 50,
@@ -10027,12 +10417,22 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-039+%E6%9D%91%E7%94%B0+C",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
         {
           "date": "2026-10-14",
+          "shop": "FullAhead",
+          "price": 50,
+          "median": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "type": "asking"
+        },
+        {
+          "date": "2026-10-15",
           "shop": "FullAhead",
           "price": 50,
           "median": 50,
@@ -10049,7 +10449,7 @@
     },
     "A02-040": {
       "price": 50,
-      "updated": "2026-10-14",
+      "updated": "2026-10-15",
       "sources": [],
       "offers": [
         {
@@ -10057,11 +10457,12 @@
           "source": "FullAhead",
           "price": 50,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
-          "updated": "2026-10-14",
-          "observedDate": "2026-10-14",
+          "updated": "2026-10-15",
+          "observedDate": "2026-10-15",
           "stale": false,
           "type": "asking",
-          "listingKey": "FullAhead|A02-040|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|16"
+          "listingKey": "FullAhead|A02-040|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|16",
+          "sourceUrl": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/"
         },
         {
           "shop": "FullAhead",
@@ -10110,6 +10511,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-15",
+          "market": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 50,
@@ -10118,12 +10528,22 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-040+%E9%B1%97%E6%BB%9D%E5%B7%A6%E8%BF%91%E6%AC%A1+C",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
         {
           "date": "2026-10-14",
+          "shop": "FullAhead",
+          "price": 50,
+          "median": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "type": "asking"
+        },
+        {
+          "date": "2026-10-15",
           "shop": "FullAhead",
           "price": 50,
           "median": 50,
@@ -10140,7 +10560,7 @@
     },
     "A02-041": {
       "price": 50,
-      "updated": "2026-10-14",
+      "updated": "2026-10-15",
       "sources": [],
       "offers": [
         {
@@ -10148,11 +10568,12 @@
           "source": "FullAhead",
           "price": 50,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
-          "updated": "2026-10-14",
-          "observedDate": "2026-10-14",
+          "updated": "2026-10-15",
+          "observedDate": "2026-10-15",
           "stale": false,
           "type": "asking",
-          "listingKey": "FullAhead|A02-041|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|17"
+          "listingKey": "FullAhead|A02-041|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|17",
+          "sourceUrl": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/"
         },
         {
           "shop": "FullAhead",
@@ -10201,6 +10622,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-15",
+          "market": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 50,
@@ -10209,12 +10639,22 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-041+%E9%8C%86%E5%85%8E+C",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
         {
           "date": "2026-10-14",
+          "shop": "FullAhead",
+          "price": 50,
+          "median": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "type": "asking"
+        },
+        {
+          "date": "2026-10-15",
           "shop": "FullAhead",
           "price": 50,
           "median": 50,
@@ -10231,7 +10671,7 @@
     },
     "A02-042": {
       "price": 50,
-      "updated": "2026-10-14",
+      "updated": "2026-10-15",
       "sources": [],
       "offers": [
         {
@@ -10239,11 +10679,12 @@
           "source": "FullAhead",
           "price": 50,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
-          "updated": "2026-10-14",
-          "observedDate": "2026-10-14",
+          "updated": "2026-10-15",
+          "observedDate": "2026-10-15",
           "stale": false,
           "type": "asking",
-          "listingKey": "FullAhead|A02-042|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|18"
+          "listingKey": "FullAhead|A02-042|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|18",
+          "sourceUrl": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/"
         },
         {
           "shop": "FullAhead",
@@ -10292,6 +10733,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-15",
+          "market": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 50,
@@ -10300,12 +10750,22 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-042+%E7%9C%9F%E8%8F%B0+C",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
         {
           "date": "2026-10-14",
+          "shop": "FullAhead",
+          "price": 50,
+          "median": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "type": "asking"
+        },
+        {
+          "date": "2026-10-15",
           "shop": "FullAhead",
           "price": 50,
           "median": 50,
@@ -10322,7 +10782,7 @@
     },
     "A02-043": {
       "price": 50,
-      "updated": "2026-10-14",
+      "updated": "2026-10-15",
       "sources": [],
       "offers": [
         {
@@ -10330,11 +10790,12 @@
           "source": "FullAhead",
           "price": 50,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
-          "updated": "2026-10-14",
-          "observedDate": "2026-10-14",
+          "updated": "2026-10-15",
+          "observedDate": "2026-10-15",
           "stale": false,
           "type": "asking",
-          "listingKey": "FullAhead|A02-043|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|19"
+          "listingKey": "FullAhead|A02-043|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|19",
+          "sourceUrl": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/"
         },
         {
           "shop": "FullAhead",
@@ -10383,6 +10844,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-15",
+          "market": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 50,
@@ -10391,12 +10861,22 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-043+%E6%9C%B1%E7%B4%97%E4%B8%B8+C",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
         {
           "date": "2026-10-14",
+          "shop": "FullAhead",
+          "price": 50,
+          "median": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "type": "asking"
+        },
+        {
+          "date": "2026-10-15",
           "shop": "FullAhead",
           "price": 50,
           "median": 50,
@@ -10413,7 +10893,7 @@
     },
     "A02-044": {
       "price": 50,
-      "updated": "2026-10-14",
+      "updated": "2026-10-15",
       "sources": [],
       "offers": [
         {
@@ -10421,11 +10901,12 @@
           "source": "FullAhead",
           "price": 50,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
-          "updated": "2026-10-14",
-          "observedDate": "2026-10-14",
+          "updated": "2026-10-15",
+          "observedDate": "2026-10-15",
           "stale": false,
           "type": "asking",
-          "listingKey": "FullAhead|A02-044|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|20"
+          "listingKey": "FullAhead|A02-044|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|20",
+          "sourceUrl": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/"
         },
         {
           "shop": "FullAhead",
@@ -10474,6 +10955,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-15",
+          "market": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 50,
@@ -10482,12 +10972,22 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-044+%E7%9F%A2%E7%90%B6%E7%BE%BD+C",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
         {
           "date": "2026-10-14",
+          "shop": "FullAhead",
+          "price": 50,
+          "median": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "type": "asking"
+        },
+        {
+          "date": "2026-10-15",
           "shop": "FullAhead",
           "price": 50,
           "median": 50,
@@ -10504,7 +11004,7 @@
     },
     "A02-045": {
       "price": 50,
-      "updated": "2026-10-14",
+      "updated": "2026-10-15",
       "sources": [],
       "offers": [
         {
@@ -10512,11 +11012,12 @@
           "source": "FullAhead",
           "price": 50,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
-          "updated": "2026-10-14",
-          "observedDate": "2026-10-14",
+          "updated": "2026-10-15",
+          "observedDate": "2026-10-15",
           "stale": false,
           "type": "asking",
-          "listingKey": "FullAhead|A02-045|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|21"
+          "listingKey": "FullAhead|A02-045|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|21",
+          "sourceUrl": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/"
         },
         {
           "shop": "FullAhead",
@@ -10565,6 +11066,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-15",
+          "market": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 50,
@@ -10573,12 +11083,22 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-045+%E7%B4%AF+C",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
         {
           "date": "2026-10-14",
+          "shop": "FullAhead",
+          "price": 50,
+          "median": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "type": "asking"
+        },
+        {
+          "date": "2026-10-15",
           "shop": "FullAhead",
           "price": 50,
           "median": 50,
@@ -10605,7 +11125,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A02-046|120|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|22"
         },
@@ -10664,7 +11184,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-046+%E7%94%A3%E5%B1%8B%E6%95%B7%E8%80%80%E5%93%89+SR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
@@ -10681,11 +11201,11 @@
       ],
       "weightedAverage": 120,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A02-047": {
-      "price": 100,
+      "price": 58,
       "updated": "2026-10-14",
       "sources": [],
       "offers": [
@@ -10696,7 +11216,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A02-047|100|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|23"
         },
@@ -10731,7 +11251,7 @@
           "url": "https://jp.mercari.com/search?keyword=A02-047+%E7%AB%88%E9%96%80%E7%82%AD%E5%8D%81%E9%83%8E+R"
         }
       ],
-      "average": 100,
+      "average": 79,
       "history": [
         {
           "date": "2026-09-29",
@@ -10749,13 +11269,13 @@
           "confidence": "low"
         }
       ],
-      "marketValue": 100,
+      "marketValue": 58,
       "mercari": {
         "status": "manual-search",
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-047+%E7%AB%88%E9%96%80%E7%82%AD%E5%8D%81%E9%83%8E+R",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
@@ -10770,10 +11290,10 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 100,
+      "weightedAverage": 79,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A02-048": {
       "price": 150,
@@ -10787,7 +11307,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A02-048|150|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|24"
         },
@@ -10846,7 +11366,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-048+%E7%AB%88%E9%96%80%E8%91%B5%E6%9E%9D+R",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
@@ -10863,8 +11383,8 @@
       ],
       "weightedAverage": 150,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A02-049": {
       "price": 100,
@@ -10878,7 +11398,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A02-049|100|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|25"
         },
@@ -10937,7 +11457,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-049+%E5%88%87%E3%82%8A%E8%A3%82%E3%81%8D%E9%AD%94%E3%81%AE%E9%AC%BC+R",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
@@ -10954,8 +11474,8 @@
       ],
       "weightedAverage": 100,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A02-050": {
       "price": 100,
@@ -10969,7 +11489,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A02-050|100|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|26"
         },
@@ -11028,7 +11548,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-050+%E3%83%81%E3%83%A5%E3%83%B3%E5%A4%AA%E9%83%8E+R",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
@@ -11045,11 +11565,11 @@
       ],
       "weightedAverage": 100,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A02-051": {
-      "price": 100,
+      "price": 58,
       "updated": "2026-10-14",
       "sources": [],
       "offers": [
@@ -11060,7 +11580,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A02-051|100|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|27"
         },
@@ -11095,7 +11615,7 @@
           "url": "https://jp.mercari.com/search?keyword=A02-051+%E8%83%A1%E8%9D%B6%E3%82%AB%E3%83%8A%E3%82%A8+R"
         }
       ],
-      "average": 100,
+      "average": 79,
       "history": [
         {
           "date": "2026-09-29",
@@ -11113,13 +11633,13 @@
           "confidence": "low"
         }
       ],
-      "marketValue": 100,
+      "marketValue": 58,
       "mercari": {
         "status": "manual-search",
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-051+%E8%83%A1%E8%9D%B6%E3%82%AB%E3%83%8A%E3%82%A8+R",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
@@ -11134,14 +11654,14 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 100,
+      "weightedAverage": 79,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A02-052": {
       "price": 100,
-      "updated": "2026-10-14",
+      "updated": "2026-10-15",
       "sources": [],
       "offers": [
         {
@@ -11149,11 +11669,12 @@
           "source": "FullAhead",
           "price": 100,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
-          "updated": "2026-10-14",
-          "observedDate": "2026-10-14",
+          "updated": "2026-10-15",
+          "observedDate": "2026-10-15",
           "stale": false,
           "type": "asking",
-          "listingKey": "FullAhead|A02-052|100|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|28"
+          "listingKey": "FullAhead|A02-052|100|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|28",
+          "sourceUrl": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/"
         },
         {
           "shop": "FullAhead",
@@ -11186,7 +11707,7 @@
           "url": "https://jp.mercari.com/search?keyword=A02-052+%E5%96%84%E9%80%B8%E3%81%AE%E5%85%84%E5%BC%9F%E5%AD%90+R"
         }
       ],
-      "average": 100,
+      "average": 92,
       "history": [
         {
           "date": "2026-09-29",
@@ -11202,6 +11723,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-15",
+          "market": 100,
+          "average": 92,
+          "cheapest": 100,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 100,
@@ -11210,7 +11740,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-052+%E5%96%84%E9%80%B8%E3%81%AE%E5%85%84%E5%BC%9F%E5%AD%90+R",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
@@ -11223,16 +11753,26 @@
           "cheapest": 100,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-15",
+          "shop": "FullAhead",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 100,
+      "weightedAverage": 92,
       "confidence": "low",
       "listingCount": 1,
       "shopCount": 1
     },
     "A02-053": {
       "price": 100,
-      "updated": "2026-10-14",
+      "updated": "2026-10-15",
       "sources": [],
       "offers": [
         {
@@ -11240,11 +11780,12 @@
           "source": "FullAhead",
           "price": 100,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
-          "updated": "2026-10-14",
-          "observedDate": "2026-10-14",
+          "updated": "2026-10-15",
+          "observedDate": "2026-10-15",
           "stale": false,
           "type": "asking",
-          "listingKey": "FullAhead|A02-053|100|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|29"
+          "listingKey": "FullAhead|A02-053|100|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|29",
+          "sourceUrl": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/"
         },
         {
           "shop": "FullAhead",
@@ -11277,7 +11818,7 @@
           "url": "https://jp.mercari.com/search?keyword=A02-053+%E7%85%89%E7%8D%84%E5%8D%83%E5%AF%BF%E9%83%8E+R"
         }
       ],
-      "average": 100,
+      "average": 92,
       "history": [
         {
           "date": "2026-09-29",
@@ -11293,6 +11834,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-15",
+          "market": 100,
+          "average": 92,
+          "cheapest": 100,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 100,
@@ -11301,7 +11851,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-053+%E7%85%89%E7%8D%84%E5%8D%83%E5%AF%BF%E9%83%8E+R",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
@@ -11314,9 +11864,19 @@
           "cheapest": 100,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-15",
+          "shop": "FullAhead",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 100,
+      "weightedAverage": 92,
       "confidence": "low",
       "listingCount": 1,
       "shopCount": 1
@@ -11333,7 +11893,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A02-054|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|30"
         },
@@ -11392,7 +11952,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-054+%E3%81%8A%E5%A0%82%E3%81%AE%E9%AC%BC+C",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
@@ -11409,8 +11969,8 @@
       ],
       "weightedAverage": 50,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A02-055": {
       "price": 50,
@@ -11424,7 +11984,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A02-055|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|31"
         },
@@ -11483,7 +12043,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-055+%E3%81%B5%E3%81%8F+C",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
@@ -11500,8 +12060,8 @@
       ],
       "weightedAverage": 50,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A02-056": {
       "price": 50,
@@ -11515,7 +12075,7 @@
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
           "updated": "2026-10-14",
           "observedDate": "2026-10-14",
-          "stale": false,
+          "stale": true,
           "type": "asking",
           "listingKey": "FullAhead|A02-056|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|32"
         },
@@ -11574,7 +12134,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-056+%E9%9A%A0+C",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
@@ -11591,12 +12151,12 @@
       ],
       "weightedAverage": 50,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 0,
+      "shopCount": 0
     },
     "A02-057": {
       "price": 50,
-      "updated": "2026-10-14",
+      "updated": "2026-10-15",
       "sources": [],
       "offers": [
         {
@@ -11604,11 +12164,12 @@
           "source": "FullAhead",
           "price": 50,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
-          "updated": "2026-10-14",
-          "observedDate": "2026-10-14",
+          "updated": "2026-10-15",
+          "observedDate": "2026-10-15",
           "stale": false,
           "type": "asking",
-          "listingKey": "FullAhead|A02-057|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|33"
+          "listingKey": "FullAhead|A02-057|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|33",
+          "sourceUrl": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/"
         },
         {
           "shop": "FullAhead",
@@ -11641,7 +12202,7 @@
           "url": "https://jp.mercari.com/search?keyword=A02-057+%E8%9C%98%E8%9B%9B%E3%81%AE%E9%AC%BC%28%E5%A7%89%29+C"
         }
       ],
-      "average": 50,
+      "average": 46,
       "history": [
         {
           "date": "2026-09-29",
@@ -11657,6 +12218,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-15",
+          "market": 50,
+          "average": 46,
+          "cheapest": 50,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 50,
@@ -11665,7 +12235,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-057+%E8%9C%98%E8%9B%9B%E3%81%AE%E9%AC%BC%28%E5%A7%89%29+C",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
       "shopHistory": [
@@ -11678,18 +12248,40 @@
           "cheapest": 50,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-15",
+          "shop": "FullAhead",
+          "price": 50,
+          "median": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 50,
+      "weightedAverage": 46,
       "confidence": "low",
       "listingCount": 1,
       "shopCount": 1
     },
     "A02-058": {
       "price": 50,
-      "updated": "2026-10-14",
+      "updated": "2026-10-15",
       "sources": [],
       "offers": [
+        {
+          "shop": "FullAhead",
+          "source": "FullAhead",
+          "price": 50,
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
+          "updated": "2026-10-15",
+          "observedDate": "2026-10-15",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "FullAhead|A02-058|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|34",
+          "sourceUrl": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/"
+        },
         {
           "shop": "FullAhead",
           "source": "FullAhead",
@@ -11728,6 +12320,15 @@
           "market": 50.0,
           "average": 50,
           "cheapest": 50.0
+        },
+        {
+          "date": "2026-10-15",
+          "market": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 50,
@@ -11736,16 +12337,43 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-058+%E4%BA%BA%E8%B2%B7%E3%81%84+C",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
-      "shopHistory": []
+      "shopHistory": [
+        {
+          "date": "2026-10-15",
+          "shop": "FullAhead",
+          "price": 50,
+          "median": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "type": "asking"
+        }
+      ],
+      "weightedAverage": 50,
+      "confidence": "low",
+      "listingCount": 1,
+      "shopCount": 1
     },
     "A02-059": {
       "price": 50,
-      "updated": "2026-10-14",
+      "updated": "2026-10-15",
       "sources": [],
       "offers": [
+        {
+          "shop": "FullAhead",
+          "source": "FullAhead",
+          "price": 50,
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
+          "updated": "2026-10-15",
+          "observedDate": "2026-10-15",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "FullAhead|A02-059|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|35",
+          "sourceUrl": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/"
+        },
         {
           "shop": "FullAhead",
           "source": "FullAhead",
@@ -11784,6 +12412,15 @@
           "market": 50.0,
           "average": 50,
           "cheapest": 50.0
+        },
+        {
+          "date": "2026-10-15",
+          "market": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 50,
@@ -11792,10 +12429,25 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-059+%E8%97%A4%E3%81%AE%E8%8A%B1%E3%81%AE%E5%AE%B6%E7%B4%8B%E3%81%AE%E5%AE%B6%E3%81%AE%E3%81%8A%E5%A9%86%E3%81%95%E3%82%93+C",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
-      "shopHistory": []
+      "shopHistory": [
+        {
+          "date": "2026-10-15",
+          "shop": "FullAhead",
+          "price": 50,
+          "median": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "type": "asking"
+        }
+      ],
+      "weightedAverage": 50,
+      "confidence": "low",
+      "listingCount": 1,
+      "shopCount": 1
     },
     "A02-060": {
       "price": 50,
@@ -11848,10 +12500,14 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=A02-060+%E4%BC%9D%E4%BB%A4%E5%BD%B9%E3%81%AE%E9%AC%BC%E6%AE%BA%E9%9A%8A%E5%A3%AB+C",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "freshSourceCount": 1,
-      "shopHistory": []
+      "shopHistory": [],
+      "weightedAverage": 50,
+      "confidence": "low",
+      "listingCount": 0,
+      "shopCount": 0
     },
     "P02-001": {
       "offers": [],
@@ -11885,7 +12541,7 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=P02-001+%E7%85%89%E7%8D%84%E6%9D%8F%E5%AF%BF%E9%83%8E+PR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "history": [],
       "freshSourceCount": 0,
@@ -11932,15 +12588,28 @@
         "median": null,
         "samples": [],
         "url": "https://jp.mercari.com/search?keyword=P02-002+%E8%83%A1%E8%9D%B6%E3%81%97%E3%81%AE%E3%81%B6+PR",
-        "updated": "2026-10-14"
+        "note": "No automated sold-price data; do not interpret asks as completed sales."
       },
       "history": [],
       "updated": "2026-10-14",
       "freshSourceCount": 1,
-      "shopHistory": []
+      "shopHistory": [],
+      "weightedAverage": 280,
+      "confidence": "low",
+      "listingCount": 0,
+      "shopCount": 0
     }
   },
   "sourcesFetchedToday": [
     "FullAhead"
-  ]
+  ],
+  "sourceStatus": {
+    "successfulSources": [
+      "FullAhead"
+    ],
+    "failedFetches": 3,
+    "successfulPages": 3,
+    "observedListings": 27,
+    "checkedOn": "2026-10-15"
+  }
 }
