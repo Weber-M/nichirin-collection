@@ -1,7 +1,12 @@
 {
-  "updated": "2026-10-18",
+  "updated": "2026-10-19",
   "source": "https://p.eagate.573.jp/game/kimetsu/bslash/news/index.html",
   "items": [
+    {
+      "date": "2026.10.19",
+      "title": "『ジャンプフェスタ2027』に出展決定！",
+      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/1019_1.html"
+    },
     {
       "date": "2026.10.14",
       "title": "ゲーム内イベント「第2回 全集中！チャレンジバトル」開催！",
@@ -96,11 +101,6 @@
       "date": "2026.08.12",
       "title": "ゲーム内イベント「大ダメージで大量ゲット！アイテムくじバトル」開催！",
       "url": "https://p.eagate.573.jp/game/kimetsu/bslash/event/lottery/index.html"
-    },
-    {
-      "date": "2026.08.07",
-      "title": "現在確認されている不具合につきまして",
-      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/0807.html"
     }
   ]
 }
