@@ -1,7 +1,17 @@
 {
-  "updated": "2026-10-19",
+  "updated": "2026-10-20",
   "source": "https://p.eagate.573.jp/game/kimetsu/bslash/news/index.html",
   "items": [
+    {
+      "date": "2026.10.20",
+      "title": "ランクマッチ調整のお知らせ",
+      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/1020.html"
+    },
+    {
+      "date": "2026.10.19",
+      "title": "お店で冨岡義勇のPRカードを手に入れよう！",
+      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/1019_2.html"
+    },
     {
       "date": "2026.10.19",
       "title": "『ジャンプフェスタ2027』に出展決定！",
@@ -91,16 +101,6 @@
       "date": "2026.08.18",
       "title": "バージョンアップのお知らせ",
       "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/0818.html"
-    },
-    {
-      "date": "2026.08.17",
-      "title": "不具合対応のお知らせ",
-      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/0817.html"
-    },
-    {
-      "date": "2026.08.12",
-      "title": "ゲーム内イベント「大ダメージで大量ゲット！アイテムくじバトル」開催！",
-      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/event/lottery/index.html"
     }
   ]
 }
