@@ -4,7 +4,7 @@
   "historyPolicy": "Daily market snapshots are added only on days with fresh observations. Per-shop daily summaries are stored in each card shopHistory; missing days are not forward-filled.",
   "pricePolicy": "Market value is a recency-weighted median of live asking-price observations, with equal total influence per shop. Asking prices are not completed sales.",
   "mercariNote": "Mercari is a manual search link only; no automated completed-sale prices are included.",
-  "updated": "2026-10-20",
+  "updated": "2026-10-21",
   "cards": {
     "P01-001": {
       "price": 3980,
@@ -110,7 +110,7 @@
           "stale": true
         }
       ],
-      "average": 431,
+      "average": 429,
       "marketValue": 480,
       "history": [
         {
@@ -151,7 +151,7 @@
       },
       "freshSourceCount": 2,
       "shopHistory": [],
-      "weightedAverage": 431,
+      "weightedAverage": 429,
       "confidence": "low",
       "listingCount": 0,
       "shopCount": 0
@@ -197,7 +197,7 @@
           "stale": true
         }
       ],
-      "average": 211,
+      "average": 210,
       "marketValue": 160,
       "history": [
         {
@@ -238,7 +238,7 @@
       },
       "freshSourceCount": 2,
       "shopHistory": [],
-      "weightedAverage": 211,
+      "weightedAverage": 210,
       "confidence": "low",
       "listingCount": 0,
       "shopCount": 0
@@ -2733,7 +2733,7 @@
     },
     "A01-023": {
       "price": 80,
-      "updated": "2026-10-20",
+      "updated": "2026-10-21",
       "sources": [
         {
           "name": "TCG Library",
@@ -2754,8 +2754,8 @@
           "source": "FullAhead",
           "price": 80,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/",
-          "updated": "2026-10-20",
-          "observedDate": "2026-10-20",
+          "updated": "2026-10-21",
+          "observedDate": "2026-10-21",
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-023|80|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|34",
@@ -2870,6 +2870,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-21",
+          "market": 80,
+          "average": 85,
+          "cheapest": 80,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 80,
@@ -2951,6 +2960,16 @@
           "cheapest": 80,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-21",
+          "shop": "FullAhead",
+          "price": 80,
+          "median": 80,
+          "average": 80,
+          "cheapest": 80,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
       "weightedAverage": 85,
@@ -2960,7 +2979,7 @@
     },
     "A01-024": {
       "price": 80,
-      "updated": "2026-10-20",
+      "updated": "2026-10-21",
       "sources": [
         {
           "name": "TCG Library",
@@ -2981,8 +3000,8 @@
           "source": "FullAhead",
           "price": 80,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/",
-          "updated": "2026-10-20",
-          "observedDate": "2026-10-20",
+          "updated": "2026-10-21",
+          "observedDate": "2026-10-21",
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-024|80|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|35",
@@ -3097,6 +3116,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-21",
+          "market": 80,
+          "average": 80,
+          "cheapest": 80,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 80,
@@ -3171,6 +3199,16 @@
         },
         {
           "date": "2026-10-20",
+          "shop": "FullAhead",
+          "price": 80,
+          "median": 80,
+          "average": 80,
+          "cheapest": 80,
+          "listingCount": 1,
+          "type": "asking"
+        },
+        {
+          "date": "2026-10-21",
           "shop": "FullAhead",
           "price": 80,
           "median": 80,
@@ -3635,7 +3673,7 @@
     },
     "A01-029": {
       "price": 80,
-      "updated": "2026-10-20",
+      "updated": "2026-10-21",
       "sources": [
         {
           "name": "TCG Library",
@@ -3656,8 +3694,8 @@
           "source": "FullAhead",
           "price": 80,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/",
-          "updated": "2026-10-20",
-          "observedDate": "2026-10-20",
+          "updated": "2026-10-21",
+          "observedDate": "2026-10-21",
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-029|80|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|40",
@@ -3772,6 +3810,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-21",
+          "market": 80,
+          "average": 80,
+          "cheapest": 80,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 80,
@@ -3853,6 +3900,16 @@
           "cheapest": 80,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-21",
+          "shop": "FullAhead",
+          "price": 80,
+          "median": 80,
+          "average": 80,
+          "cheapest": 80,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
       "weightedAverage": 80,
@@ -3862,7 +3919,7 @@
     },
     "A01-030": {
       "price": 80,
-      "updated": "2026-10-20",
+      "updated": "2026-10-21",
       "sources": [
         {
           "name": "TCG Library",
@@ -3883,8 +3940,8 @@
           "source": "FullAhead",
           "price": 80,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/",
-          "updated": "2026-10-20",
-          "observedDate": "2026-10-20",
+          "updated": "2026-10-21",
+          "observedDate": "2026-10-21",
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-030|80|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|41",
@@ -3999,6 +4056,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-21",
+          "market": 80,
+          "average": 85,
+          "cheapest": 80,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 80,
@@ -4080,6 +4146,16 @@
           "cheapest": 80,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-21",
+          "shop": "FullAhead",
+          "price": 80,
+          "median": 80,
+          "average": 80,
+          "cheapest": 80,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
       "weightedAverage": 85,
@@ -4089,7 +4165,7 @@
     },
     "A01-031": {
       "price": 80,
-      "updated": "2026-10-20",
+      "updated": "2026-10-21",
       "sources": [
         {
           "name": "TCG Library",
@@ -4110,8 +4186,8 @@
           "source": "FullAhead",
           "price": 80,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/",
-          "updated": "2026-10-20",
-          "observedDate": "2026-10-20",
+          "updated": "2026-10-21",
+          "observedDate": "2026-10-21",
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-031|80|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|42",
@@ -4226,6 +4302,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-21",
+          "market": 80,
+          "average": 85,
+          "cheapest": 80,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 80,
@@ -4300,6 +4385,16 @@
         },
         {
           "date": "2026-10-20",
+          "shop": "FullAhead",
+          "price": 80,
+          "median": 80,
+          "average": 80,
+          "cheapest": 80,
+          "listingCount": 1,
+          "type": "asking"
+        },
+        {
+          "date": "2026-10-21",
           "shop": "FullAhead",
           "price": 80,
           "median": 80,
@@ -4652,7 +4747,7 @@
     },
     "A01-035": {
       "price": 50,
-      "updated": "2026-10-20",
+      "updated": "2026-10-21",
       "sources": [
         {
           "name": "TCG Library",
@@ -4673,8 +4768,8 @@
           "source": "FullAhead",
           "price": 50,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/",
-          "updated": "2026-10-20",
-          "observedDate": "2026-10-20",
+          "updated": "2026-10-21",
+          "observedDate": "2026-10-21",
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-035|50|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|46",
@@ -4789,6 +4884,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-21",
+          "market": 50,
+          "average": 63,
+          "cheapest": 50,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 50,
@@ -4870,6 +4974,16 @@
           "cheapest": 50,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-21",
+          "shop": "FullAhead",
+          "price": 50,
+          "median": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
       "weightedAverage": 63,
@@ -4879,7 +4993,7 @@
     },
     "A01-036": {
       "price": 50,
-      "updated": "2026-10-20",
+      "updated": "2026-10-21",
       "sources": [
         {
           "name": "TCG Library",
@@ -4900,8 +5014,8 @@
           "source": "FullAhead",
           "price": 50,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/",
-          "updated": "2026-10-20",
-          "observedDate": "2026-10-20",
+          "updated": "2026-10-21",
+          "observedDate": "2026-10-21",
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-036|50|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|47",
@@ -5016,6 +5130,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-21",
+          "market": 50,
+          "average": 63,
+          "cheapest": 50,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 50,
@@ -5097,6 +5220,16 @@
           "cheapest": 50,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-21",
+          "shop": "FullAhead",
+          "price": 50,
+          "median": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
       "weightedAverage": 63,
@@ -5106,7 +5239,7 @@
     },
     "A01-037": {
       "price": 50,
-      "updated": "2026-10-20",
+      "updated": "2026-10-21",
       "sources": [
         {
           "name": "TCG Library",
@@ -5127,8 +5260,8 @@
           "source": "FullAhead",
           "price": 50,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/",
-          "updated": "2026-10-20",
-          "observedDate": "2026-10-20",
+          "updated": "2026-10-21",
+          "observedDate": "2026-10-21",
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-037|50|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|48",
@@ -5234,6 +5367,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-21",
+          "market": 50,
+          "average": 63,
+          "cheapest": 50,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 50,
@@ -5305,6 +5447,16 @@
           "cheapest": 50,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-21",
+          "shop": "FullAhead",
+          "price": 50,
+          "median": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
       "weightedAverage": 63,
@@ -5314,7 +5466,7 @@
     },
     "A01-038": {
       "price": 50,
-      "updated": "2026-10-20",
+      "updated": "2026-10-21",
       "sources": [
         {
           "name": "TCG Library",
@@ -5335,8 +5487,8 @@
           "source": "FullAhead",
           "price": 50,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page3/order/",
-          "updated": "2026-10-20",
-          "observedDate": "2026-10-20",
+          "updated": "2026-10-21",
+          "observedDate": "2026-10-21",
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-038|50|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|49",
@@ -5433,6 +5585,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-21",
+          "market": 50,
+          "average": 63,
+          "cheapest": 50,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 50,
@@ -5487,6 +5648,16 @@
         },
         {
           "date": "2026-10-20",
+          "shop": "FullAhead",
+          "price": 50,
+          "median": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "type": "asking"
+        },
+        {
+          "date": "2026-10-21",
           "shop": "FullAhead",
           "price": 50,
           "median": 50,
@@ -8396,7 +8567,7 @@
           "url": "https://jp.mercari.com/search?keyword=A02-006+%E5%98%B4%E5%B9%B3%E4%BC%8A%E4%B9%8B%E5%8A%A9+UR"
         }
       ],
-      "average": 4942,
+      "average": 4953,
       "history": [
         {
           "date": "2026-09-29",
@@ -8435,7 +8606,7 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 4942,
+      "weightedAverage": 4953,
       "confidence": "low",
       "listingCount": 0,
       "shopCount": 0
@@ -8568,7 +8739,7 @@
           "url": "https://jp.mercari.com/search?keyword=A02-008+%E7%85%89%E7%8D%84%E6%9D%8F%E5%AF%BF%E9%83%8E+UR"
         }
       ],
-      "average": 1654,
+      "average": 1658,
       "history": [
         {
           "date": "2026-09-29",
@@ -8607,7 +8778,7 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 1654,
+      "weightedAverage": 1658,
       "confidence": "low",
       "listingCount": 0,
       "shopCount": 0
@@ -8657,7 +8828,7 @@
           "url": "https://jp.mercari.com/search?keyword=A02-009+%E7%85%89%E7%8D%84%E6%9D%8F%E5%AF%BF%E9%83%8E+UR"
         }
       ],
-      "average": 11907,
+      "average": 11908,
       "history": [
         {
           "date": "2026-09-29",
@@ -8696,7 +8867,7 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 11907,
+      "weightedAverage": 11908,
       "confidence": "low",
       "listingCount": 0,
       "shopCount": 0
@@ -8829,7 +9000,7 @@
           "url": "https://jp.mercari.com/search?keyword=A02-011+%E9%AD%98%E5%A4%A2+UR"
         }
       ],
-      "average": 5049,
+      "average": 5061,
       "history": [
         {
           "date": "2026-09-29",
@@ -8868,7 +9039,7 @@
           "type": "asking"
         }
       ],
-      "weightedAverage": 5049,
+      "weightedAverage": 5061,
       "confidence": "low",
       "listingCount": 0,
       "shopCount": 0
@@ -9124,7 +9295,7 @@
     },
     "A02-015": {
       "price": 100,
-      "updated": "2026-10-20",
+      "updated": "2026-10-21",
       "sources": [],
       "offers": [
         {
@@ -9132,11 +9303,11 @@
           "source": "FullAhead",
           "price": 100,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/",
-          "updated": "2026-10-20",
-          "observedDate": "2026-10-20",
+          "updated": "2026-10-21",
+          "observedDate": "2026-10-21",
           "stale": false,
           "type": "asking",
-          "listingKey": "FullAhead|A02-015|100|https://pt-fullahead.com/shopbrand/kynbs/|41",
+          "listingKey": "FullAhead|A02-015|100|https://pt-fullahead.com/shopbrand/kynbs/|42",
           "sourceUrl": "https://pt-fullahead.com/shopbrand/kynbs/"
         }
       ],
@@ -9232,6 +9403,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-21",
+          "market": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 100,
@@ -9313,6 +9493,16 @@
           "cheapest": 100,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-21",
+          "shop": "FullAhead",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
       "weightedAverage": 100,
@@ -9321,10 +9511,22 @@
       "shopCount": 1
     },
     "A02-016": {
-      "price": 120,
-      "updated": "2026-10-14",
+      "price": 100,
+      "updated": "2026-10-21",
       "sources": [],
       "offers": [
+        {
+          "shop": "FullAhead",
+          "source": "FullAhead",
+          "price": 100,
+          "url": "https://pt-fullahead.com/shopbrand/kynbs/",
+          "updated": "2026-10-21",
+          "observedDate": "2026-10-21",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "FullAhead|A02-016|100|https://pt-fullahead.com/shopbrand/kynbs/|43",
+          "sourceUrl": "https://pt-fullahead.com/shopbrand/kynbs/"
+        },
         {
           "shop": "FullAhead",
           "source": "FullAhead",
@@ -9359,7 +9561,7 @@
           "url": "https://jp.mercari.com/search?keyword=A02-016+%E5%86%A8%E5%B2%A1%E7%BE%A9%E5%8B%87+SR"
         }
       ],
-      "average": 120,
+      "average": 104,
       "history": [
         {
           "date": "2026-09-29",
@@ -9375,9 +9577,18 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-21",
+          "market": 100,
+          "average": 104,
+          "cheapest": 100,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
-      "marketValue": 120,
+      "marketValue": 100,
       "mercari": {
         "status": "manual-search",
         "median": null,
@@ -9396,12 +9607,22 @@
           "cheapest": 120,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-21",
+          "shop": "FullAhead",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 120,
+      "weightedAverage": 104,
       "confidence": "low",
-      "listingCount": 0,
-      "shopCount": 0
+      "listingCount": 1,
+      "shopCount": 1
     },
     "A02-017": {
       "price": 150,
@@ -10925,7 +11146,7 @@
     },
     "A02-035": {
       "price": 50,
-      "updated": "2026-10-20",
+      "updated": "2026-10-21",
       "sources": [],
       "offers": [
         {
@@ -10933,11 +11154,11 @@
           "source": "FullAhead",
           "price": 50,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
-          "updated": "2026-10-20",
-          "observedDate": "2026-10-20",
+          "updated": "2026-10-21",
+          "observedDate": "2026-10-21",
           "stale": false,
           "type": "asking",
-          "listingKey": "FullAhead|A02-035|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|11",
+          "listingKey": "FullAhead|A02-035|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|12",
           "sourceUrl": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/"
         },
         {
@@ -11041,6 +11262,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-21",
+          "market": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 50,
@@ -11122,6 +11352,16 @@
           "cheapest": 50,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-21",
+          "shop": "FullAhead",
+          "price": 50,
+          "median": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
       "weightedAverage": 50,
@@ -11131,7 +11371,7 @@
     },
     "A02-036": {
       "price": 50,
-      "updated": "2026-10-20",
+      "updated": "2026-10-21",
       "sources": [],
       "offers": [
         {
@@ -11139,11 +11379,11 @@
           "source": "FullAhead",
           "price": 50,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
-          "updated": "2026-10-20",
-          "observedDate": "2026-10-20",
+          "updated": "2026-10-21",
+          "observedDate": "2026-10-21",
           "stale": false,
           "type": "asking",
-          "listingKey": "FullAhead|A02-036|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|12",
+          "listingKey": "FullAhead|A02-036|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|13",
           "sourceUrl": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/"
         },
         {
@@ -11247,6 +11487,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-21",
+          "market": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 50,
@@ -11328,6 +11577,16 @@
           "cheapest": 50,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-21",
+          "shop": "FullAhead",
+          "price": 50,
+          "median": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
       "weightedAverage": 50,
@@ -11337,7 +11596,7 @@
     },
     "A02-037": {
       "price": 50,
-      "updated": "2026-10-20",
+      "updated": "2026-10-21",
       "sources": [],
       "offers": [
         {
@@ -11345,11 +11604,11 @@
           "source": "FullAhead",
           "price": 50,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
-          "updated": "2026-10-20",
-          "observedDate": "2026-10-20",
+          "updated": "2026-10-21",
+          "observedDate": "2026-10-21",
           "stale": false,
           "type": "asking",
-          "listingKey": "FullAhead|A02-037|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|13",
+          "listingKey": "FullAhead|A02-037|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|14",
           "sourceUrl": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/"
         },
         {
@@ -11453,6 +11712,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-21",
+          "market": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 50,
@@ -11534,6 +11802,16 @@
           "cheapest": 50,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-21",
+          "shop": "FullAhead",
+          "price": 50,
+          "median": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
       "weightedAverage": 50,
@@ -11543,7 +11821,7 @@
     },
     "A02-038": {
       "price": 50,
-      "updated": "2026-10-20",
+      "updated": "2026-10-21",
       "sources": [],
       "offers": [
         {
@@ -11551,11 +11829,11 @@
           "source": "FullAhead",
           "price": 50,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
-          "updated": "2026-10-20",
-          "observedDate": "2026-10-20",
+          "updated": "2026-10-21",
+          "observedDate": "2026-10-21",
           "stale": false,
           "type": "asking",
-          "listingKey": "FullAhead|A02-038|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|14",
+          "listingKey": "FullAhead|A02-038|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|15",
           "sourceUrl": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/"
         },
         {
@@ -11659,6 +11937,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-21",
+          "market": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 50,
@@ -11740,6 +12027,16 @@
           "cheapest": 50,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-21",
+          "shop": "FullAhead",
+          "price": 50,
+          "median": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
       "weightedAverage": 50,
@@ -11749,7 +12046,7 @@
     },
     "A02-039": {
       "price": 50,
-      "updated": "2026-10-20",
+      "updated": "2026-10-21",
       "sources": [],
       "offers": [
         {
@@ -11757,11 +12054,11 @@
           "source": "FullAhead",
           "price": 50,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
-          "updated": "2026-10-20",
-          "observedDate": "2026-10-20",
+          "updated": "2026-10-21",
+          "observedDate": "2026-10-21",
           "stale": false,
           "type": "asking",
-          "listingKey": "FullAhead|A02-039|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|15",
+          "listingKey": "FullAhead|A02-039|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|16",
           "sourceUrl": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/"
         },
         {
@@ -11865,6 +12162,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-21",
+          "market": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 50,
@@ -11946,6 +12252,16 @@
           "cheapest": 50,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-21",
+          "shop": "FullAhead",
+          "price": 50,
+          "median": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
       "weightedAverage": 50,
@@ -11955,7 +12271,7 @@
     },
     "A02-040": {
       "price": 50,
-      "updated": "2026-10-20",
+      "updated": "2026-10-21",
       "sources": [],
       "offers": [
         {
@@ -11963,11 +12279,11 @@
           "source": "FullAhead",
           "price": 50,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
-          "updated": "2026-10-20",
-          "observedDate": "2026-10-20",
+          "updated": "2026-10-21",
+          "observedDate": "2026-10-21",
           "stale": false,
           "type": "asking",
-          "listingKey": "FullAhead|A02-040|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|16",
+          "listingKey": "FullAhead|A02-040|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|17",
           "sourceUrl": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/"
         },
         {
@@ -12071,6 +12387,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-21",
+          "market": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 50,
@@ -12152,6 +12477,16 @@
           "cheapest": 50,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-21",
+          "shop": "FullAhead",
+          "price": 50,
+          "median": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
       "weightedAverage": 50,
@@ -12161,7 +12496,7 @@
     },
     "A02-041": {
       "price": 50,
-      "updated": "2026-10-20",
+      "updated": "2026-10-21",
       "sources": [],
       "offers": [
         {
@@ -12169,11 +12504,11 @@
           "source": "FullAhead",
           "price": 50,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
-          "updated": "2026-10-20",
-          "observedDate": "2026-10-20",
+          "updated": "2026-10-21",
+          "observedDate": "2026-10-21",
           "stale": false,
           "type": "asking",
-          "listingKey": "FullAhead|A02-041|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|17",
+          "listingKey": "FullAhead|A02-041|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|18",
           "sourceUrl": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/"
         },
         {
@@ -12277,6 +12612,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-21",
+          "market": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 50,
@@ -12358,6 +12702,16 @@
           "cheapest": 50,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-21",
+          "shop": "FullAhead",
+          "price": 50,
+          "median": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
       "weightedAverage": 50,
@@ -12367,7 +12721,7 @@
     },
     "A02-042": {
       "price": 50,
-      "updated": "2026-10-20",
+      "updated": "2026-10-21",
       "sources": [],
       "offers": [
         {
@@ -12375,11 +12729,11 @@
           "source": "FullAhead",
           "price": 50,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
-          "updated": "2026-10-20",
-          "observedDate": "2026-10-20",
+          "updated": "2026-10-21",
+          "observedDate": "2026-10-21",
           "stale": false,
           "type": "asking",
-          "listingKey": "FullAhead|A02-042|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|18",
+          "listingKey": "FullAhead|A02-042|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|19",
           "sourceUrl": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/"
         },
         {
@@ -12483,6 +12837,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-21",
+          "market": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 50,
@@ -12564,6 +12927,16 @@
           "cheapest": 50,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-21",
+          "shop": "FullAhead",
+          "price": 50,
+          "median": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
       "weightedAverage": 50,
@@ -12573,7 +12946,7 @@
     },
     "A02-043": {
       "price": 50,
-      "updated": "2026-10-20",
+      "updated": "2026-10-21",
       "sources": [],
       "offers": [
         {
@@ -12581,11 +12954,11 @@
           "source": "FullAhead",
           "price": 50,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
-          "updated": "2026-10-20",
-          "observedDate": "2026-10-20",
+          "updated": "2026-10-21",
+          "observedDate": "2026-10-21",
           "stale": false,
           "type": "asking",
-          "listingKey": "FullAhead|A02-043|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|19",
+          "listingKey": "FullAhead|A02-043|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|20",
           "sourceUrl": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/"
         },
         {
@@ -12689,6 +13062,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-21",
+          "market": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 50,
@@ -12770,6 +13152,16 @@
           "cheapest": 50,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-21",
+          "shop": "FullAhead",
+          "price": 50,
+          "median": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
       "weightedAverage": 50,
@@ -12779,7 +13171,7 @@
     },
     "A02-044": {
       "price": 50,
-      "updated": "2026-10-20",
+      "updated": "2026-10-21",
       "sources": [],
       "offers": [
         {
@@ -12787,11 +13179,11 @@
           "source": "FullAhead",
           "price": 50,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
-          "updated": "2026-10-20",
-          "observedDate": "2026-10-20",
+          "updated": "2026-10-21",
+          "observedDate": "2026-10-21",
           "stale": false,
           "type": "asking",
-          "listingKey": "FullAhead|A02-044|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|20",
+          "listingKey": "FullAhead|A02-044|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|21",
           "sourceUrl": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/"
         },
         {
@@ -12895,6 +13287,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-21",
+          "market": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 50,
@@ -12976,6 +13377,16 @@
           "cheapest": 50,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-21",
+          "shop": "FullAhead",
+          "price": 50,
+          "median": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
       "weightedAverage": 50,
@@ -12985,7 +13396,7 @@
     },
     "A02-045": {
       "price": 50,
-      "updated": "2026-10-20",
+      "updated": "2026-10-21",
       "sources": [],
       "offers": [
         {
@@ -12993,11 +13404,11 @@
           "source": "FullAhead",
           "price": 50,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
-          "updated": "2026-10-20",
-          "observedDate": "2026-10-20",
+          "updated": "2026-10-21",
+          "observedDate": "2026-10-21",
           "stale": false,
           "type": "asking",
-          "listingKey": "FullAhead|A02-045|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|21",
+          "listingKey": "FullAhead|A02-045|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|22",
           "sourceUrl": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/"
         },
         {
@@ -13101,6 +13512,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-21",
+          "market": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 50,
@@ -13175,6 +13595,16 @@
         },
         {
           "date": "2026-10-20",
+          "shop": "FullAhead",
+          "price": 50,
+          "median": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "type": "asking"
+        },
+        {
+          "date": "2026-10-21",
           "shop": "FullAhead",
           "price": 50,
           "median": 50,
@@ -13737,7 +14167,7 @@
     },
     "A02-052": {
       "price": 100,
-      "updated": "2026-10-20",
+      "updated": "2026-10-21",
       "sources": [],
       "offers": [
         {
@@ -13745,11 +14175,11 @@
           "source": "FullAhead",
           "price": 100,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
-          "updated": "2026-10-20",
-          "observedDate": "2026-10-20",
+          "updated": "2026-10-21",
+          "observedDate": "2026-10-21",
           "stale": false,
           "type": "asking",
-          "listingKey": "FullAhead|A02-052|100|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|28",
+          "listingKey": "FullAhead|A02-052|100|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|29",
           "sourceUrl": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/"
         },
         {
@@ -13783,7 +14213,7 @@
           "url": "https://jp.mercari.com/search?keyword=A02-052+%E5%96%84%E9%80%B8%E3%81%AE%E5%85%84%E5%BC%9F%E5%AD%90+R"
         }
       ],
-      "average": 92,
+      "average": 93,
       "history": [
         {
           "date": "2026-09-29",
@@ -13849,6 +14279,15 @@
           "date": "2026-10-20",
           "market": 100,
           "average": 92,
+          "cheapest": 100,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
+        },
+        {
+          "date": "2026-10-21",
+          "market": 100,
+          "average": 93,
           "cheapest": 100,
           "listingCount": 1,
           "shopCount": 1,
@@ -13934,16 +14373,26 @@
           "cheapest": 100,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-21",
+          "shop": "FullAhead",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 92,
+      "weightedAverage": 93,
       "confidence": "low",
       "listingCount": 1,
       "shopCount": 1
     },
     "A02-053": {
       "price": 100,
-      "updated": "2026-10-20",
+      "updated": "2026-10-21",
       "sources": [],
       "offers": [
         {
@@ -13951,11 +14400,11 @@
           "source": "FullAhead",
           "price": 100,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
-          "updated": "2026-10-20",
-          "observedDate": "2026-10-20",
+          "updated": "2026-10-21",
+          "observedDate": "2026-10-21",
           "stale": false,
           "type": "asking",
-          "listingKey": "FullAhead|A02-053|100|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|29",
+          "listingKey": "FullAhead|A02-053|100|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|30",
           "sourceUrl": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/"
         },
         {
@@ -13989,7 +14438,7 @@
           "url": "https://jp.mercari.com/search?keyword=A02-053+%E7%85%89%E7%8D%84%E5%8D%83%E5%AF%BF%E9%83%8E+R"
         }
       ],
-      "average": 92,
+      "average": 93,
       "history": [
         {
           "date": "2026-09-29",
@@ -14055,6 +14504,15 @@
           "date": "2026-10-20",
           "market": 100,
           "average": 92,
+          "cheapest": 100,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
+        },
+        {
+          "date": "2026-10-21",
+          "market": 100,
+          "average": 93,
           "cheapest": 100,
           "listingCount": 1,
           "shopCount": 1,
@@ -14140,9 +14598,19 @@
           "cheapest": 100,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-21",
+          "shop": "FullAhead",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 92,
+      "weightedAverage": 93,
       "confidence": "low",
       "listingCount": 1,
       "shopCount": 1
@@ -14422,7 +14890,7 @@
     },
     "A02-057": {
       "price": 50,
-      "updated": "2026-10-20",
+      "updated": "2026-10-21",
       "sources": [],
       "offers": [
         {
@@ -14430,11 +14898,11 @@
           "source": "FullAhead",
           "price": 50,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
-          "updated": "2026-10-20",
-          "observedDate": "2026-10-20",
+          "updated": "2026-10-21",
+          "observedDate": "2026-10-21",
           "stale": false,
           "type": "asking",
-          "listingKey": "FullAhead|A02-057|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|33",
+          "listingKey": "FullAhead|A02-057|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|34",
           "sourceUrl": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/"
         },
         {
@@ -14538,6 +15006,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-21",
+          "market": 50,
+          "average": 46,
+          "cheapest": 50,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 50,
@@ -14619,6 +15096,16 @@
           "cheapest": 50,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-21",
+          "shop": "FullAhead",
+          "price": 50,
+          "median": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
       "weightedAverage": 46,
@@ -14628,7 +15115,7 @@
     },
     "A02-058": {
       "price": 50,
-      "updated": "2026-10-20",
+      "updated": "2026-10-21",
       "sources": [],
       "offers": [
         {
@@ -14636,11 +15123,11 @@
           "source": "FullAhead",
           "price": 50,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
-          "updated": "2026-10-20",
-          "observedDate": "2026-10-20",
+          "updated": "2026-10-21",
+          "observedDate": "2026-10-21",
           "stale": false,
           "type": "asking",
-          "listingKey": "FullAhead|A02-058|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|34",
+          "listingKey": "FullAhead|A02-058|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|35",
           "sourceUrl": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/"
         },
         {
@@ -14735,6 +15222,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-21",
+          "market": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 50,
@@ -14806,6 +15302,16 @@
           "cheapest": 50,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-21",
+          "shop": "FullAhead",
+          "price": 50,
+          "median": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
       "weightedAverage": 50,
@@ -14815,7 +15321,7 @@
     },
     "A02-059": {
       "price": 50,
-      "updated": "2026-10-20",
+      "updated": "2026-10-21",
       "sources": [],
       "offers": [
         {
@@ -14823,11 +15329,11 @@
           "source": "FullAhead",
           "price": 50,
           "url": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/",
-          "updated": "2026-10-20",
-          "observedDate": "2026-10-20",
+          "updated": "2026-10-21",
+          "observedDate": "2026-10-21",
           "stale": false,
           "type": "asking",
-          "listingKey": "FullAhead|A02-059|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|35",
+          "listingKey": "FullAhead|A02-059|50|https://pt-fullahead.com/shopbrand/kynbs/page2/order/|36",
           "sourceUrl": "https://pt-fullahead.com/shopbrand/kynbs/page2/order/"
         },
         {
@@ -14922,6 +15428,15 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-21",
+          "market": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 50,
@@ -14986,6 +15501,16 @@
         },
         {
           "date": "2026-10-20",
+          "shop": "FullAhead",
+          "price": 50,
+          "median": 50,
+          "average": 50,
+          "cheapest": 50,
+          "listingCount": 1,
+          "type": "asking"
+        },
+        {
+          "date": "2026-10-21",
           "shop": "FullAhead",
           "price": 50,
           "median": 50,
@@ -15160,7 +15685,7 @@
     ],
     "failedFetches": 3,
     "successfulPages": 3,
-    "observedListings": 26,
-    "checkedOn": "2026-10-20"
+    "observedListings": 27,
+    "checkedOn": "2026-10-21"
   }
 }
