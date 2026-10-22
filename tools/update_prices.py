@@ -291,6 +291,9 @@ def main():
     page_html = get(url)
     page_text = visible_text(page_html)
 
+    if src['kind'] == 'tcg' and page == 1:
+        print("TCG HTML SAMPLE:", page_html[:12000])
+
     if len(page_text) < 100:
         print(
             f"SHORT RESPONSE | {src['name']} | "
