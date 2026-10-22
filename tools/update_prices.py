@@ -545,14 +545,7 @@ def main():
     page_text = visible_text(page_html)
 
     if src['kind'] == 'tcg' and page == 1:
-        id_match = ID_RE.search(page_html)
-    
-        if id_match:
-            start = max(0, id_match.start() - 1500)
-            end = min(len(page_html), id_match.end() + 3000)
-            print("TCG HTML AROUND FIRST CARD ID:", page_html[start:end])
-        else:
-            print("TCG HTML: no card ID found in raw HTML")
+        id_match = ID_RE.search(page_html) 
     
         price_matches = list(PRICE_RE.finditer(page_html))
         print(
