@@ -71,9 +71,20 @@ def parse_listings(page_html, src, url, known_ids):
     found = []
 
     if src.get("kind") == "tcg":
+        
         from html import unescape
         from urllib.parse import urljoin
-
+        
+        # Shopify pages may contain multiply-escaped JSON and HTML.
+        # Gradually normalize escaped quotes, slashes, and backslashes.
+        for _ in range(4):
+            page_html = (
+                page_html
+                .replace("\\\\", "\\")
+                .replace('\\"', '"')
+                .replace("\\/", "/")
+            )
+        
         # Shopify can embed collection data as JSON inside its page scripts.
         # Decode JSON objects structurally instead of matching nested braces
         # with a regular expression.
