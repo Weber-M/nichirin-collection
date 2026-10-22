@@ -66,286 +66,296 @@ def page_url(src,page):
  return src['base'] if page==1 else f"{src['base']}?p={page}"
 
 
+
 def parse_listings(page_html, src, url, known_ids):
     found = []
 
-    # TCG Library uses Shopify product-card HTML. Parse each product card
-    # independently so that prices cannot accidentally be assigned to
-    # neighboring cards.
-    if src.get('kind') == 'tcg':
-        from html.parser import HTMLParser
+    if src.get("kind") == "tcg":
         from html import unescape
         from urllib.parse import urljoin
-        import re
 
-        class ProductCardParser(HTMLParser):
-            def __init__(self):
-                super().__init__(convert_charrefs=True)
-                self.cards = []
-                self.card = None
-                self.depth = 0
-                self.capture_title = False
-                self.title_depth = 0
-                self.capture_price = False
-                self.price_depth = 0
-                self.title_parts = []
-                self.price_parts = []
+        # Shopify can embed collection data as JSON inside its page scripts.
+        # Decode JSON objects structurally instead of matching nested braces
+        # with a regular expression.
+        decoder = json.JSONDecoder()
+        collection_positions = list(
+            re.finditer(r'"collection"\s*:\s*', page_html)
+        )
 
-            def handle_starttag(self, tag, attrs):
-                attrs = dict(attrs)
-                classes = attrs.get('class', '').split()
-
-                # The product-card link commonly contains the product URL
-                # and image/title for one listing.
-                if tag == 'a' and 'scard__link' in classes:
-                    self.card = {
-                        'url': urljoin('https://tcg-library.com', attrs.get('href', '')),
-                        'title': '',
-                        'prices': [],
-                    }
-                    self.depth = 1
-                    self.capture_title = False
-                    self.capture_price = False
-                    self.title_parts = []
-                    self.price_parts = []
-                    return
-
-                if self.card is None:
-                    return
-
-                self.depth += 1
-
-                if tag in ('h2', 'h3', 'h4'):
-                    self.capture_title = True
-                    self.title_depth = self.depth
-                    self.title_parts = []
-
-                if tag == 'span' and 'price-block__price' in classes:
-                    self.capture_price = True
-                    self.price_depth = self.depth
-                    self.price_parts = []
-
-            def handle_data(self, data):
-                if self.card is None:
-                    return
-                if self.capture_title:
-                    self.title_parts.append(data)
-                if self.capture_price:
-                    self.price_parts.append(data)
-
-            def handle_endtag(self, tag):
-                if self.card is None:
-                    return
-
-                if self.capture_title and self.depth == self.title_depth:
-                    self.card['title'] = ' '.join(self.title_parts).strip()
-                    self.capture_title = False
-
-                if self.capture_price and self.depth == self.price_depth:
-                    raw_price = ''.join(self.price_parts).strip()
-                    match = re.search(r'[¥￥]\s*([0-9][0-9,]*)', raw_price)
-                    if match:
-                        try:
-                            price = int(match.group(1).replace(',', ''))
-                            if 1 <= price <= 1_000_000:
-                                self.card['prices'].append(price)
-                        except ValueError:
-                            pass
-                    self.capture_price = False
-
-                self.depth -= 1
-
-                if tag == 'a' and self.depth == 0:
-                    self.card['title'] = self.card['title'] or ''
-                    self.cards.append(self.card)
-                    self.card = None
-                    self.capture_title = False
-                    self.capture_price = False
-
-        parser = ProductCardParser()
-        parser.feed(page_html)
-
-        # Shopify collection-event data may contain the complete product
-        # title, URL, and numeric price even when card markup differs.
-        # Use it as a fallback, matching each event product independently.
-        for card in parser.cards:
-            combined = unescape(card['title'] + ' ' + card['url'])
-            id_matches = list(ID_RE.finditer(combined))
-            card_ids = list(dict.fromkeys(
-                m.group(1) for m in id_matches if m.group(1) in known_ids
-            ))
-
-            prices = list(dict.fromkeys(card['prices']))
-
-            if len(card_ids) != 1 or len(prices) != 1:
+        for match in collection_positions:
+            start = match.end()
+            try:
+                collection, _ = decoder.raw_decode(page_html, start)
+            except (json.JSONDecodeError, ValueError):
                 continue
 
-            cid = card_ids[0]
-            exclusion_text = combined.lower()
-            if any(term.lower() in exclusion_text for term in EXCLUDED):
+            if not isinstance(collection, dict):
                 continue
 
-            price = prices[0]
-            found.append({
-                'card_id': cid,
-                'shop': src['shop'],
-                'source': src['name'],
-                'price': price,
-                'url': card['url'] or url,
-                'date': TODAY,
-                'type': 'asking',
-                'listingKey': (
-                    f"{src['shop']}|{cid}|{price}|{card['url'] or url}"
-                ),
-            })
+            variants = collection.get("productVariants", [])
+            if not isinstance(variants, list):
+                continue
 
-        # If the product-card markup did not match, try Shopify's
-        # collection event data, where prices are numeric JPY amounts.
-        if not found:
-            import json
-
-            event_pattern = re.compile(
-                r'"collection_viewed"\\s*,\\s*\\{.*?"collection"\\s*:\\s*'
-                r'(\\{.*?\\})\\s*\\}\\s*\\]'
-            )
-
-            for event_match in event_pattern.finditer(page_html):
-                try:
-                    event = json.loads(event_match.group(1))
-                except (json.JSONDecodeError, ValueError):
+            for variant in variants:
+                if not isinstance(variant, dict):
                     continue
 
-                for variant in event.get('productVariants', []):
-                    product = variant.get('product') or {}
-                    title = str(product.get('title') or '')
-                    product_url = urljoin(
-                        'https://tcg-library.com',
-                        str(product.get('url') or '')
-                    )
-                    combined = title + ' ' + product_url
+                product = variant.get("product") or {}
+                if not isinstance(product, dict):
+                    continue
 
-                    ids = list(dict.fromkeys(
-                        m.group(1) for m in ID_RE.finditer(combined)
-                        if m.group(1) in known_ids
-                    ))
-                    try:
-                        price = int(float(variant.get('price', {}).get('amount')))
-                    except (TypeError, ValueError):
-                        continue
+                title = unescape(str(product.get("title") or ""))
+                product_url = urljoin(
+                    "https://tcg-library.com",
+                    str(product.get("url") or "")
+                )
+                combined = title + " " + product_url
 
-                    if len(ids) != 1 or not (1 <= price <= 1_000_000):
-                        continue
-                    if any(term.lower() in combined.lower() for term in EXCLUDED):
-                        continue
+                ids = list(dict.fromkeys(
+                    m.group(1)
+                    for m in ID_RE.finditer(combined)
+                    if m.group(1) in known_ids
+                ))
 
-                    cid = ids[0]
-                    found.append({
-                        'card_id': cid,
-                        'shop': src['shop'],
-                        'source': src['name'],
-                        'price': price,
-                        'url': product_url or url,
-                        'date': TODAY,
-                        'type': 'asking',
-                        'listingKey': f"{src['shop']}|{cid}|{price}|{product_url}",
-                    })
+                price_data = variant.get("price") or {}
+                try:
+                    price = int(float(price_data.get("amount")))
+                except (TypeError, ValueError, OverflowError):
+                    continue
 
-        # De-duplicate cards that appear more than once on a page.
-        out = []
+                if len(ids) != 1 or not 1 <= price <= 1_000_000:
+                    continue
+
+                if any(term.lower() in combined.lower()
+                       for term in EXCLUDED):
+                    continue
+
+                cid = ids[0]
+                found.append({
+                    "card_id": cid,
+                    "shop": src["shop"],
+                    "source": src["name"],
+                    "price": price,
+                    "url": product_url or url,
+                    "date": TODAY,
+                    "type": "asking",
+                    "listingKey": (
+                        f"{src['shop']}|{cid}|{price}|{product_url or url}"
+                    ),
+                })
+
+        # Fallback: parse individual Shopify product links and their prices
+        # from HTML when no usable collection JSON was found.
+        if not found:
+            class ProductParser(HTMLParser):
+                def __init__(self):
+                    super().__init__(convert_charrefs=True)
+                    self.products = []
+                    self.current = None
+                    self.depth = 0
+                    self.title_depth = None
+                    self.price_depth = None
+                    self.title_parts = []
+                    self.price_parts = []
+
+                def handle_starttag(self, tag, attrs):
+                    attrs = dict(attrs)
+                    classes = attrs.get("class", "").split()
+
+                    if tag == "a" and "scard__link" in classes:
+                        if self.current is not None:
+                            self.products.append(self.current)
+
+                        self.current = {
+                            "url": urljoin(
+                                "https://tcg-library.com",
+                                attrs.get("href", "")
+                            ),
+                            "title": "",
+                            "prices": [],
+                        }
+                        self.depth = 1
+                        self.title_depth = None
+                        self.price_depth = None
+                        self.title_parts = []
+                        self.price_parts = []
+                        return
+
+                    if self.current is None:
+                        return
+
+                    self.depth += 1
+
+                    if tag in ("h2", "h3", "h4"):
+                        self.title_depth = self.depth
+                        self.title_parts = []
+
+                    if tag == "span" and "price-block__price" in classes:
+                        self.price_depth = self.depth
+                        self.price_parts = []
+
+                def handle_data(self, data):
+                    if self.current is None:
+                        return
+                    if self.title_depth is not None:
+                        self.title_parts.append(data)
+                    if self.price_depth is not None:
+                        self.price_parts.append(data)
+
+                def handle_endtag(self, tag):
+                    if self.current is None:
+                        return
+
+                    if self.title_depth == self.depth:
+                        self.current["title"] = " ".join(
+                            self.title_parts
+                        ).strip()
+                        self.title_depth = None
+
+                    if self.price_depth == self.depth:
+                        raw = "".join(self.price_parts).strip()
+                        m = re.search(r"[¥￥]\s*([0-9][0-9,]*)", raw)
+                        if m:
+                            value = int(m.group(1).replace(",", ""))
+                            if 1 <= value <= 1_000_000:
+                                self.current["prices"].append(value)
+                        self.price_depth = None
+
+                    self.depth -= 1
+
+                    if tag == "a" and self.depth == 0:
+                        self.products.append(self.current)
+                        self.current = None
+
+            parser = ProductParser()
+            parser.feed(page_html)
+            if parser.current is not None:
+                parser.products.append(parser.current)
+
+            for product in parser.products:
+                combined = unescape(
+                    product["title"] + " " + product["url"]
+                )
+                ids = list(dict.fromkeys(
+                    m.group(1)
+                    for m in ID_RE.finditer(combined)
+                    if m.group(1) in known_ids
+                ))
+                prices = list(dict.fromkeys(product["prices"]))
+
+                if len(ids) != 1 or len(prices) != 1:
+                    continue
+                if any(term.lower() in combined.lower()
+                       for term in EXCLUDED):
+                    continue
+
+                cid = ids[0]
+                price = prices[0]
+                found.append({
+                    "card_id": cid,
+                    "shop": src["shop"],
+                    "source": src["name"],
+                    "price": price,
+                    "url": product["url"] or url,
+                    "date": TODAY,
+                    "type": "asking",
+                    "listingKey": (
+                        f"{src['shop']}|{cid}|{price}|{product['url'] or url}"
+                    ),
+                })
+
+        # De-duplicate repeated products from the same source page.
+        unique = []
         seen = set()
         for item in found:
             key = (
-                item['card_id'], item['shop'], item['price'],
-                item['url'], item['listingKey']
+                item["card_id"], item["shop"], item["price"], item["url"]
             )
             if key not in seen:
                 seen.add(key)
-                out.append(item)
+                unique.append(item)
 
-        return out
+        return unique
 
-    # Existing parser for non-TCG sources, including FullAhead.
+    # Keep the existing text-based parser for FullAhead and other sources.
     text = visible_text(page_html)
     ids = list(ID_RE.finditer(text))
-    found = []
 
-    for i, m in enumerate(ids):
-        cid = m.group(1)
+    for i, match in enumerate(ids):
+        cid = match.group(1)
         if cid not in known_ids:
             continue
 
         next_start = (
             ids[i + 1].start()
             if i + 1 < len(ids)
-            else min(len(text), m.end() + 320)
+            else min(len(text), match.end() + 320)
         )
-        segment = text[m.end():next_start]
-        vals = []
+        segment = text[match.end():next_start]
+        values = []
 
-        for pm in PRICE_RE.finditer(segment):
-            raw = pm.group(1) or pm.group(2)
+        for price_match in PRICE_RE.finditer(segment):
+            raw = price_match.group(1) or price_match.group(2)
             try:
-                value = int(raw.replace(',', ''))
+                value = int(raw.replace(",", ""))
             except (ValueError, AttributeError):
                 continue
             if 1 <= value <= 1_000_000:
-                vals.append(value)
+                values.append(value)
 
-        if not vals:
+        if not values:
             prev_end = (
                 ids[i - 1].end()
                 if i > 0
-                else max(0, m.start() - 180)
+                else max(0, match.start() - 180)
             )
-            segment = text[prev_end:m.start()]
+            segment = text[prev_end:match.start()]
 
-            for pm in PRICE_RE.finditer(segment):
-                raw = pm.group(1) or pm.group(2)
+            for price_match in PRICE_RE.finditer(segment):
+                raw = price_match.group(1) or price_match.group(2)
                 try:
-                    value = int(raw.replace(',', ''))
+                    value = int(raw.replace(",", ""))
                 except (ValueError, AttributeError):
                     continue
                 if 1 <= value <= 1_000_000:
-                    vals.append(value)
+                    values.append(value)
 
-        segment_for_exclusions = text[
-            max(0, m.start() - 120):min(len(text), next_start + 120)
+        exclusion_text = text[
+            max(0, match.start() - 120):
+            min(len(text), next_start + 120)
         ]
-        if any(
-            term.lower() in segment_for_exclusions.lower()
-            for term in EXCLUDED
-        ):
+        if any(term.lower() in exclusion_text.lower()
+               for term in EXCLUDED):
             continue
 
-        vals = list(dict.fromkeys(vals))
-        if len(vals) != 1:
+        values = list(dict.fromkeys(values))
+        if len(values) != 1:
             continue
 
+        price = values[0]
         found.append({
-            'card_id': cid,
-            'shop': src['shop'],
-            'source': src['name'],
-            'price': vals[0],
-            'url': url,
-            'date': TODAY,
-            'type': 'asking',
-            'listingKey': (
-                f"{src['shop']}|{cid}|{vals[0]}|{url}|{i}"
-            ),
+            "card_id": cid,
+            "shop": src["shop"],
+            "source": src["name"],
+            "price": price,
+            "url": url,
+            "date": TODAY,
+            "type": "asking",
+            "listingKey": f"{src['shop']}|{cid}|{price}|{url}|{i}",
         })
 
-    out = []
+    unique = []
     seen = set()
     for item in found:
         key = (
-            item['card_id'], item['shop'], item['price'],
-            item['url'], item['listingKey']
+            item["card_id"], item["shop"], item["price"],
+            item["url"], item["listingKey"]
         )
         if key not in seen:
             seen.add(key)
-            out.append(item)
+            unique.append(item)
 
-    return out
+    return unique
 
 def mercari_url(card):
  q=' '.join(x for x in [card['id'],card.get('name',''),str(card.get('rarity','')).replace('*','')] if x)
