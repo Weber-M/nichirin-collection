@@ -630,9 +630,17 @@ def main():
   prev['shopHistory']=shop_history
   est=estimate(dedup)
   if est:
-   prev.update({'price':est['cheapest'],'marketValue':est['market'],'average':est['weightedAverage'],
-    'weightedAverage':est['weightedAverage'],'confidence':est['confidence'],'listingCount':est['listingCount'],
-    'shopCount':est['shopCount'],'updated':TODAY})
+      prev.update({
+          'price': est['cheapest'],
+          'marketValue': est['market'],
+          'average': est['weightedAverage'],
+          'weightedAverage': est['weightedAverage'],
+          'confidence': est['confidence'],
+          'listingCount': est['listingCount'],
+          'shopCount': est['shopCount'],
+          'freshSourceCount': est['shopCount'],
+          'updated': TODAY
+      })
   prev['shopLinks']=[{'shop':k,'url':v} for k,v in SHOP_LINKS.items()]
   prev['shopLinks'].append({'shop':'メルカリ','url':mercari_url(card)})
   mercari_rows=[]; mercari_ok=False
