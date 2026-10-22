@@ -290,6 +290,12 @@ def main():
    try:
     page_html = get(url)
     page_text = visible_text(page_html)
+
+    if len(page_text) < 100:
+        print(
+            f"SHORT RESPONSE | {src['name']} | "
+            f"{url} | body={page_text!r}"
+        )
     
     id_matches = list(ID_RE.finditer(page_text))
     known_matches = sum(
