@@ -59,7 +59,7 @@ def main():
 
             card = prices["cards"].setdefault(cid, {})
             mercari = card.setdefault("mercari", {})
-            bucket_name = "active" if status == "active" else "sold"
+            bucket_name = "asking" if status == "active" else "sold"
             bucket = mercari.setdefault(bucket_name, {"samples": [], "median": None, "sampleCount": 0})
             samples = bucket.setdefault("samples", [])
             if any(str(s.get("url", "")) == url and str(s.get("status", status)).lower() == status
