@@ -82,8 +82,8 @@
       "shopCount": 0
     },
     "P01-002": {
-      "price": 240,
-      "updated": "2026-10-14",
+      "price": 600,
+      "updated": "2026-10-22",
       "sources": [
         {
           "name": "TCG Library",
@@ -99,6 +99,17 @@
         }
       ],
       "offers": [
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library all",
+          "price": 600,
+          "url": "https://tcg-library.com/products/kamado-tanjiro-p01-002-pr",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|P01-002|600|https://tcg-library.com/products/kamado-tanjiro-p01-002-pr"
+        },
         {
           "shop": "FullAhead",
           "source": "FullAhead",
@@ -122,14 +133,23 @@
           "stale": true
         }
       ],
-      "average": 429,
-      "marketValue": 480,
+      "average": 600,
+      "marketValue": 600,
       "history": [
         {
           "date": "2026-10-05",
           "market": 480,
           "average": 440,
           "cheapest": 240
+        },
+        {
+          "date": "2026-10-22",
+          "market": 600,
+          "average": 600,
+          "cheapest": 600,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "shopLinks": [
@@ -164,15 +184,26 @@
         "sold": {}
       },
       "freshSourceCount": 2,
-      "shopHistory": [],
-      "weightedAverage": 429,
+      "shopHistory": [
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 600,
+          "median": 600,
+          "average": 600,
+          "cheapest": 600,
+          "listingCount": 1,
+          "type": "asking"
+        }
+      ],
+      "weightedAverage": 600,
       "confidence": "low",
-      "listingCount": 0,
-      "shopCount": 0
+      "listingCount": 1,
+      "shopCount": 1
     },
     "P01-003": {
       "price": 100,
-      "updated": "2026-10-14",
+      "updated": "2026-10-22",
       "sources": [
         {
           "name": "TCG Library",
@@ -188,6 +219,17 @@
         }
       ],
       "offers": [
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library all",
+          "price": 100,
+          "url": "https://tcg-library.com/products/rui-p01-003-pr",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|P01-003|100|https://tcg-library.com/products/rui-p01-003-pr"
+        },
         {
           "shop": "FullAhead",
           "source": "FullAhead",
@@ -211,14 +253,23 @@
           "stale": true
         }
       ],
-      "average": 210,
-      "marketValue": 160,
+      "average": 100,
+      "marketValue": 100,
       "history": [
         {
           "date": "2026-10-05",
           "market": 160,
           "average": 180,
           "cheapest": 100
+        },
+        {
+          "date": "2026-10-22",
+          "market": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "shopLinks": [
@@ -253,11 +304,22 @@
         "sold": {}
       },
       "freshSourceCount": 2,
-      "shopHistory": [],
-      "weightedAverage": 210,
+      "shopHistory": [
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
+        }
+      ],
+      "weightedAverage": 100,
       "confidence": "low",
-      "listingCount": 0,
-      "shopCount": 0
+      "listingCount": 1,
+      "shopCount": 1
     },
     "P01-005": {
       "price": 600,
@@ -341,8 +403,8 @@
       "shopCount": 0
     },
     "A01-001": {
-      "price": 348,
-      "updated": "2026-10-14",
+      "price": 900,
+      "updated": "2026-10-22",
       "sources": [
         {
           "name": "TCG Library",
@@ -358,6 +420,17 @@
         }
       ],
       "offers": [
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 900,
+          "url": "https://tcg-library.com/products/kamado-tanjiro-a01-001-ur",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-001|900|https://tcg-library.com/products/kamado-tanjiro-a01-001-ur"
+        },
         {
           "shop": "FullAhead",
           "source": "FullAhead",
@@ -397,16 +470,25 @@
           "url": "https://jp.mercari.com/search?keyword=A01-001+%E7%AB%88%E9%96%80%E7%82%AD%E6%B2%BB%E9%83%8E+UR"
         }
       ],
-      "average": 624,
+      "average": 900,
       "history": [
         {
           "date": "2026-09-28",
           "market": 1120.0,
           "average": 1120,
           "cheapest": 1120.0
+        },
+        {
+          "date": "2026-10-22",
+          "market": 900,
+          "average": 900,
+          "cheapest": 900,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
-      "marketValue": 348,
+      "marketValue": 900,
       "mercari": {
         "status": "manual-search",
         "median": null,
@@ -417,14 +499,25 @@
         "sold": {}
       },
       "freshSourceCount": 2,
-      "shopHistory": [],
-      "weightedAverage": 624,
+      "shopHistory": [
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 900,
+          "median": 900,
+          "average": 900,
+          "cheapest": 900,
+          "listingCount": 1,
+          "type": "asking"
+        }
+      ],
+      "weightedAverage": 900,
       "confidence": "low",
-      "listingCount": 0,
-      "shopCount": 0
+      "listingCount": 1,
+      "shopCount": 1
     },
     "A01-002": {
-      "price": 7280,
+      "price": 6200,
       "updated": "2026-10-22",
       "sources": [
         {
@@ -451,6 +544,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-002|7280|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|17"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 6200,
+          "url": "https://tcg-library.com/products/kamado-tanjiro-a01-002-ur",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-002|6200|https://tcg-library.com/products/kamado-tanjiro-a01-002-ur"
         },
         {
           "shop": "TCG Library",
@@ -483,7 +587,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-002+%E7%AB%88%E9%96%80%E7%82%AD%E6%B2%BB%E9%83%8E+UR"
         }
       ],
-      "average": 7280,
+      "average": 6740,
       "history": [
         {
           "date": "2026-09-28",
@@ -502,15 +606,15 @@
         },
         {
           "date": "2026-10-22",
-          "market": 7280,
-          "average": 7280,
-          "cheapest": 7280,
-          "listingCount": 1,
-          "shopCount": 1,
+          "market": 6200,
+          "average": 6740,
+          "cheapest": 6200,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
-      "marketValue": 7280,
+      "marketValue": 6200,
       "mercari": {
         "status": "manual-search",
         "median": null,
@@ -541,12 +645,22 @@
           "cheapest": 7280,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 6200,
+          "median": 6200,
+          "average": 6200,
+          "cheapest": 6200,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 7280,
+      "weightedAverage": 6740,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-003": {
       "price": 480,
@@ -576,6 +690,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-003|480|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|18"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 600,
+          "url": "https://tcg-library.com/products/kamado-nezuko-a01-003-ur",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-003|600|https://tcg-library.com/products/kamado-nezuko-a01-003-ur"
         },
         {
           "shop": "FullAhead",
@@ -627,7 +752,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-003+%E7%AB%88%E9%96%80%E7%A6%B0%E8%B1%86%E5%AD%90+UR"
         }
       ],
-      "average": 480,
+      "average": 540,
       "history": [
         {
           "date": "2026-09-28",
@@ -647,10 +772,10 @@
         {
           "date": "2026-10-22",
           "market": 480,
-          "average": 480,
+          "average": 540,
           "cheapest": 480,
-          "listingCount": 1,
-          "shopCount": 1,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
@@ -685,12 +810,22 @@
           "cheapest": 480,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 600,
+          "median": 600,
+          "average": 600,
+          "cheapest": 600,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 480,
+      "weightedAverage": 540,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-004": {
       "price": 5480,
@@ -720,6 +855,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-004|5480|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|19"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 6900,
+          "url": "https://tcg-library.com/products/kamado-nezuko-a01-004-ur",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-004|6900|https://tcg-library.com/products/kamado-nezuko-a01-004-ur"
         },
         {
           "shop": "FullAhead",
@@ -763,7 +909,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-004+%E7%AB%88%E9%96%80%E7%A6%B0%E8%B1%86%E5%AD%90+UR"
         }
       ],
-      "average": 5480,
+      "average": 6190,
       "history": [
         {
           "date": "2026-09-28",
@@ -783,10 +929,10 @@
         {
           "date": "2026-10-22",
           "market": 5480,
-          "average": 5480,
+          "average": 6190,
           "cheapest": 5480,
-          "listingCount": 1,
-          "shopCount": 1,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
@@ -821,12 +967,22 @@
           "cheapest": 5480,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 6900,
+          "median": 6900,
+          "average": 6900,
+          "cheapest": 6900,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 5480,
+      "weightedAverage": 6190,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-005": {
       "price": 620,
@@ -856,6 +1012,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-005|620|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|20"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 700,
+          "url": "https://tcg-library.com/products/agatsuma-zenitsu-a01-005-ur",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-005|700|https://tcg-library.com/products/agatsuma-zenitsu-a01-005-ur"
         },
         {
           "shop": "FullAhead",
@@ -907,7 +1074,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-005+%E6%88%91%E5%A6%BB%E5%96%84%E9%80%B8+UR"
         }
       ],
-      "average": 620,
+      "average": 660,
       "history": [
         {
           "date": "2026-09-28",
@@ -927,10 +1094,10 @@
         {
           "date": "2026-10-22",
           "market": 620,
-          "average": 620,
+          "average": 660,
           "cheapest": 620,
-          "listingCount": 1,
-          "shopCount": 1,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
@@ -965,15 +1132,25 @@
           "cheapest": 620,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 700,
+          "median": 700,
+          "average": 700,
+          "cheapest": 700,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 620,
+      "weightedAverage": 660,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-006": {
-      "price": 380,
+      "price": 300,
       "updated": "2026-10-22",
       "sources": [
         {
@@ -1000,6 +1177,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-006|380|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|21"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 300,
+          "url": "https://tcg-library.com/products/hashibira-inosuke-a01-006-ur",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-006|300|https://tcg-library.com/products/hashibira-inosuke-a01-006-ur"
         },
         {
           "shop": "FullAhead",
@@ -1040,7 +1228,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-006+%E5%98%B4%E5%B9%B3%E4%BC%8A%E4%B9%8B%E5%8A%A9+UR"
         }
       ],
-      "average": 380,
+      "average": 340,
       "history": [
         {
           "date": "2026-09-28",
@@ -1059,15 +1247,15 @@
         },
         {
           "date": "2026-10-22",
-          "market": 380,
-          "average": 380,
-          "cheapest": 380,
-          "listingCount": 1,
-          "shopCount": 1,
+          "market": 300,
+          "average": 340,
+          "cheapest": 300,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
-      "marketValue": 380,
+      "marketValue": 300,
       "mercari": {
         "status": "manual-search",
         "median": null,
@@ -1098,15 +1286,25 @@
           "cheapest": 380,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 300,
+          "median": 300,
+          "average": 300,
+          "cheapest": 300,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 380,
+      "weightedAverage": 340,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-007": {
-      "price": 1280,
+      "price": 1000,
       "updated": "2026-10-22",
       "sources": [
         {
@@ -1133,6 +1331,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-007|1280|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|22"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 1000,
+          "url": "https://tcg-library.com/products/tomioka-giyu-a01-007-ur",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-007|1000|https://tcg-library.com/products/tomioka-giyu-a01-007-ur"
         },
         {
           "shop": "FullAhead",
@@ -1184,7 +1393,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-007+%E5%86%A8%E5%B2%A1%E7%BE%A9%E5%8B%87+UR"
         }
       ],
-      "average": 1280,
+      "average": 1140,
       "history": [
         {
           "date": "2026-09-28",
@@ -1203,15 +1412,15 @@
         },
         {
           "date": "2026-10-22",
-          "market": 1280,
-          "average": 1280,
-          "cheapest": 1280,
-          "listingCount": 1,
-          "shopCount": 1,
+          "market": 1000,
+          "average": 1140,
+          "cheapest": 1000,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
-      "marketValue": 1280,
+      "marketValue": 1000,
       "mercari": {
         "status": "manual-search",
         "median": null,
@@ -1242,15 +1451,25 @@
           "cheapest": 1280,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 1000,
+          "median": 1000,
+          "average": 1000,
+          "cheapest": 1000,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 1280,
+      "weightedAverage": 1140,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-008": {
-      "price": 11800,
+      "price": 9400,
       "updated": "2026-10-22",
       "sources": [
         {
@@ -1277,6 +1496,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-008|11800|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|23"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 9400,
+          "url": "https://tcg-library.com/products/tomioka-giyu-a01-008-ur",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-008|9400|https://tcg-library.com/products/tomioka-giyu-a01-008-ur"
         },
         {
           "shop": "FullAhead",
@@ -1320,7 +1550,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-008+%E5%86%A8%E5%B2%A1%E7%BE%A9%E5%8B%87+UR"
         }
       ],
-      "average": 11800,
+      "average": 10600,
       "history": [
         {
           "date": "2026-09-28",
@@ -1339,15 +1569,15 @@
         },
         {
           "date": "2026-10-22",
-          "market": 11800,
-          "average": 11800,
-          "cheapest": 11800,
-          "listingCount": 1,
-          "shopCount": 1,
+          "market": 9400,
+          "average": 10600,
+          "cheapest": 9400,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
-      "marketValue": 11800,
+      "marketValue": 9400,
       "mercari": {
         "status": "manual-search",
         "median": null,
@@ -1378,15 +1608,25 @@
           "cheapest": 11800,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 9400,
+          "median": 9400,
+          "average": 9400,
+          "cheapest": 9400,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 11800,
+      "weightedAverage": 10600,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-009": {
-      "price": 1580,
+      "price": 900,
       "updated": "2026-10-22",
       "sources": [
         {
@@ -1413,6 +1653,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-009|1580|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|24"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 900,
+          "url": "https://tcg-library.com/products/kocho-shinobu-a01-009-ur",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-009|900|https://tcg-library.com/products/kocho-shinobu-a01-009-ur"
         },
         {
           "shop": "FullAhead",
@@ -1464,7 +1715,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-009+%E8%83%A1%E8%9D%B6%E3%81%97%E3%81%AE%E3%81%B6+UR"
         }
       ],
-      "average": 1580,
+      "average": 1240,
       "history": [
         {
           "date": "2026-09-28",
@@ -1483,15 +1734,15 @@
         },
         {
           "date": "2026-10-22",
-          "market": 1580,
-          "average": 1580,
-          "cheapest": 1580,
-          "listingCount": 1,
-          "shopCount": 1,
+          "market": 900,
+          "average": 1240,
+          "cheapest": 900,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
-      "marketValue": 1580,
+      "marketValue": 900,
       "mercari": {
         "status": "manual-search",
         "median": null,
@@ -1522,16 +1773,26 @@
           "cheapest": 1580,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 900,
+          "median": 900,
+          "average": 900,
+          "cheapest": 900,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 1580,
+      "weightedAverage": 1240,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-010": {
       "price": 7200,
-      "updated": "2026-10-14",
+      "updated": "2026-10-22",
       "sources": [
         {
           "name": "TCG Library",
@@ -1547,6 +1808,17 @@
         }
       ],
       "offers": [
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 7200,
+          "url": "https://tcg-library.com/products/kocho-shinobu-a01-010-ur",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-010|7200|https://tcg-library.com/products/kocho-shinobu-a01-010-ur"
+        },
         {
           "shop": "TCG Library",
           "source": "TCG Library A01",
@@ -1585,6 +1857,15 @@
           "market": 12100.0,
           "average": 12100,
           "cheapest": 12100.0
+        },
+        {
+          "date": "2026-10-22",
+          "market": 7200,
+          "average": 7200,
+          "cheapest": 7200,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
       "marketValue": 7200,
@@ -1598,14 +1879,25 @@
         "sold": {}
       },
       "freshSourceCount": 1,
-      "shopHistory": [],
+      "shopHistory": [
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 7200,
+          "median": 7200,
+          "average": 7200,
+          "cheapest": 7200,
+          "listingCount": 1,
+          "type": "asking"
+        }
+      ],
       "weightedAverage": 7200,
       "confidence": "low",
-      "listingCount": 0,
-      "shopCount": 0
+      "listingCount": 1,
+      "shopCount": 1
     },
     "A01-011": {
-      "price": 480,
+      "price": 300,
       "updated": "2026-10-22",
       "sources": [
         {
@@ -1632,6 +1924,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-011|480|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|25"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 300,
+          "url": "https://tcg-library.com/products/rui-a01-011-ur",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-011|300|https://tcg-library.com/products/rui-a01-011-ur"
         },
         {
           "shop": "FullAhead",
@@ -1683,7 +1986,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-011+%E7%B4%AF+UR"
         }
       ],
-      "average": 480,
+      "average": 390,
       "history": [
         {
           "date": "2026-09-28",
@@ -1702,15 +2005,15 @@
         },
         {
           "date": "2026-10-22",
-          "market": 480,
-          "average": 480,
-          "cheapest": 480,
-          "listingCount": 1,
-          "shopCount": 1,
+          "market": 300,
+          "average": 390,
+          "cheapest": 300,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
-      "marketValue": 480,
+      "marketValue": 300,
       "mercari": {
         "status": "manual-search",
         "median": null,
@@ -1741,15 +2044,25 @@
           "cheapest": 480,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 300,
+          "median": 300,
+          "average": 300,
+          "cheapest": 300,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 480,
+      "weightedAverage": 390,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-012": {
-      "price": 120,
+      "price": 100,
       "updated": "2026-10-22",
       "sources": [
         {
@@ -1776,6 +2089,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-012|120|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|26"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/kamado-tanjiro-a01-012-sr",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-012|100|https://tcg-library.com/products/kamado-tanjiro-a01-012-sr"
         },
         {
           "shop": "FullAhead",
@@ -1827,7 +2151,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-012+%E7%AB%88%E9%96%80%E7%82%AD%E6%B2%BB%E9%83%8E+SR"
         }
       ],
-      "average": 120,
+      "average": 110,
       "history": [
         {
           "date": "2026-09-28",
@@ -1846,15 +2170,15 @@
         },
         {
           "date": "2026-10-22",
-          "market": 120,
-          "average": 120,
-          "cheapest": 120,
-          "listingCount": 1,
-          "shopCount": 1,
+          "market": 100,
+          "average": 110,
+          "cheapest": 100,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
-      "marketValue": 120,
+      "marketValue": 100,
       "mercari": {
         "status": "manual-search",
         "median": null,
@@ -1885,15 +2209,25 @@
           "cheapest": 120,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 120,
+      "weightedAverage": 110,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-013": {
-      "price": 120,
+      "price": 100,
       "updated": "2026-10-22",
       "sources": [
         {
@@ -1920,6 +2254,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-013|120|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|27"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/kamado-nezuko-a01-013-sr",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-013|100|https://tcg-library.com/products/kamado-nezuko-a01-013-sr"
         },
         {
           "shop": "FullAhead",
@@ -1971,7 +2316,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-013+%E7%AB%88%E9%96%80%E7%A6%B0%E8%B1%86%E5%AD%90+SR"
         }
       ],
-      "average": 120,
+      "average": 110,
       "history": [
         {
           "date": "2026-09-28",
@@ -1990,15 +2335,15 @@
         },
         {
           "date": "2026-10-22",
-          "market": 120,
-          "average": 120,
-          "cheapest": 120,
-          "listingCount": 1,
-          "shopCount": 1,
+          "market": 100,
+          "average": 110,
+          "cheapest": 100,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
-      "marketValue": 120,
+      "marketValue": 100,
       "mercari": {
         "status": "manual-search",
         "median": null,
@@ -2029,12 +2374,22 @@
           "cheapest": 120,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 120,
+      "weightedAverage": 110,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-014": {
       "price": 100,
@@ -2064,6 +2419,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-014|100|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|28"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/agatsuma-zenitsu-a01-014-sr",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-014|100|https://tcg-library.com/products/agatsuma-zenitsu-a01-014-sr"
         },
         {
           "shop": "FullAhead",
@@ -2126,8 +2492,8 @@
           "market": 100,
           "average": 100,
           "cheapest": 100,
-          "listingCount": 1,
-          "shopCount": 1,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
@@ -2162,12 +2528,22 @@
           "cheapest": 100,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
       "weightedAverage": 100,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-015": {
       "price": 100,
@@ -2197,6 +2573,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-015|100|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|29"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/hashibira-inosuke-a01-015-sr",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-015|100|https://tcg-library.com/products/hashibira-inosuke-a01-015-sr"
         },
         {
           "shop": "FullAhead",
@@ -2277,8 +2664,8 @@
           "market": 100,
           "average": 100,
           "cheapest": 100,
-          "listingCount": 1,
-          "shopCount": 1,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
@@ -2333,15 +2720,25 @@
           "cheapest": 100,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
       "weightedAverage": 100,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-016": {
-      "price": 120,
+      "price": 100,
       "updated": "2026-10-22",
       "sources": [
         {
@@ -2368,6 +2765,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-016|120|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|30"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/tomioka-giyu-a01-016-sr",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-016|100|https://tcg-library.com/products/tomioka-giyu-a01-016-sr"
         },
         {
           "shop": "FullAhead",
@@ -2408,7 +2816,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-016+%E5%86%A8%E5%B2%A1%E7%BE%A9%E5%8B%87+SR"
         }
       ],
-      "average": 120,
+      "average": 110,
       "history": [
         {
           "date": "2026-09-28",
@@ -2427,15 +2835,15 @@
         },
         {
           "date": "2026-10-22",
-          "market": 120,
-          "average": 120,
-          "cheapest": 120,
-          "listingCount": 1,
-          "shopCount": 1,
+          "market": 100,
+          "average": 110,
+          "cheapest": 100,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
-      "marketValue": 120,
+      "marketValue": 100,
       "mercari": {
         "status": "manual-search",
         "median": null,
@@ -2466,15 +2874,25 @@
           "cheapest": 120,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 120,
+      "weightedAverage": 110,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-017": {
-      "price": 200,
+      "price": 100,
       "updated": "2026-10-22",
       "sources": [
         {
@@ -2501,6 +2919,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-017|200|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|31"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/kocho-shinobu-a01-017-sr",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-017|100|https://tcg-library.com/products/kocho-shinobu-a01-017-sr"
         },
         {
           "shop": "FullAhead",
@@ -2552,7 +2981,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-017+%E8%83%A1%E8%9D%B6%E3%81%97%E3%81%AE%E3%81%B6+SR"
         }
       ],
-      "average": 200,
+      "average": 150,
       "history": [
         {
           "date": "2026-09-28",
@@ -2571,15 +3000,15 @@
         },
         {
           "date": "2026-10-22",
-          "market": 200,
-          "average": 200,
-          "cheapest": 200,
-          "listingCount": 1,
-          "shopCount": 1,
+          "market": 100,
+          "average": 150,
+          "cheapest": 100,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
-      "marketValue": 200,
+      "marketValue": 100,
       "mercari": {
         "status": "manual-search",
         "median": null,
@@ -2610,15 +3039,25 @@
           "cheapest": 200,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 200,
+      "weightedAverage": 150,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-018": {
-      "price": 480,
+      "price": 100,
       "updated": "2026-10-22",
       "sources": [
         {
@@ -2645,6 +3084,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-018|480|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|32"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/sabito-a01-018-sr",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-018|100|https://tcg-library.com/products/sabito-a01-018-sr"
         },
         {
           "shop": "FullAhead",
@@ -2685,7 +3135,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-018+%E9%8C%86%E5%85%8E+SR"
         }
       ],
-      "average": 480,
+      "average": 290,
       "history": [
         {
           "date": "2026-09-28",
@@ -2704,15 +3154,15 @@
         },
         {
           "date": "2026-10-22",
-          "market": 480,
-          "average": 480,
-          "cheapest": 480,
-          "listingCount": 1,
-          "shopCount": 1,
+          "market": 100,
+          "average": 290,
+          "cheapest": 100,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
-      "marketValue": 480,
+      "marketValue": 100,
       "mercari": {
         "status": "manual-search",
         "median": null,
@@ -2743,12 +3193,22 @@
           "cheapest": 480,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 480,
+      "weightedAverage": 290,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-019": {
       "price": 100,
@@ -2778,6 +3238,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-019|100|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|33"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/rui-a01-019-sr",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-019|100|https://tcg-library.com/products/rui-a01-019-sr"
         },
         {
           "shop": "FullAhead",
@@ -2840,8 +3311,8 @@
           "market": 100,
           "average": 100,
           "cheapest": 100,
-          "listingCount": 1,
-          "shopCount": 1,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
@@ -2876,12 +3347,22 @@
           "cheapest": 100,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
       "weightedAverage": 100,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-020": {
       "price": 80,
@@ -2911,6 +3392,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-020|80|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|34"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/kamado-tanjiro-a01-020-r",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-020|100|https://tcg-library.com/products/kamado-tanjiro-a01-020-r"
         },
         {
           "shop": "FullAhead",
@@ -2951,7 +3443,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-020+%E7%AB%88%E9%96%80%E7%82%AD%E6%B2%BB%E9%83%8E+R"
         }
       ],
-      "average": 80,
+      "average": 90,
       "history": [
         {
           "date": "2026-09-28",
@@ -2971,10 +3463,10 @@
         {
           "date": "2026-10-22",
           "market": 80,
-          "average": 80,
+          "average": 90,
           "cheapest": 80,
-          "listingCount": 1,
-          "shopCount": 1,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
@@ -3009,12 +3501,22 @@
           "cheapest": 80,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 80,
+      "weightedAverage": 90,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-021": {
       "price": 80,
@@ -3044,6 +3546,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-021|80|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|35"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/kamado-nezuko-a01-021-r",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-021|100|https://tcg-library.com/products/kamado-nezuko-a01-021-r"
         },
         {
           "shop": "FullAhead",
@@ -3084,7 +3597,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-021+%E7%AB%88%E9%96%80%E7%A6%B0%E8%B1%86%E5%AD%90+R"
         }
       ],
-      "average": 80,
+      "average": 90,
       "history": [
         {
           "date": "2026-09-28",
@@ -3104,10 +3617,10 @@
         {
           "date": "2026-10-22",
           "market": 80,
-          "average": 80,
+          "average": 90,
           "cheapest": 80,
-          "listingCount": 1,
-          "shopCount": 1,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
@@ -3142,12 +3655,22 @@
           "cheapest": 80,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 80,
+      "weightedAverage": 90,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-022": {
       "price": 80,
@@ -3177,6 +3700,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-022|80|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|36"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/agatsuma-zenitsu-a01-022-r",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-022|100|https://tcg-library.com/products/agatsuma-zenitsu-a01-022-r"
         },
         {
           "shop": "FullAhead",
@@ -3217,7 +3751,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-022+%E6%88%91%E5%A6%BB%E5%96%84%E9%80%B8+R"
         }
       ],
-      "average": 80,
+      "average": 90,
       "history": [
         {
           "date": "2026-09-28",
@@ -3237,10 +3771,10 @@
         {
           "date": "2026-10-22",
           "market": 80,
-          "average": 80,
+          "average": 90,
           "cheapest": 80,
-          "listingCount": 1,
-          "shopCount": 1,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
@@ -3275,12 +3809,22 @@
           "cheapest": 80,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 80,
+      "weightedAverage": 90,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-023": {
       "price": 80,
@@ -3310,6 +3854,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-023|80|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|37"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/hashibira-inosuke-a01-023-r",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-023|100|https://tcg-library.com/products/hashibira-inosuke-a01-023-r"
         },
         {
           "shop": "FullAhead",
@@ -3350,7 +3905,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-023+%E5%98%B4%E5%B9%B3%E4%BC%8A%E4%B9%8B%E5%8A%A9+R"
         }
       ],
-      "average": 80,
+      "average": 90,
       "history": [
         {
           "date": "2026-09-28",
@@ -3433,10 +3988,10 @@
         {
           "date": "2026-10-22",
           "market": 80,
-          "average": 80,
+          "average": 90,
           "cheapest": 80,
-          "listingCount": 1,
-          "shopCount": 1,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
@@ -3541,12 +4096,22 @@
           "cheapest": 80,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 80,
+      "weightedAverage": 90,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-024": {
       "price": 80,
@@ -3576,6 +4141,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-024|80|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|38"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/shinazugawa-genya-a01-024-r",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-024|100|https://tcg-library.com/products/shinazugawa-genya-a01-024-r"
         },
         {
           "shop": "FullAhead",
@@ -3616,7 +4192,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-024+%E4%B8%8D%E6%AD%BB%E5%B7%9D%E7%8E%84%E5%BC%A5+R"
         }
       ],
-      "average": 80,
+      "average": 90,
       "history": [
         {
           "date": "2026-09-28",
@@ -3699,10 +4275,10 @@
         {
           "date": "2026-10-22",
           "market": 80,
-          "average": 80,
+          "average": 90,
           "cheapest": 80,
-          "listingCount": 1,
-          "shopCount": 1,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
@@ -3807,12 +4383,22 @@
           "cheapest": 80,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 80,
+      "weightedAverage": 90,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-025": {
       "price": 100,
@@ -3842,6 +4428,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-025|100|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|39"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/tomioka-giyu-a01-025-r",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-025|100|https://tcg-library.com/products/tomioka-giyu-a01-025-r"
         },
         {
           "shop": "FullAhead",
@@ -3904,8 +4501,8 @@
           "market": 100,
           "average": 100,
           "cheapest": 100,
-          "listingCount": 1,
-          "shopCount": 1,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
@@ -3940,12 +4537,22 @@
           "cheapest": 100,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
       "weightedAverage": 100,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-026": {
       "price": 80,
@@ -3975,6 +4582,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-026|80|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|40"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/kocho-shinobu-a01-026-r",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-026|100|https://tcg-library.com/products/kocho-shinobu-a01-026-r"
         },
         {
           "shop": "FullAhead",
@@ -4015,7 +4633,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-026+%E8%83%A1%E8%9D%B6%E3%81%97%E3%81%AE%E3%81%B6+R"
         }
       ],
-      "average": 80,
+      "average": 90,
       "history": [
         {
           "date": "2026-09-28",
@@ -4035,10 +4653,10 @@
         {
           "date": "2026-10-22",
           "market": 80,
-          "average": 80,
+          "average": 90,
           "cheapest": 80,
-          "listingCount": 1,
-          "shopCount": 1,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
@@ -4073,12 +4691,22 @@
           "cheapest": 80,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 80,
+      "weightedAverage": 90,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-027": {
       "price": 80,
@@ -4108,6 +4736,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-027|80|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|41"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/urokodaki-sakonji-a01-027-r",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-027|100|https://tcg-library.com/products/urokodaki-sakonji-a01-027-r"
         },
         {
           "shop": "FullAhead",
@@ -4148,7 +4787,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-027+%E9%B1%97%E6%BB%9D%E5%B7%A6%E8%BF%91%E6%AC%A1+R"
         }
       ],
-      "average": 80,
+      "average": 90,
       "history": [
         {
           "date": "2026-09-28",
@@ -4168,10 +4807,10 @@
         {
           "date": "2026-10-22",
           "market": 80,
-          "average": 80,
+          "average": 90,
           "cheapest": 80,
-          "listingCount": 1,
-          "shopCount": 1,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
@@ -4206,12 +4845,22 @@
           "cheapest": 80,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 80,
+      "weightedAverage": 90,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-028": {
       "price": 80,
@@ -4241,6 +4890,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-028|80|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|42"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/makomo-a01-028-r",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-028|100|https://tcg-library.com/products/makomo-a01-028-r"
         },
         {
           "shop": "FullAhead",
@@ -4281,7 +4941,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-028+%E7%9C%9F%E8%8F%B0+R"
         }
       ],
-      "average": 80,
+      "average": 90,
       "history": [
         {
           "date": "2026-09-28",
@@ -4301,10 +4961,10 @@
         {
           "date": "2026-10-22",
           "market": 80,
-          "average": 80,
+          "average": 90,
           "cheapest": 80,
-          "listingCount": 1,
-          "shopCount": 1,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
@@ -4339,12 +4999,22 @@
           "cheapest": 80,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 80,
+      "weightedAverage": 90,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-029": {
       "price": 80,
@@ -4374,6 +5044,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-029|80|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|43"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/teoni-a01-029-r",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-029|100|https://tcg-library.com/products/teoni-a01-029-r"
         },
         {
           "shop": "FullAhead",
@@ -4414,7 +5095,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-029+%E6%89%8B%E9%AC%BC+R"
         }
       ],
-      "average": 80,
+      "average": 90,
       "history": [
         {
           "date": "2026-09-28",
@@ -4497,10 +5178,10 @@
         {
           "date": "2026-10-22",
           "market": 80,
-          "average": 80,
+          "average": 90,
           "cheapest": 80,
-          "listingCount": 1,
-          "shopCount": 1,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
@@ -4605,12 +5286,22 @@
           "cheapest": 80,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 80,
+      "weightedAverage": 90,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-030": {
       "price": 80,
@@ -4640,6 +5331,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-030|80|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|44"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/susamaru-a01-030-r",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-030|100|https://tcg-library.com/products/susamaru-a01-030-r"
         },
         {
           "shop": "FullAhead",
@@ -4680,7 +5382,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-030+%E6%9C%B1%E7%B4%97%E4%B8%B8+R"
         }
       ],
-      "average": 80,
+      "average": 90,
       "history": [
         {
           "date": "2026-09-28",
@@ -4763,10 +5465,10 @@
         {
           "date": "2026-10-22",
           "market": 80,
-          "average": 80,
+          "average": 90,
           "cheapest": 80,
-          "listingCount": 1,
-          "shopCount": 1,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
@@ -4871,12 +5573,22 @@
           "cheapest": 80,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 80,
+      "weightedAverage": 90,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-031": {
       "price": 80,
@@ -4906,6 +5618,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-031|80|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|45"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/yahaba-a01-031-r",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-031|100|https://tcg-library.com/products/yahaba-a01-031-r"
         },
         {
           "shop": "FullAhead",
@@ -4946,7 +5669,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-031+%E7%9F%A2%E7%90%B6%E7%BE%BD+R"
         }
       ],
-      "average": 80,
+      "average": 90,
       "history": [
         {
           "date": "2026-09-28",
@@ -5029,10 +5752,10 @@
         {
           "date": "2026-10-22",
           "market": 80,
-          "average": 80,
+          "average": 90,
           "cheapest": 80,
-          "listingCount": 1,
-          "shopCount": 1,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
@@ -5137,12 +5860,22 @@
           "cheapest": 80,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 80,
+      "weightedAverage": 90,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-032": {
       "price": 50,
@@ -5172,6 +5905,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-032|50|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|46"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/kamado-tanjiro-a01-032-c",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-032|100|https://tcg-library.com/products/kamado-tanjiro-a01-032-c"
         },
         {
           "shop": "FullAhead",
@@ -5212,7 +5956,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-032+%E7%AB%88%E9%96%80%E7%82%AD%E6%B2%BB%E9%83%8E+C"
         }
       ],
-      "average": 50,
+      "average": 75,
       "history": [
         {
           "date": "2026-09-28",
@@ -5232,10 +5976,10 @@
         {
           "date": "2026-10-22",
           "market": 50,
-          "average": 50,
+          "average": 75,
           "cheapest": 50,
-          "listingCount": 1,
-          "shopCount": 1,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
@@ -5270,12 +6014,22 @@
           "cheapest": 50,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 50,
+      "weightedAverage": 75,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-033": {
       "price": 50,
@@ -5305,6 +6059,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-033|50|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|47"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/kamado-nezuko-a01-033-c",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-033|100|https://tcg-library.com/products/kamado-nezuko-a01-033-c"
         },
         {
           "shop": "FullAhead",
@@ -5345,7 +6110,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-033+%E7%AB%88%E9%96%80%E7%A6%B0%E8%B1%86%E5%AD%90+C"
         }
       ],
-      "average": 50,
+      "average": 75,
       "history": [
         {
           "date": "2026-09-28",
@@ -5365,10 +6130,10 @@
         {
           "date": "2026-10-22",
           "market": 50,
-          "average": 50,
+          "average": 75,
           "cheapest": 50,
-          "listingCount": 1,
-          "shopCount": 1,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
@@ -5403,12 +6168,22 @@
           "cheapest": 50,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 50,
+      "weightedAverage": 75,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-034": {
       "price": 50,
@@ -5438,6 +6213,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-034|50|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|48"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/agatsuma-zenitsu-a01-034-c",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-034|100|https://tcg-library.com/products/agatsuma-zenitsu-a01-034-c"
         },
         {
           "shop": "FullAhead",
@@ -5478,7 +6264,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-034+%E6%88%91%E5%A6%BB%E5%96%84%E9%80%B8+C"
         }
       ],
-      "average": 50,
+      "average": 75,
       "history": [
         {
           "date": "2026-09-28",
@@ -5498,10 +6284,10 @@
         {
           "date": "2026-10-22",
           "market": 50,
-          "average": 50,
+          "average": 75,
           "cheapest": 50,
-          "listingCount": 1,
-          "shopCount": 1,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
@@ -5536,12 +6322,22 @@
           "cheapest": 50,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 50,
+      "weightedAverage": 75,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-035": {
       "price": 50,
@@ -5571,6 +6367,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-035|50|https://pt-fullahead.com/shopbrand/kynbs/page3/order/|49"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/hashibira-inosuke-a01-035-c",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-035|100|https://tcg-library.com/products/hashibira-inosuke-a01-035-c"
         },
         {
           "shop": "FullAhead",
@@ -5611,7 +6418,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-035+%E5%98%B4%E5%B9%B3%E4%BC%8A%E4%B9%8B%E5%8A%A9+C"
         }
       ],
-      "average": 50,
+      "average": 75,
       "history": [
         {
           "date": "2026-09-28",
@@ -5694,10 +6501,10 @@
         {
           "date": "2026-10-22",
           "market": 50,
-          "average": 50,
+          "average": 75,
           "cheapest": 50,
-          "listingCount": 1,
-          "shopCount": 1,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
@@ -5802,15 +6609,25 @@
           "cheapest": 50,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 50,
+      "weightedAverage": 75,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-036": {
-      "price": 50,
+      "price": 100,
       "updated": "2026-10-22",
       "sources": [
         {
@@ -5827,6 +6644,17 @@
         }
       ],
       "offers": [
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/shinazugawa-genya-a01-036-c",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-036|100|https://tcg-library.com/products/shinazugawa-genya-a01-036-c"
+        },
         {
           "shop": "FullAhead",
           "source": "FullAhead",
@@ -5877,7 +6705,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-036+%E4%B8%8D%E6%AD%BB%E5%B7%9D%E7%8E%84%E5%BC%A5+C"
         }
       ],
-      "average": 50,
+      "average": 100,
       "history": [
         {
           "date": "2026-09-28",
@@ -5956,9 +6784,18 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-22",
+          "market": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
-      "marketValue": 50,
+      "marketValue": 100,
       "mercari": {
         "status": "manual-search",
         "median": null,
@@ -6059,15 +6896,25 @@
           "cheapest": 50,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 50,
+      "weightedAverage": 100,
       "confidence": "low",
       "listingCount": 1,
       "shopCount": 1
     },
     "A01-037": {
-      "price": 50,
+      "price": 100,
       "updated": "2026-10-22",
       "sources": [
         {
@@ -6084,6 +6931,17 @@
         }
       ],
       "offers": [
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/tomioka-giyu-a01-037-c",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-037|100|https://tcg-library.com/products/tomioka-giyu-a01-037-c"
+        },
         {
           "shop": "FullAhead",
           "source": "FullAhead",
@@ -6134,7 +6992,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-037+%E5%86%A8%E5%B2%A1%E7%BE%A9%E5%8B%87+C"
         }
       ],
-      "average": 50,
+      "average": 100,
       "history": [
         {
           "date": "2026-09-28",
@@ -6204,9 +7062,18 @@
           "listingCount": 1,
           "shopCount": 1,
           "confidence": "low"
+        },
+        {
+          "date": "2026-10-22",
+          "market": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
-      "marketValue": 50,
+      "marketValue": 100,
       "mercari": {
         "status": "manual-search",
         "median": null,
@@ -6297,9 +7164,19 @@
           "cheapest": 50,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 50,
+      "weightedAverage": 100,
       "confidence": "low",
       "listingCount": 1,
       "shopCount": 1
@@ -6332,6 +7209,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-038|50|https://pt-fullahead.com/shopbrand/kynbs/page4/order/|2"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/kocho-shinobu-a01-038-c",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-038|100|https://tcg-library.com/products/kocho-shinobu-a01-038-c"
         },
         {
           "shop": "FullAhead",
@@ -6383,7 +7271,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-038+%E8%83%A1%E8%9D%B6%E3%81%97%E3%81%AE%E3%81%B6+C"
         }
       ],
-      "average": 50,
+      "average": 75,
       "history": [
         {
           "date": "2026-09-28",
@@ -6448,10 +7336,10 @@
         {
           "date": "2026-10-22",
           "market": 50,
-          "average": 50,
+          "average": 75,
           "cheapest": 50,
-          "listingCount": 1,
-          "shopCount": 1,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
@@ -6536,12 +7424,22 @@
           "cheapest": 50,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 50,
+      "weightedAverage": 75,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-039": {
       "price": 50,
@@ -6571,6 +7469,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-039|50|https://pt-fullahead.com/shopbrand/kynbs/page4/order/|3"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/urokodaki-sakonji-a01-039-c",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-039|100|https://tcg-library.com/products/urokodaki-sakonji-a01-039-c"
         },
         {
           "shop": "FullAhead",
@@ -6622,7 +7531,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-039+%E9%B1%97%E6%BB%9D%E5%B7%A6%E8%BF%91%E6%AC%A1+C"
         }
       ],
-      "average": 50,
+      "average": 75,
       "history": [
         {
           "date": "2026-09-28",
@@ -6660,10 +7569,10 @@
         {
           "date": "2026-10-22",
           "market": 50,
-          "average": 50,
+          "average": 75,
           "cheapest": 50,
-          "listingCount": 1,
-          "shopCount": 1,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
@@ -6718,12 +7627,22 @@
           "cheapest": 50,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 50,
+      "weightedAverage": 75,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-040": {
       "price": 50,
@@ -6753,6 +7672,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-040|50|https://pt-fullahead.com/shopbrand/kynbs/page4/order/|4"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/sabito-a01-040-c",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-040|100|https://tcg-library.com/products/sabito-a01-040-c"
         },
         {
           "shop": "FullAhead",
@@ -6805,7 +7735,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-040+%E9%8C%86%E5%85%8E+C"
         }
       ],
-      "average": 50,
+      "average": 75,
       "history": [
         {
           "date": "2026-09-28",
@@ -6834,10 +7764,10 @@
         {
           "date": "2026-10-22",
           "market": 50,
-          "average": 50,
+          "average": 75,
           "cheapest": 50,
-          "listingCount": 1,
-          "shopCount": 1,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
@@ -6882,12 +7812,22 @@
           "cheapest": 50,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 50,
+      "weightedAverage": 75,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-041": {
       "price": 50,
@@ -6917,6 +7857,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-041|50|https://pt-fullahead.com/shopbrand/kynbs/page4/order/|5"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/makomo-a01-041-c",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-041|100|https://tcg-library.com/products/makomo-a01-041-c"
         },
         {
           "shop": "FullAhead",
@@ -6957,7 +7908,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-041+%E7%9C%9F%E8%8F%B0+C"
         }
       ],
-      "average": 50,
+      "average": 75,
       "history": [
         {
           "date": "2026-09-28",
@@ -6977,10 +7928,10 @@
         {
           "date": "2026-10-22",
           "market": 50,
-          "average": 50,
+          "average": 75,
           "cheapest": 50,
-          "listingCount": 1,
-          "shopCount": 1,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
@@ -7015,12 +7966,22 @@
           "cheapest": 50,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 50,
+      "weightedAverage": 75,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-042": {
       "price": 50,
@@ -7050,6 +8011,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-042|50|https://pt-fullahead.com/shopbrand/kynbs/page4/order/|6"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/teoni-a01-042-c",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-042|100|https://tcg-library.com/products/teoni-a01-042-c"
         },
         {
           "shop": "FullAhead",
@@ -7090,7 +8062,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-042+%E6%89%8B%E9%AC%BC+C"
         }
       ],
-      "average": 50,
+      "average": 75,
       "history": [
         {
           "date": "2026-09-28",
@@ -7110,10 +8082,10 @@
         {
           "date": "2026-10-22",
           "market": 50,
-          "average": 50,
+          "average": 75,
           "cheapest": 50,
-          "listingCount": 1,
-          "shopCount": 1,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
@@ -7148,12 +8120,22 @@
           "cheapest": 50,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 50,
+      "weightedAverage": 75,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-043": {
       "price": 50,
@@ -7183,6 +8165,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-043|50|https://pt-fullahead.com/shopbrand/kynbs/page4/order/|7"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/susamaru-a01-043-c",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-043|100|https://tcg-library.com/products/susamaru-a01-043-c"
         },
         {
           "shop": "FullAhead",
@@ -7223,7 +8216,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-043+%E6%9C%B1%E7%B4%97%E4%B8%B8+C"
         }
       ],
-      "average": 50,
+      "average": 75,
       "history": [
         {
           "date": "2026-09-28",
@@ -7243,10 +8236,10 @@
         {
           "date": "2026-10-22",
           "market": 50,
-          "average": 50,
+          "average": 75,
           "cheapest": 50,
-          "listingCount": 1,
-          "shopCount": 1,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
@@ -7281,12 +8274,22 @@
           "cheapest": 50,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 50,
+      "weightedAverage": 75,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-044": {
       "price": 50,
@@ -7316,6 +8319,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-044|50|https://pt-fullahead.com/shopbrand/kynbs/page4/order/|8"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/yahaba-a01-044-c",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-044|100|https://tcg-library.com/products/yahaba-a01-044-c"
         },
         {
           "shop": "FullAhead",
@@ -7356,7 +8370,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-044+%E7%9F%A2%E7%90%B6%E7%BE%BD+C"
         }
       ],
-      "average": 50,
+      "average": 75,
       "history": [
         {
           "date": "2026-09-28",
@@ -7376,10 +8390,10 @@
         {
           "date": "2026-10-22",
           "market": 50,
-          "average": 50,
+          "average": 75,
           "cheapest": 50,
-          "listingCount": 1,
-          "shopCount": 1,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
@@ -7414,12 +8428,22 @@
           "cheapest": 50,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 50,
+      "weightedAverage": 75,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-045": {
       "price": 50,
@@ -7449,6 +8473,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-045|50|https://pt-fullahead.com/shopbrand/kynbs/page4/order/|9"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/rui-a01-045-c",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-045|100|https://tcg-library.com/products/rui-a01-045-c"
         },
         {
           "shop": "FullAhead",
@@ -7489,7 +8524,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-045+%E7%B4%AF+C"
         }
       ],
-      "average": 50,
+      "average": 75,
       "history": [
         {
           "date": "2026-09-28",
@@ -7509,10 +8544,10 @@
         {
           "date": "2026-10-22",
           "market": 50,
-          "average": 50,
+          "average": 75,
           "cheapest": 50,
-          "listingCount": 1,
-          "shopCount": 1,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
@@ -7547,15 +8582,25 @@
           "cheapest": 50,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 50,
+      "weightedAverage": 75,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-046": {
-      "price": 380,
+      "price": 100,
       "updated": "2026-10-22",
       "sources": [
         {
@@ -7582,6 +8627,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-046|380|https://pt-fullahead.com/shopbrand/kynbs/page4/order/|10"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/kibutsuji-muzan-a01-046-sr",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-046|100|https://tcg-library.com/products/kibutsuji-muzan-a01-046-sr"
         },
         {
           "shop": "FullAhead",
@@ -7633,7 +8689,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-046+%E9%AC%BC%E8%88%9E%E8%BE%BB%E7%84%A1%E6%83%A8+SR"
         }
       ],
-      "average": 380,
+      "average": 240,
       "history": [
         {
           "date": "2026-09-28",
@@ -7652,15 +8708,15 @@
         },
         {
           "date": "2026-10-22",
-          "market": 380,
-          "average": 380,
-          "cheapest": 380,
-          "listingCount": 1,
-          "shopCount": 1,
+          "market": 100,
+          "average": 240,
+          "cheapest": 100,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
-      "marketValue": 380,
+      "marketValue": 100,
       "mercari": {
         "status": "manual-search",
         "median": null,
@@ -7691,15 +8747,25 @@
           "cheapest": 380,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 380,
+      "weightedAverage": 240,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-047": {
-      "price": 580,
+      "price": 100,
       "updated": "2026-10-22",
       "sources": [
         {
@@ -7726,6 +8792,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-047|580|https://pt-fullahead.com/shopbrand/kynbs/page4/order/|11"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/tamayo-a01-047-sr",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-047|100|https://tcg-library.com/products/tamayo-a01-047-sr"
         },
         {
           "shop": "FullAhead",
@@ -7766,7 +8843,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-047+%E7%8F%A0%E4%B8%96+SR"
         }
       ],
-      "average": 580,
+      "average": 340,
       "history": [
         {
           "date": "2026-09-28",
@@ -7785,15 +8862,15 @@
         },
         {
           "date": "2026-10-22",
-          "market": 580,
-          "average": 580,
-          "cheapest": 580,
-          "listingCount": 1,
-          "shopCount": 1,
+          "market": 100,
+          "average": 340,
+          "cheapest": 100,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
-      "marketValue": 580,
+      "marketValue": 100,
       "mercari": {
         "status": "manual-search",
         "median": null,
@@ -7824,15 +8901,25 @@
           "cheapest": 580,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 580,
+      "weightedAverage": 340,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-048": {
-      "price": 620,
+      "price": 100,
       "updated": "2026-10-22",
       "sources": [
         {
@@ -7859,6 +8946,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-048|620|https://pt-fullahead.com/shopbrand/kynbs/page4/order/|12"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/tsuyuri-kanao-a01-048-sr",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-048|100|https://tcg-library.com/products/tsuyuri-kanao-a01-048-sr"
         },
         {
           "shop": "FullAhead",
@@ -7910,7 +9008,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-048+%E6%A0%97%E8%8A%B1%E8%90%BD%E3%82%AB%E3%83%8A%E3%83%B2+SR"
         }
       ],
-      "average": 620,
+      "average": 360,
       "history": [
         {
           "date": "2026-09-28",
@@ -7929,15 +9027,15 @@
         },
         {
           "date": "2026-10-22",
-          "market": 620,
-          "average": 620,
-          "cheapest": 620,
-          "listingCount": 1,
-          "shopCount": 1,
+          "market": 100,
+          "average": 360,
+          "cheapest": 100,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
-      "marketValue": 620,
+      "marketValue": 100,
       "mercari": {
         "status": "manual-search",
         "median": null,
@@ -7968,12 +9066,22 @@
           "cheapest": 620,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 620,
+      "weightedAverage": 360,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-049": {
       "price": 80,
@@ -8003,6 +9111,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-049|80|https://pt-fullahead.com/shopbrand/kynbs/page4/order/|13"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/white-hair-black-hair-a01-049-r",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-049|100|https://tcg-library.com/products/white-hair-black-hair-a01-049-r"
         },
         {
           "shop": "FullAhead",
@@ -8043,7 +9162,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-049+%E7%99%BD%E9%AB%AE%E3%81%A8%E9%BB%92%E9%AB%AA+R"
         }
       ],
-      "average": 80,
+      "average": 90,
       "history": [
         {
           "date": "2026-09-28",
@@ -8063,10 +9182,10 @@
         {
           "date": "2026-10-22",
           "market": 80,
-          "average": 80,
+          "average": 90,
           "cheapest": 80,
-          "listingCount": 1,
-          "shopCount": 1,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
@@ -8101,15 +9220,25 @@
           "cheapest": 80,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 80,
+      "weightedAverage": 90,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-050": {
-      "price": 380,
+      "price": 100,
       "updated": "2026-10-22",
       "sources": [
         {
@@ -8136,6 +9265,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-050|380|https://pt-fullahead.com/shopbrand/kynbs/page4/order/|14"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/yushiro-a01-050-r",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-050|100|https://tcg-library.com/products/yushiro-a01-050-r"
         },
         {
           "shop": "FullAhead",
@@ -8187,7 +9327,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-050+%E6%84%88%E5%8F%B2%E9%83%8E+R"
         }
       ],
-      "average": 380,
+      "average": 240,
       "history": [
         {
           "date": "2026-09-28",
@@ -8206,15 +9346,15 @@
         },
         {
           "date": "2026-10-22",
-          "market": 380,
-          "average": 380,
-          "cheapest": 380,
-          "listingCount": 1,
-          "shopCount": 1,
+          "market": 100,
+          "average": 240,
+          "cheapest": 100,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
-      "marketValue": 380,
+      "marketValue": 100,
       "mercari": {
         "status": "manual-search",
         "median": null,
@@ -8245,12 +9385,22 @@
           "cheapest": 380,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 380,
+      "weightedAverage": 240,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-051": {
       "price": 80,
@@ -8280,6 +9430,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-051|80|https://pt-fullahead.com/shopbrand/kynbs/page4/order/|15"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/spider-demon-father-a01-051-r",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-051|100|https://tcg-library.com/products/spider-demon-father-a01-051-r"
         },
         {
           "shop": "FullAhead",
@@ -8320,7 +9481,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-051+%E8%9C%98%E8%9B%9B%E3%81%AE%E9%AC%BC%28%E7%88%B6%29+R"
         }
       ],
-      "average": 80,
+      "average": 90,
       "history": [
         {
           "date": "2026-09-28",
@@ -8340,10 +9501,10 @@
         {
           "date": "2026-10-22",
           "market": 80,
-          "average": 80,
+          "average": 90,
           "cheapest": 80,
-          "listingCount": 1,
-          "shopCount": 1,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
@@ -8378,12 +9539,22 @@
           "cheapest": 80,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 80,
+      "weightedAverage": 90,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-052": {
       "price": 80,
@@ -8413,6 +9584,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-052|80|https://pt-fullahead.com/shopbrand/kynbs/page4/order/|16"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/kuwajima-jigoro-a01-052-r",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-052|100|https://tcg-library.com/products/kuwajima-jigoro-a01-052-r"
         },
         {
           "shop": "FullAhead",
@@ -8453,7 +9635,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-052+%E6%A1%91%E5%B3%B6%E6%85%88%E6%82%9F%E9%83%8E+R"
         }
       ],
-      "average": 80,
+      "average": 90,
       "history": [
         {
           "date": "2026-09-28",
@@ -8473,10 +9655,10 @@
         {
           "date": "2026-10-22",
           "market": 80,
-          "average": 80,
+          "average": 90,
           "cheapest": 80,
-          "listingCount": 1,
-          "shopCount": 1,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
@@ -8511,12 +9693,22 @@
           "cheapest": 80,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 80,
+      "weightedAverage": 90,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-053": {
       "price": 80,
@@ -8546,6 +9738,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-053|80|https://pt-fullahead.com/shopbrand/kynbs/page4/order/|17"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/haganezuka-hotaru-a01-053-r",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-053|100|https://tcg-library.com/products/haganezuka-hotaru-a01-053-r"
         },
         {
           "shop": "FullAhead",
@@ -8586,7 +9789,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-053+%E9%8B%BC%E9%90%B5%E5%A1%9A%E8%9B%8D+R"
         }
       ],
-      "average": 80,
+      "average": 90,
       "history": [
         {
           "date": "2026-09-28",
@@ -8606,10 +9809,10 @@
         {
           "date": "2026-10-22",
           "market": 80,
-          "average": 80,
+          "average": 90,
           "cheapest": 80,
-          "listingCount": 1,
-          "shopCount": 1,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
@@ -8644,12 +9847,22 @@
           "cheapest": 80,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 80,
+      "weightedAverage": 90,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-054": {
       "price": 80,
@@ -8679,6 +9892,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-054|80|https://pt-fullahead.com/shopbrand/kynbs/page4/order/|18"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/kyogai-a01-054-r",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-054|100|https://tcg-library.com/products/kyogai-a01-054-r"
         },
         {
           "shop": "FullAhead",
@@ -8719,7 +9943,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-054+%E9%9F%BF%E5%87%B1+R"
         }
       ],
-      "average": 80,
+      "average": 90,
       "history": [
         {
           "date": "2026-09-28",
@@ -8739,10 +9963,10 @@
         {
           "date": "2026-10-22",
           "market": 80,
-          "average": 80,
+          "average": 90,
           "cheapest": 80,
-          "listingCount": 1,
-          "shopCount": 1,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
@@ -8777,12 +10001,22 @@
           "cheapest": 80,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 80,
+      "weightedAverage": 90,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-055": {
       "price": 50,
@@ -8812,6 +10046,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-055|50|https://pt-fullahead.com/shopbrand/kynbs/page4/order/|19"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/kanzaki-aoi-a01-055-c",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-055|100|https://tcg-library.com/products/kanzaki-aoi-a01-055-c"
         },
         {
           "shop": "FullAhead",
@@ -8852,7 +10097,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-055+%E7%A5%9E%E5%B4%8E%E3%82%A2%E3%82%AA%E3%82%A4+C"
         }
       ],
-      "average": 50,
+      "average": 75,
       "history": [
         {
           "date": "2026-09-28",
@@ -8872,10 +10117,10 @@
         {
           "date": "2026-10-22",
           "market": 50,
-          "average": 50,
+          "average": 75,
           "cheapest": 50,
-          "listingCount": 1,
-          "shopCount": 1,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
@@ -8910,12 +10155,22 @@
           "cheapest": 50,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 50,
+      "weightedAverage": 75,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-056": {
       "price": 50,
@@ -8945,6 +10200,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-056|50|https://pt-fullahead.com/shopbrand/kynbs/page4/order/|20"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/swordsman-marked-by-rui-a01-056-c",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-056|100|https://tcg-library.com/products/swordsman-marked-by-rui-a01-056-c"
         },
         {
           "shop": "FullAhead",
@@ -8985,7 +10251,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-056+%E7%B4%AF%E3%81%AB%E5%88%BB%E3%81%BE%E3%82%8C%E3%81%9F%E5%89%A3%E5%A3%AB+C"
         }
       ],
-      "average": 50,
+      "average": 75,
       "history": [
         {
           "date": "2026-09-28",
@@ -9005,10 +10271,10 @@
         {
           "date": "2026-10-22",
           "market": 50,
-          "average": 50,
+          "average": 75,
           "cheapest": 50,
-          "listingCount": 1,
-          "shopCount": 1,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
@@ -9043,12 +10309,22 @@
           "cheapest": 50,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 50,
+      "weightedAverage": 75,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-057": {
       "price": 50,
@@ -9078,6 +10354,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-057|50|https://pt-fullahead.com/shopbrand/kynbs/page4/order/|21"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/kiyo-sumi-naho-a01-057-c",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-057|100|https://tcg-library.com/products/kiyo-sumi-naho-a01-057-c"
         },
         {
           "shop": "FullAhead",
@@ -9118,7 +10405,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-057+%E3%81%8D%E3%82%88%E3%83%BB%E3%81%99%E3%81%BF%E3%83%BB%E3%81%AA%E3%81%BB+C"
         }
       ],
-      "average": 50,
+      "average": 75,
       "history": [
         {
           "date": "2026-09-28",
@@ -9138,10 +10425,10 @@
         {
           "date": "2026-10-22",
           "market": 50,
-          "average": 50,
+          "average": 75,
           "cheapest": 50,
-          "listingCount": 1,
-          "shopCount": 1,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
@@ -9176,12 +10463,22 @@
           "cheapest": 50,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 50,
+      "weightedAverage": 75,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-058": {
       "price": 50,
@@ -9211,6 +10508,17 @@
           "stale": false,
           "type": "asking",
           "listingKey": "FullAhead|A01-058|50|https://pt-fullahead.com/shopbrand/kynbs/page4/order/|22"
+        },
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/tennoji-matsuemon-a01-058-c",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-058|100|https://tcg-library.com/products/tennoji-matsuemon-a01-058-c"
         },
         {
           "shop": "FullAhead",
@@ -9251,7 +10559,7 @@
           "url": "https://jp.mercari.com/search?keyword=A01-058+%E5%A4%A9%E7%8E%8B%E5%AF%BA%E6%9D%BE%E5%8F%B3%E8%A1%9B%E9%96%80+C"
         }
       ],
-      "average": 50,
+      "average": 75,
       "history": [
         {
           "date": "2026-09-28",
@@ -9271,10 +10579,10 @@
         {
           "date": "2026-10-22",
           "market": 50,
-          "average": 50,
+          "average": 75,
           "cheapest": 50,
-          "listingCount": 1,
-          "shopCount": 1,
+          "listingCount": 2,
+          "shopCount": 2,
           "confidence": "low"
         }
       ],
@@ -9309,16 +10617,26 @@
           "cheapest": 50,
           "listingCount": 1,
           "type": "asking"
+        },
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
         }
       ],
-      "weightedAverage": 50,
+      "weightedAverage": 75,
       "confidence": "low",
-      "listingCount": 1,
-      "shopCount": 1
+      "listingCount": 2,
+      "shopCount": 2
     },
     "A01-059": {
-      "price": 28,
-      "updated": "2026-10-14",
+      "price": 100,
+      "updated": "2026-10-22",
       "sources": [
         {
           "name": "TCG Library",
@@ -9334,6 +10652,17 @@
         }
       ],
       "offers": [
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/swamp-demon-a01-059-c",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-059|100|https://tcg-library.com/products/swamp-demon-a01-059-c"
+        },
         {
           "shop": "FullAhead",
           "source": "FullAhead",
@@ -9373,16 +10702,25 @@
           "url": "https://jp.mercari.com/search?keyword=A01-059+%E6%B2%BC%E3%81%AE%E9%AC%BC+C"
         }
       ],
-      "average": 64,
+      "average": 100,
       "history": [
         {
           "date": "2026-09-28",
           "market": 60.0,
           "average": 60,
           "cheapest": 60.0
+        },
+        {
+          "date": "2026-10-22",
+          "market": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
-      "marketValue": 28,
+      "marketValue": 100,
       "mercari": {
         "status": "manual-search",
         "median": null,
@@ -9393,15 +10731,26 @@
         "sold": {}
       },
       "freshSourceCount": 2,
-      "shopHistory": [],
-      "weightedAverage": 64,
+      "shopHistory": [
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
+        }
+      ],
+      "weightedAverage": 100,
       "confidence": "low",
-      "listingCount": 0,
-      "shopCount": 0
+      "listingCount": 1,
+      "shopCount": 1
     },
     "A01-060": {
-      "price": 28,
-      "updated": "2026-10-14",
+      "price": 100,
+      "updated": "2026-10-22",
       "sources": [
         {
           "name": "TCG Library",
@@ -9417,6 +10766,17 @@
         }
       ],
       "offers": [
+        {
+          "shop": "TCG Library",
+          "source": "TCG Library A01",
+          "price": 100,
+          "url": "https://tcg-library.com/products/spider-demon-mother-a01-060-c",
+          "updated": "2026-10-22",
+          "observedDate": "2026-10-22",
+          "stale": false,
+          "type": "asking",
+          "listingKey": "TCG Library|A01-060|100|https://tcg-library.com/products/spider-demon-mother-a01-060-c"
+        },
         {
           "shop": "FullAhead",
           "source": "FullAhead",
@@ -9456,16 +10816,25 @@
           "url": "https://jp.mercari.com/search?keyword=A01-060+%E8%9C%98%E8%9B%9B%E3%81%AE%E9%AC%BC%28%E6%AF%8D%29+C"
         }
       ],
-      "average": 64,
+      "average": 100,
       "history": [
         {
           "date": "2026-09-28",
           "market": 60.0,
           "average": 60,
           "cheapest": 60.0
+        },
+        {
+          "date": "2026-10-22",
+          "market": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "shopCount": 1,
+          "confidence": "low"
         }
       ],
-      "marketValue": 28,
+      "marketValue": 100,
       "mercari": {
         "status": "manual-search",
         "median": null,
@@ -9476,11 +10845,22 @@
         "sold": {}
       },
       "freshSourceCount": 2,
-      "shopHistory": [],
-      "weightedAverage": 64,
+      "shopHistory": [
+        {
+          "date": "2026-10-22",
+          "shop": "TCG Library",
+          "price": 100,
+          "median": 100,
+          "average": 100,
+          "cheapest": 100,
+          "listingCount": 1,
+          "type": "asking"
+        }
+      ],
+      "weightedAverage": 100,
       "confidence": "low",
-      "listingCount": 0,
-      "shopCount": 0
+      "listingCount": 1,
+      "shopCount": 1
     },
     "A02-001": {
       "price": 480,
@@ -18304,6 +19684,8 @@
     }
   },
   "sourcesFetchedToday": [
-    "FullAhead"
+    "FullAhead",
+    "TCG Library A01",
+    "TCG Library all"
   ]
 }
