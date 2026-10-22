@@ -292,7 +292,23 @@ def main():
     page_text = visible_text(page_html)
 
     if src['kind'] == 'tcg' and page == 1:
-        print("TCG HTML SAMPLE:", page_html[:12000])
+        id_match = ID_RE.search(page_html)
+    
+        if id_match:
+            start = max(0, id_match.start() - 1500)
+            end = min(len(page_html), id_match.end() + 3000)
+            print("TCG HTML AROUND FIRST CARD ID:", page_html[start:end])
+        else:
+            print("TCG HTML: no card ID found in raw HTML")
+    
+        price_matches = list(PRICE_RE.finditer(page_html))
+        print(
+            "TCG RAW PRICE MATCHES:",
+            [
+                page_html[max(0, m.start() - 100):min(len(page_html), m.end() + 100)]
+                for m in price_matches[:15]
+            ]
+        )
 
     if len(page_text) < 100:
         print(
