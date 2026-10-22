@@ -13,6 +13,7 @@
     "observedListings": 27,
     "checkedOn": "2026-10-21"
   },
+  "mercariImportPolicy": "Manual observations only. Active asks and sold listings are separate. A sold listing's displayed price is not guaranteed to equal the final transaction amount.",
   "updated": "2026-10-22",
   "cards": {
     "P01-001": {
