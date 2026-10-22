@@ -288,8 +288,27 @@ def main():
   for page in src['pages']:
    url=page_url(src,page)
    try:
-    obs=parse_listings(get(url),src,url,card_by_id)
-    print(f"PRICE DEBUG | {src['name']} | page {page} | extracted {len(obs)} listing observations")
+    page_html = get(url)
+    page_text = visible_text(page_html)
+    
+    id_matches = list(ID_RE.finditer(page_text))
+    known_matches = sum(
+        1 for m in id_matches if m.group(1) in card_by_id
+    )
+    
+    print(
+        f"PAGE DIAGNOSTIC | {src['name']} | page {page} "
+        f"| chars={len(page_text)} "
+        f"| card_ids={len(id_matches)} "
+        f"| known_card_ids={known_matches}"
+    )
+    
+    obs = parse_listings(page_html, src, url, card_by_id)
+    
+    print(
+        f"PRICE DEBUG | {src['name']} | page {page} "
+        f"| extracted {len(obs)} listing observations"
+    )
     if obs:successful.add(src['name'])
     for o in obs:
      fetched[o['card_id']].append(o)
