@@ -548,13 +548,6 @@ def main():
         id_match = ID_RE.search(page_html) 
     
         price_matches = list(PRICE_RE.finditer(page_html))
-        print(
-            "TCG RAW PRICE MATCHES:",
-            [
-                page_html[max(0, m.start() - 100):min(len(page_html), m.end() + 100)]
-                for m in price_matches[:15]
-            ]
-        )
 
     if len(page_text) < 100:
         print(
