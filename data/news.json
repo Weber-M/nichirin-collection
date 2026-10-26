@@ -1,7 +1,12 @@
 {
-  "updated": "2026-10-25",
+  "updated": "2026-10-26",
   "source": "https://p.eagate.573.jp/game/kimetsu/bslash/news/index.html",
   "items": [
+    {
+      "date": "2026.10.26",
+      "title": "不具合対応のお知らせ",
+      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/1026.html"
+    },
     {
       "date": "2026.10.20",
       "title": "ランクマッチ調整のお知らせ",
@@ -96,11 +101,6 @@
       "date": "2026.08.20",
       "title": "ゲーム内イベント「大ダメージで大量ゲット！アイテムくじバトル」に竈門禰󠄀豆子が参戦！",
       "url": "https://p.eagate.573.jp/game/kimetsu/bslash/event/lottery/index.html"
-    },
-    {
-      "date": "2026.08.18",
-      "title": "バージョンアップのお知らせ",
-      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/0818.html"
     }
   ]
 }
