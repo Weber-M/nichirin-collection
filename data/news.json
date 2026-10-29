@@ -1,7 +1,12 @@
 {
-  "updated": "2026-10-28",
+  "updated": "2026-10-29",
   "source": "https://p.eagate.573.jp/game/kimetsu/bslash/news/index.html",
   "items": [
+    {
+      "date": "2026.10.28",
+      "title": "不具合対応のお知らせ",
+      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/1028.html"
+    },
     {
       "date": "2026.10.26",
       "title": "不具合対応のお知らせ",
@@ -95,11 +100,6 @@
     {
       "date": "2026.08.27",
       "title": "ゲーム内イベント「大ダメージで大量ゲット！アイテムくじバトル」に冨岡義勇が参戦！",
-      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/event/lottery/index.html"
-    },
-    {
-      "date": "2026.08.20",
-      "title": "ゲーム内イベント「大ダメージで大量ゲット！アイテムくじバトル」に竈門禰󠄀豆子が参戦！",
       "url": "https://p.eagate.573.jp/game/kimetsu/bslash/event/lottery/index.html"
     }
   ]
