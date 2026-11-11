@@ -1,7 +1,12 @@
 {
-  "updated": "2026-11-10",
+  "updated": "2026-11-11",
   "source": "https://p.eagate.573.jp/game/kimetsu/bslash/news/index.html",
   "items": [
+    {
+      "date": "2026.11.11",
+      "title": "バージョンアップのお知らせ",
+      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/1111.html"
+    },
     {
       "date": "2026.11.02",
       "title": "第2回全集中！チャレンジバトルの調整のお知らせ",
@@ -96,11 +101,6 @@
       "date": "2026.09.08",
       "title": "バージョンアップのお知らせ",
       "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/0908.html"
-    },
-    {
-      "date": "2026.09.03",
-      "title": "9月3日は我妻善逸の誕生日！",
-      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/0903.html"
     }
   ]
 }
