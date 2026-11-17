@@ -1,7 +1,12 @@
 {
-  "updated": "2026-11-16",
+  "updated": "2026-11-17",
   "source": "https://p.eagate.573.jp/game/kimetsu/bslash/news/index.html",
   "items": [
+    {
+      "date": "2026.11.17",
+      "title": "不具合対応のお知らせ",
+      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/1117.html"
+    },
     {
       "date": "2026.11.16",
       "title": "全員もらえる！スペシャルカードキャンペーン開催！ ゲームをプレーして熱く燃える煉獄杏寿郎をゲットしよう！",
@@ -96,11 +101,6 @@
       "date": "2026.09.16",
       "title": "2弾カードリスト公開！",
       "url": "https://p.eagate.573.jp/game/kimetsu/bslash/card/index.html?part=2"
-    },
-    {
-      "date": "2026.09.14",
-      "title": "ゲーム内イベント「頂を目指せ！ランキングバトル」開催！",
-      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/event/ranking/index.html"
     }
   ]
 }
