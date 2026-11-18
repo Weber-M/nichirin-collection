@@ -1,7 +1,12 @@
 {
-  "updated": "2026-11-17",
+  "updated": "2026-11-18",
   "source": "https://p.eagate.573.jp/game/kimetsu/bslash/news/index.html",
   "items": [
+    {
+      "date": "2026.11.18",
+      "title": "明日から！ゲーム内イベント「突き進め！ハチャメチャバトル」開催！",
+      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/event/hachamecha/index.html"
+    },
     {
       "date": "2026.11.17",
       "title": "不具合対応のお知らせ",
@@ -96,11 +101,6 @@
       "date": "2026.09.17",
       "title": "現在確認されている不具合につきまして",
       "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/0917.html"
-    },
-    {
-      "date": "2026.09.16",
-      "title": "2弾カードリスト公開！",
-      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/card/index.html?part=2"
     }
   ]
 }
