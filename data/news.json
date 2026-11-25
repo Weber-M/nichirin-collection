@@ -1,7 +1,12 @@
 {
-  "updated": "2026-11-24",
+  "updated": "2026-11-25",
   "source": "https://p.eagate.573.jp/game/kimetsu/bslash/news/index.html",
   "items": [
+    {
+      "date": "2026.11.25",
+      "title": "バージョンアップのお知らせ",
+      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/1125.html"
+    },
     {
       "date": "2026.11.18",
       "title": "明日から！ゲーム内イベント「突き進め！ハチャメチャバトル」開催！",
@@ -96,11 +101,6 @@
       "date": "2026.09.18",
       "title": "｢ランクマッチ」の解禁が9月24日（木）10時からに決定！！",
       "url": "https://p.eagate.573.jp/game/kimetsu/bslash/howto/mode_vs.html"
-    },
-    {
-      "date": "2026.09.17",
-      "title": "現在確認されている不具合につきまして",
-      "url": "https://p.eagate.573.jp/game/kimetsu/bslash/news/2026/0917.html"
     }
   ]
 }
